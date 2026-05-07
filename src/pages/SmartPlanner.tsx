@@ -87,6 +87,19 @@ function stylePrompt(style: TravelStyle) {
   return '用户选择深度探索风格，可以安排主题日，节奏缓慢，融入本地生活感。'
 }
 
+function normalizeAiItinerary(payload: unknown): DayPlan[] | null {
+  if (!payload || typeof payload !== 'object') return null
+  const data = payload as { itinerary?: unknown; days?: unknown; plan?: { itinerary?: unknown } }
+  const candidate = data.itinerary ?? data.days ?? data.plan?.itinerary
+  if (!Array.isArray(candidate)) return null
+  const normalized = candidate.filter((item): item is DayPlan => {
+    if (!item || typeof item !== 'object') return false
+    const row = item as Partial<DayPlan>
+    return typeof row.dayNumber === 'number' && typeof row.cityId === 'string' && typeof row.morning === 'string' && typeof row.afternoon === 'string' && typeof row.evening === 'string'
+  })
+  return normalized.length ? normalized : null
+}
+
 async function generateAiItinerary(routeInfo: string, fallback: DayPlan[], travelStyle: TravelStyle, userApiKey?: string) {
   const response = await fetch('/api/generate-itinerary', {
     method: 'POST',
@@ -95,21 +108,28 @@ async function generateAiItinerary(routeInfo: string, fallback: DayPlan[], trave
       messages: [
         {
           role: 'system',
-          content: `你是申根旅行专家。根据以下路线生成逐日行程。${stylePrompt(travelStyle)}每天分上午/下午/晚上三个时段，输出 JSON 格式。`,
+          content: `你是申根旅行专家。根据以下路线生成逐日行程。${stylePrompt(travelStyle)}每天分上午/下午/晚上三个时段，务必只输出 JSON 对象，结构为 {"itinerary":[{"dayNumber":1,"cityId":"paris","morning":"...","afternoon":"...","evening":"...","restaurant":"...","transitNote":"..."}]}。`,
         },
         { role: 'user', content: routeInfo },
       ],
       userApiKey: userApiKey || undefined,
     }),
   })
-  if (!response.ok) return fallback
-  const raw = (await response.json()) as { choices?: Array<{ message?: { content?: string } }> }
+  const raw = await response.json()
+  console.log('[AI itinerary] /api/generate-itinerary status:', response.status, 'ok:', response.ok, 'raw:', raw)
+  if (!response.ok) {
+    return { itinerary: fallback, usedAi: false, reason: `HTTP_${response.status}` as const }
+  }
+  const typed = raw as { choices?: Array<{ message?: { content?: string } }> }
   try {
-    const content = raw.choices?.[0]?.message?.content
-    const parsed = content ? (JSON.parse(content) as { itinerary?: DayPlan[] }) : null
-    return parsed?.itinerary?.length ? parsed.itinerary : fallback
+    const content = typed.choices?.[0]?.message?.content
+    if (!content) return { itinerary: fallback, usedAi: false, reason: 'EMPTY_CONTENT' as const }
+    const parsed = JSON.parse(content) as unknown
+    const normalized = normalizeAiItinerary(parsed)
+    if (normalized) return { itinerary: normalized, usedAi: true as const }
+    return { itinerary: fallback, usedAi: false, reason: 'PARSE_SCHEMA_MISMATCH' as const }
   } catch {
-    return fallback
+    return { itinerary: fallback, usedAi: false, reason: 'PARSE_JSON_ERROR' as const }
   }
 }
 
@@ -143,6 +163,7 @@ export default function SmartPlanner() {
   const [loadingItinerary, setLoadingItinerary] = useState(false)
   const [loadingRecommend, setLoadingRecommend] = useState(false)
   const [recommendationNotice, setRecommendationNotice] = useState<string | null>(null)
+  const [aiRenderStatus, setAiRenderStatus] = useState<{ source: 'ai' | 'fallback' | 'pending'; reason?: string } | null>(null)
   const [showRegenerateHint, setShowRegenerateHint] = useState(false)
   const [showSettingsModal, setShowSettingsModal] = useState(false)
   const [holidayConflicts, setHolidayConflicts] = useState<HolidayConflict[]>([])
@@ -195,6 +216,7 @@ export default function SmartPlanner() {
       setAltResults([])
       setItinerary(result.plan.itinerary)
       setDismissedHolidayAlertIds([])
+      setAiRenderStatus(null)
     }
     setLoadingRecommend(false)
   }
@@ -225,11 +247,20 @@ export default function SmartPlanner() {
     if (!mainResult || activeTab !== 'itinerary') return
     const run = async () => {
       setLoadingItinerary(true)
+      setAiRenderStatus({ source: 'pending' })
       const routeInfo = `${mainResult.summary}\n${mainResult.plan.route
         .map((s, i) => `${i + 1}. ${cityMap.get(s.cityId)?.nameZh ?? s.cityId} ${s.days}天`)
         .join('\n')}`
       const localItinerary = mainResult.plan.itinerary
-      setItinerary(await generateAiItinerary(routeInfo, localItinerary, travelStyle, settings.apiKey))
+      const aiResult = await generateAiItinerary(routeInfo, localItinerary, travelStyle, settings.apiKey)
+      console.log('[AI itinerary] result source:', aiResult.usedAi ? 'AI' : 'FALLBACK', aiResult)
+      if (!aiResult.usedAi) {
+        setRecommendationNotice(`AI 行程接口调用失败，已降级为基础模板（${aiResult.reason ?? 'UNKNOWN'}）`)
+        setAiRenderStatus({ source: 'fallback', reason: aiResult.reason })
+      } else {
+        setAiRenderStatus({ source: 'ai' })
+      }
+      setItinerary(aiResult.itinerary)
       setLoadingItinerary(false)
     }
     run()
@@ -443,7 +474,18 @@ export default function SmartPlanner() {
 
           {activeTab === 'itinerary' ? (
             <div className="space-y-3">
-              {loadingItinerary ? <p className="text-sm text-slate-500">正在生成逐日行程...</p> : null}
+              <div className="flex flex-wrap items-center gap-2">
+                {loadingItinerary ? <p className="text-sm text-slate-500">正在生成逐日行程...</p> : null}
+                {aiRenderStatus?.source === 'ai' ? (
+                  <span className="rounded-full bg-emerald-100 px-2.5 py-1 text-xs text-emerald-700">AI 已启用</span>
+                ) : null}
+                {aiRenderStatus?.source === 'fallback' ? (
+                  <span className="rounded-full bg-amber-100 px-2.5 py-1 text-xs text-amber-700">已降级基础模板（{aiRenderStatus.reason ?? 'UNKNOWN'}）</span>
+                ) : null}
+                {aiRenderStatus?.source === 'pending' && !loadingItinerary ? (
+                  <span className="rounded-full bg-slate-100 px-2.5 py-1 text-xs text-slate-600">AI 状态检测中</span>
+                ) : null}
+              </div>
               <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={onDragEnd}>
                 <SortableContext items={itinerary.map((item) => item.dayNumber)} strategy={verticalListSortingStrategy}>
                   <div className="space-y-3">

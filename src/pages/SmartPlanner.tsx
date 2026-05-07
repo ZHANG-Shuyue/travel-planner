@@ -147,6 +147,7 @@ export default function SmartPlanner() {
 
   const {
     generateRecommendation,
+    wishlistCities,
     allCities,
     getAlternativeCities,
     getInsertCandidates,
@@ -196,7 +197,6 @@ export default function SmartPlanner() {
   const exportContainerRef = useRef<HTMLDivElement | null>(null)
   const resultSectionRef = useRef<HTMLElement | null>(null)
   const [settingsCollapsed, setSettingsCollapsed] = useState(false)
-  const [showRefineMapPicker, setShowRefineMapPicker] = useState(false)
 
   const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 4 } }))
   const departureOptions = useMemo(
@@ -542,30 +542,28 @@ export default function SmartPlanner() {
 
   return (
     <div className="space-y-4">
-      <section className="rounded-2xl border border-muted/60 bg-white/95 p-3 backdrop-blur dark:bg-dark-card/95">
+      <section className="sticky top-16 z-20 rounded-2xl border border-muted/60 bg-white/95 p-4 backdrop-blur dark:bg-dark-card/95">
         <AnimatePresence mode="wait" initial={false}>
-          {mainResult && settingsCollapsed ? (
+          {settingsCollapsed ? (
             <motion.div
               key="planner-summary"
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="rounded-xl bg-white px-4 py-3 shadow-sm dark:bg-gray-800"
+              className="flex items-center justify-between rounded-xl bg-white px-4 py-3 shadow-sm dark:bg-gray-800"
               onClick={() => setSettingsCollapsed(false)}
             >
-              <div className="flex items-center justify-between gap-3">
-                <p className="text-xs text-slate-500 dark:text-slate-300">{plannerSummary}</p>
-                <button
-                  className="rounded-full px-3 py-1 text-xs text-white"
-                  style={{ backgroundColor: '#7B9EAE' }}
-                  onClick={(event) => {
-                    event.stopPropagation()
-                    setSettingsCollapsed(false)
-                  }}
-                >
-                  展开修改
-                </button>
-              </div>
+              <p className="text-xs text-slate-500 dark:text-slate-300">{plannerSummary}</p>
+              <button
+                className="flex h-6 w-6 items-center justify-center rounded-full border text-xs"
+                style={{ borderColor: '#7B9EAE', color: '#7B9EAE' }}
+                onClick={(event) => {
+                  event.stopPropagation()
+                  setSettingsCollapsed(false)
+                }}
+              >
+                ˅
+              </button>
             </motion.div>
           ) : (
             <motion.div
@@ -573,106 +571,128 @@ export default function SmartPlanner() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="space-y-3"
+              className="space-y-4"
             >
-              <h1 className="font-title text-center text-2xl">你有几天假？让我帮你规划！</h1>
-              <div className="flex flex-wrap justify-center gap-2">
+              <div className="relative">
+                <h1 className="font-title text-center text-3xl">你有几天假？让我帮你规划！</h1>
+                <button
+                  className="absolute right-0 top-0 flex h-6 w-6 items-center justify-center rounded-full border text-xs"
+                  style={{ borderColor: '#7B9EAE', color: '#7B9EAE' }}
+                  onClick={() => setSettingsCollapsed(true)}
+                >
+                  ˄
+                </button>
+              </div>
+
+              <div className="mt-3 flex flex-wrap justify-center gap-2">
                 <button className={`rounded-full px-4 py-1.5 text-sm ${plannerMode === 'zero' ? 'bg-primary text-white' : 'border border-muted/60'}`} onClick={() => setPlannerMode('zero')}>帮我从零规划</button>
                 <button className={`rounded-full px-4 py-1.5 text-sm ${plannerMode === 'refine' ? 'bg-primary text-white' : 'border border-muted/60'}`} onClick={() => setPlannerMode('refine')}>我有初步想法</button>
               </div>
 
-              <div className="flex flex-wrap gap-2">
+              <div className="mt-3 grid gap-2 md:grid-cols-2 xl:grid-cols-4">
                 {(Object.keys(styleMeta) as TravelStyle[]).map((style) => {
                   const active = style === travelStyle
                   const meta = styleMeta[style]
                   return (
-                    <button
+                    <motion.button
                       key={style}
-                      title={`${meta.desc} · ${meta.pace}`}
-                      className={`rounded-full px-3 py-1.5 text-xs ${active ? 'text-white' : 'border border-muted/60 text-slate-600 dark:text-slate-200'}`}
-                      style={active ? { backgroundColor: '#7B9EAE' } : undefined}
+                      whileTap={{ scale: 0.98 }}
+                      animate={{ scale: active ? 1.02 : 1 }}
+                      className={`rounded-xl border p-3 text-left ${active ? 'border-purple bg-purple/10 shadow-sm' : 'border-muted/60'}`}
                       onClick={() => setTravelStyle(style)}
                     >
-                      {meta.icon} {meta.title}
-                    </button>
+                      <p className="text-sm font-medium">{meta.icon} {meta.title}</p>
+                      <p className="mt-1 text-xs text-slate-500">{meta.desc}</p>
+                      <p className="mt-1 text-[11px] text-purple">{meta.pace}</p>
+                    </motion.button>
                   )
                 })}
               </div>
 
-              <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-                <label className="rounded-xl border border-muted/60 p-2 text-sm">
-                  <p className="text-xs text-slate-500">天数</p>
-                  <div className="mt-1 flex items-center gap-2">
-                    <input type="range" min={1} max={30} value={days} onChange={(e) => setDays(Number(e.target.value))} className="w-full" />
-                    <input type="number" min={1} max={30} value={days} onChange={(e) => setDays(Math.min(30, Math.max(1, Number(e.target.value) || 1)))} className="w-14 rounded border border-muted/60 px-2 py-1 text-xs" />
-                  </div>
-                </label>
-                <label className="rounded-xl border border-muted/60 p-2 text-sm">
-                  <p className="text-xs text-slate-500">出发城市</p>
-                  <select className="mt-1 w-full rounded border border-muted/60 px-2 py-1 text-sm" value={departureCity} onChange={(e) => setDepartureCity(e.target.value)}>
-                    {departureOptions.map((id) => <option key={id} value={id}>{id === 'london' ? '伦敦' : cityMap.get(id)?.nameZh ?? id}</option>)}
-                  </select>
-                </label>
-                <label className="rounded-xl border border-muted/60 p-2 text-sm">
-                  <p className="text-xs text-slate-500">计划出发日期</p>
-                  <input type="date" value={planStartDate} onChange={(event) => setPlanStartDate(event.target.value)} className="mt-1 w-full rounded border border-muted/60 px-2 py-1 text-sm" />
-                </label>
-              </div>
-
-              <div className="rounded-xl border border-muted/60 p-2 text-sm">
-                <p className="text-xs text-slate-500">旅行偏好（可多选）</p>
-                <div className="mt-1 flex flex-wrap gap-2">
-                  {preferenceTags.map((tag) => (
-                    <button key={tag} className={`rounded-full px-3 py-1 text-xs ${selectedPreferences.includes(tag) ? 'bg-primary text-white' : 'bg-muted/35'}`} onClick={() => setSelectedPreferences((prev) => (prev.includes(tag) ? prev.filter((v) => v !== tag) : [...prev, tag]))}>{tag}</button>
-                  ))}
-                </div>
-              </div>
-
-              <div className="flex flex-wrap gap-2">
-                {[
-                  { key: 'budget', label: '穷游', range: '€50-100/天' },
-                  { key: 'mid', label: '舒适', range: '€100-190/天' },
-                  { key: 'luxury', label: '奢华', range: '€190+/天' },
-                ].map((item) => (
-                  <button key={item.key} title={item.range} className={`rounded-full px-3 py-1.5 text-xs ${budgetLevel === item.key ? 'bg-primary text-white' : 'border border-muted/60'}`} onClick={() => setBudgetLevel(item.key as 'budget' | 'mid' | 'luxury')}>{item.label}</button>
-                ))}
-                <button className={`rounded-full px-3 py-1.5 text-xs ${wishlistPriority ? 'bg-primary text-white' : 'border border-muted/60'}`} onClick={() => setWishlistPriority((v) => !v)}>
-                  心愿单优先：{wishlistPriority ? '开' : '关'}
-                </button>
-              </div>
-
               {plannerMode === 'zero' && requiredCityIds.length ? (
-                <p className="text-xs text-primary">必经城市：{requiredCityIds.map((id) => cityMap.get(id)?.nameZh ?? id).join(' · ')}</p>
+                <p className="mt-2 text-center text-xs text-primary">必经城市：{requiredCityIds.map((id) => cityMap.get(id)?.nameZh ?? id).join(' · ')}</p>
               ) : null}
 
               {plannerMode === 'refine' ? (
-                <div className="grid gap-2 lg:grid-cols-3">
-                  <div className="lg:col-span-2 space-y-2 rounded-xl border border-muted/60 p-2">
+                <div className="mt-3 grid gap-3 lg:grid-cols-2">
+                  <div className="space-y-2 rounded-xl border border-muted/60 p-3">
                     <p className="text-sm font-medium">必去城市（可拖拽排序）</p>
                     <CityTagInput cities={allCities} value={mandatoryCityIds} onChange={setMandatoryCityIds} placeholder="搜索城市（中英文）" />
+                    <p className="text-xs text-slate-500">也可以在地图点选城市加入必去清单</p>
+                    <SchengenMap
+                      visitedCityIds={visitedCityIds}
+                      highlightedCityIds={mandatoryCityIds}
+                      onCityClick={(cityId) => setMandatoryCityIds((prev) => (prev.includes(cityId) ? prev : [...prev, cityId]))}
+                      compact
+                      compactTight
+                    />
                   </div>
-                  <div className="space-y-2 rounded-xl border border-muted/60 p-2 text-sm">
-                    <label className="flex items-center justify-between rounded-lg bg-muted/20 px-2 py-1.5">
-                      <span className="text-xs">补充连接城市</span>
-                      <button className={`rounded-full px-2 py-1 text-xs ${fillConnections ? 'bg-primary text-white' : 'bg-muted/50'}`} onClick={() => setFillConnections((prev) => !prev)}>{fillConnections ? '开' : '关'}</button>
+                  <div className="space-y-2 rounded-xl border border-muted/60 p-3 text-sm">
+                    <label className="flex items-center justify-between rounded-lg bg-muted/20 px-3 py-2">
+                      <span>帮我在这些城市之间补充连接城市</span>
+                      <button className={`rounded-full px-3 py-1 text-xs ${fillConnections ? 'bg-primary text-white' : 'bg-muted/50'}`} onClick={() => setFillConnections((prev) => !prev)}>
+                        {fillConnections ? '已开启' : '已关闭'}
+                      </button>
                     </label>
-                    <button className="w-full rounded-lg border border-dashed border-primary/40 px-2 py-1.5 text-xs text-primary" onClick={() => setShowRefineMapPicker((prev) => !prev)}>
-                      📍 在地图上选城市
-                    </button>
+                    <p className="text-xs text-slate-500">指定城市会标记为 📌，系统补充城市会标记为 🔗。你仍可在结果中继续编辑路线。</p>
                   </div>
-                  <AnimatePresence>
-                    {showRefineMapPicker ? (
-                      <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} className="lg:col-span-3 overflow-hidden rounded-xl border border-muted/60 p-2">
-                        <div className="max-h-[250px] overflow-hidden">
-                          <SchengenMap visitedCityIds={visitedCityIds} highlightedCityIds={mandatoryCityIds} onCityClick={(cityId) => setMandatoryCityIds((prev) => (prev.includes(cityId) ? prev : [...prev, cityId]))} compact />
-                        </div>
-                      </motion.div>
-                    ) : null}
-                  </AnimatePresence>
                 </div>
               ) : null}
 
-              <div className="flex flex-wrap gap-2 pt-1">
+              <div className="mt-4 grid gap-3 md:grid-cols-2 lg:grid-cols-4">
+                <label className="rounded-xl border border-muted/60 p-3 text-sm">
+                  <p>天数</p>
+                  <div className="mt-2 flex items-center gap-2">
+                    <input type="range" min={1} max={30} value={days} onChange={(e) => setDays(Number(e.target.value))} className="w-full" />
+                    <input type="number" min={1} max={30} value={days} onChange={(e) => setDays(Math.min(30, Math.max(1, Number(e.target.value) || 1)))} className="w-16 rounded border border-muted/60 px-2 py-1" />
+                  </div>
+                </label>
+                <label className="rounded-xl border border-muted/60 p-3 text-sm">
+                  <p>出发城市</p>
+                  <select className="mt-2 w-full rounded border border-muted/60 px-2 py-1" value={departureCity} onChange={(e) => setDepartureCity(e.target.value)}>
+                    {departureOptions.map((id) => <option key={id} value={id}>{id === 'london' ? '伦敦' : cityMap.get(id)?.nameZh ?? id}</option>)}
+                  </select>
+                </label>
+                <div className="rounded-xl border border-muted/60 p-3 text-sm">
+                  <p>旅行偏好（可多选）</p>
+                  <div className="mt-2 flex flex-wrap gap-2">
+                    {preferenceTags.map((tag) => (
+                      <button key={tag} className={`rounded-full px-3 py-1 text-xs ${selectedPreferences.includes(tag) ? 'bg-primary text-white' : 'bg-muted/35'}`} onClick={() => setSelectedPreferences((prev) => (prev.includes(tag) ? prev.filter((v) => v !== tag) : [...prev, tag]))}>{tag}</button>
+                    ))}
+                  </div>
+                </div>
+                <label className="rounded-xl border border-muted/60 p-3 text-sm">
+                  <p>计划出发日期（可选）</p>
+                  <input
+                    type="date"
+                    value={planStartDate}
+                    onChange={(event) => setPlanStartDate(event.target.value)}
+                    className="mt-2 w-full rounded border border-muted/60 px-2 py-1"
+                  />
+                  <p className="mt-1 text-xs text-slate-500">填写后会自动检查节假日/闭馆冲突</p>
+                </label>
+              </div>
+
+              <div className="mt-3 grid gap-3 lg:grid-cols-2">
+                <div className="grid gap-2 sm:grid-cols-3">
+                  {[
+                    { key: 'budget', label: '穷游', range: '€50-100 / 天' },
+                    { key: 'mid', label: '舒适', range: '€100-190 / 天' },
+                    { key: 'luxury', label: '奢华', range: '€190+ / 天' },
+                  ].map((item) => (
+                    <button key={item.key} className={`rounded-xl border p-3 text-left ${budgetLevel === item.key ? 'border-primary bg-primary/10' : 'border-muted/60'}`} onClick={() => setBudgetLevel(item.key as 'budget' | 'mid' | 'luxury')}>
+                      <p className="text-sm font-medium">{item.label}</p>
+                      <p className="text-xs text-slate-500">{item.range}</p>
+                    </button>
+                  ))}
+                </div>
+                <div className="flex items-center justify-between rounded-xl border border-muted/60 px-3 py-2 text-sm">
+                  <div><p>心愿单优先</p><p className="text-xs text-slate-500">已识别心愿单城市：{wishlistCities.length}</p></div>
+                  <button className={`rounded-full px-4 py-1.5 text-xs ${wishlistPriority ? 'bg-primary text-white' : 'bg-muted/40'}`} onClick={() => setWishlistPriority((v) => !v)}>{wishlistPriority ? '已开启' : '已关闭'}</button>
+                </div>
+              </div>
+
+              <div className="mt-4 flex flex-wrap gap-2">
                 <button className="rounded-full bg-purple px-5 py-2 text-sm text-white hover:bg-purple/90 disabled:cursor-not-allowed disabled:opacity-60" disabled={loadingRecommend} onClick={() => (plannerMode === 'refine' ? doRefineGenerate() : doGenerate(false))}>{loadingRecommend ? '正在生成...' : plannerMode === 'refine' ? '帮我细化行程 ✨' : '生成旅行方案 ✨'}</button>
                 {plannerMode === 'zero' ? (
                   <>
@@ -683,7 +703,7 @@ export default function SmartPlanner() {
                 {mainResult ? <button className="rounded-full bg-primary px-4 py-2 text-sm text-white" onClick={() => savePlan({ ...mainResult.plan, itinerary })}>保存方案</button> : null}
                 {showRegenerateHint ? <button className="rounded-full bg-amber-100 px-4 py-2 text-sm text-amber-700" onClick={reroll}>天数已变化，点击重新生成</button> : null}
               </div>
-              {recommendationNotice ? <p className="rounded-lg bg-amber-50 px-3 py-2 text-sm text-amber-700">{recommendationNotice}</p> : null}
+              {recommendationNotice ? <p className="mt-2 rounded-lg bg-amber-50 px-3 py-2 text-sm text-amber-700">{recommendationNotice}</p> : null}
             </motion.div>
           )}
         </AnimatePresence>

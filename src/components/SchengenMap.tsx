@@ -18,6 +18,7 @@ interface SchengenMapProps {
   onCountryClick?: (countryCode: string) => void
   interactive?: boolean
   compact?: boolean
+  compactTight?: boolean
   cityStayDays?: Record<string, number>
   cityTransitIcons?: Record<string, string>
 }
@@ -74,6 +75,7 @@ export default function SchengenMap({
   onCountryClick,
   interactive = true,
   compact = false,
+  compactTight = false,
   cityStayDays,
   cityTransitIcons,
 }: SchengenMapProps) {
@@ -239,7 +241,7 @@ export default function SchengenMap({
 
   return (
     <div
-      className={`relative overflow-hidden map-root rounded-2xl border border-muted/60 bg-background p-2 shadow-sm ${compact ? 'h-[170px] md:h-[220px]' : 'h-[420px] md:h-[620px]'}`}
+      className={`relative overflow-hidden map-root rounded-2xl border border-muted/60 bg-background p-2 shadow-sm ${compact ? (compactTight ? 'h-[170px] md:h-[255px]' : 'h-[200px] md:h-[300px]') : 'h-[420px] md:h-[620px]'}`}
       onWheel={(event) => event.preventDefault()}
     >
       <ComposableMap

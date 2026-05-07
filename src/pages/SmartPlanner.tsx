@@ -9,7 +9,7 @@ import {
 import { SortableContext, arrayMove, useSortable, verticalListSortingStrategy } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
 import { motion } from 'framer-motion'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import SchengenMap from '../components/SchengenMap'
 import DayCard from '../components/DayCard'
@@ -19,7 +19,11 @@ import PlanComparison from '../components/PlanComparison'
 import TransitCard from '../components/TransitCard'
 import DayTripSuggestionCard from '../components/DayTripSuggestionCard'
 import VisaInfoSettings from '../components/VisaInfoSettings'
+import CityTagInput from '../components/CityTagInput'
+import SwapCityPanel from '../components/SwapCityPanel'
+import InsertCityPanel from '../components/InsertCityPanel'
 import { useSmartRecommend, type PreferenceTag, type SmartRecommendResult } from '../hooks/useSmartRecommend'
+import { useRouteOptimize } from '../hooks/useRouteOptimize'
 import { checkHolidaysForPlan } from '../hooks/useHolidayCheck'
 import { useUserStore } from '../stores/useUserStore'
 import type { DayPlan, TravelStyle } from '../types/plan'
@@ -27,6 +31,7 @@ import citiesData from '../data/schengen-cities.json'
 import type { SchengenCity } from '../types/city'
 import type { HolidayConflict } from '../types/holiday'
 import { getTransitOptions, parseDurationToHours } from '../utils/transit'
+import { exportItineraryPDF } from '../utils/exportPDF'
 
 const preferenceTags: PreferenceTag[] = ['文化', '美食', '自然', '海滨', '城市探索', '小众冒险']
 const cityData = citiesData as SchengenCity[]
@@ -50,6 +55,7 @@ function SortableDayItem({
   showStayComparison,
   arrivalTransportTip,
   onChange,
+  hideActions,
 }: {
   day: DayPlan
   city: SchengenCity
@@ -60,6 +66,7 @@ function SortableDayItem({
   showStayComparison?: boolean
   arrivalTransportTip?: SchengenCity['localTransport']
   onChange: (next: DayPlan) => void
+  hideActions?: boolean
 }) {
   const { attributes, listeners, setNodeRef, transform, transition } = useSortable({ id: day.dayNumber })
   return (
@@ -75,6 +82,7 @@ function SortableDayItem({
         stayRecommendation={stayRecommendation}
         stayAreas={showStayComparison ? city.stayAreas : undefined}
         arrivalTransportTip={arrivalTransportTip}
+        hideActions={hideActions}
       />
     </div>
   )
@@ -108,7 +116,7 @@ async function generateAiItinerary(routeInfo: string, fallback: DayPlan[], trave
       messages: [
         {
           role: 'system',
-          content: `你是申根旅行专家。根据以下路线生成逐日行程。${stylePrompt(travelStyle)}每天分上午/下午/晚上三个时段，务必只输出 JSON 对象，结构为 {"itinerary":[{"dayNumber":1,"cityId":"paris","morning":"...","afternoon":"...","evening":"...","restaurant":"...","transitNote":"..."}]}。`,
+          content: `你是申根旅行专家。根据以下路线生成逐日行程。${stylePrompt(travelStyle)}每天分上午/下午/晚上三个时段。每个时段只列出地点名称和预计停留时长，格式为“地点名（Xh）”，多个地点用箭头→连接。不要写描述性段落。务必只输出 JSON 对象，结构为 {"itinerary":[{"dayNumber":1,"cityId":"paris","morning":"...","afternoon":"...","evening":"...","restaurant":"...","transitNote":"..."}]}。`,
         },
         { role: 'user', content: routeInfo },
       ],
@@ -137,7 +145,16 @@ export default function SmartPlanner() {
   const location = useLocation()
   const prefill = (location.state as { requiredCityIds?: string[]; wishlistPriority?: boolean } | null) ?? null
 
-  const { generateRecommendation, wishlistCities } = useSmartRecommend()
+  const {
+    generateRecommendation,
+    wishlistCities,
+    allCities,
+    getAlternativeCities,
+    getInsertCandidates,
+    refineUserPlan,
+    buildPlanFromOrderedCities,
+  } = useSmartRecommend()
+  const { swapCity, removeCity, insertCity } = useRouteOptimize()
   const savePlan = useUserStore((state) => state.savePlan)
   const settings = useUserStore((state) => state.settings)
   const visaInfo = useUserStore((state) => state.visaInfo)
@@ -147,12 +164,15 @@ export default function SmartPlanner() {
   const visitedCityIds = visitedCities.map((item) => item.cityId)
 
   const [days, setDays] = useState(7)
+  const [plannerMode, setPlannerMode] = useState<'zero' | 'refine'>('zero')
   const [departureCity, setDepartureCity] = useState('london')
   const [selectedPreferences, setSelectedPreferences] = useState<PreferenceTag[]>([])
   const [travelStyle, setTravelStyle] = useState<TravelStyle>('balanced')
   const [budgetLevel, setBudgetLevel] = useState<'budget' | 'mid' | 'luxury'>('mid')
   const [wishlistPriority, setWishlistPriority] = useState(prefill?.wishlistPriority ?? true)
   const [requiredCityIds, setRequiredCityIds] = useState<string[]>(prefill?.requiredCityIds ?? [])
+  const [mandatoryCityIds, setMandatoryCityIds] = useState<string[]>(prefill?.requiredCityIds ?? [])
+  const [fillConnections, setFillConnections] = useState(true)
   const [activeTab, setActiveTab] = useState<'map' | 'itinerary' | 'inspiration'>('map')
   const [planStartDate, setPlanStartDate] = useState('')
   const [mainResult, setMainResult] = useState<SmartRecommendResult | null>(null)
@@ -170,6 +190,11 @@ export default function SmartPlanner() {
   const [dismissedHolidayAlertIds, setDismissedHolidayAlertIds] = useState<string[]>([])
   const [showHolidayPanel, setShowHolidayPanel] = useState(true)
   const [apiKeyDraft, setApiKeyDraft] = useState(settings.apiKey ?? '')
+  const [swapIndex, setSwapIndex] = useState<number | null>(null)
+  const [swapCandidates, setSwapCandidates] = useState<ReturnType<typeof getAlternativeCities>>([])
+  const [insertBetween, setInsertBetween] = useState<{ prevId: string; nextId: string; atIndex: number } | null>(null)
+  const [exportState, setExportState] = useState<'idle' | 'loading' | 'success'>('idle')
+  const exportContainerRef = useRef<HTMLDivElement | null>(null)
 
   const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 4 } }))
   const departureOptions = useMemo(
@@ -221,9 +246,184 @@ export default function SmartPlanner() {
     setLoadingRecommend(false)
   }
 
+  const doRefineGenerate = async () => {
+    setLoadingRecommend(true)
+    setRecommendationNotice(null)
+    await new Promise((resolve) => window.setTimeout(resolve, 120))
+    const refined = refineUserPlan(mandatoryCityIds, days, {
+      departureCity,
+      travelStyle,
+      budgetLevel,
+      preferenceTags: selectedPreferences,
+      fillConnections,
+      keepOrder: true,
+    })
+    if (!refined.result) {
+      setLoadingRecommend(false)
+      setRecommendationNotice(refined.warning ?? '暂无合适推荐')
+      return
+    }
+    setMainResult(refined.result)
+    setItinerary(refined.result.plan.itinerary)
+    setAltResults([])
+    setDismissedHolidayAlertIds([])
+    setAiRenderStatus(null)
+    if (refined.warning) setRecommendationNotice(refined.warning)
+    setLoadingRecommend(false)
+  }
+
   const reroll = async () => {
     if (mainResult) setExcludedCombos((prev) => [...prev, mainResult.plan.cities])
     await doGenerate(false)
+  }
+
+  const applyEditedRoute = (nextCityIds: string[], nextTotalDays?: number, nextSourceMap?: Record<string, 'mandatory' | 'recommended'>) => {
+    if (!mainResult) return
+    const fallbackSourceMap = mainResult.plan.route.reduce<Record<string, 'mandatory' | 'recommended'>>((acc, stop) => {
+      acc[stop.cityId] = stop.sourceType ?? 'recommended'
+      return acc
+    }, {})
+    const result = buildPlanFromOrderedCities(
+      nextCityIds.map((id) => cityMap.get(id)).filter((item): item is SchengenCity => Boolean(item)),
+      nextTotalDays ?? mainResult.plan.totalDays,
+      travelStyle,
+      budgetLevel,
+      departureCity,
+      nextSourceMap ?? fallbackSourceMap,
+    )
+    if (!result) {
+      setRecommendationNotice('暂无合适推荐')
+      return
+    }
+    setMainResult(result)
+    setItinerary(result.plan.itinerary)
+    setRecommendationNotice('路线已更新')
+    setSwapIndex(null)
+    setInsertBetween(null)
+  }
+
+  const openSwapForIndex = (index: number) => {
+    if (!mainResult) return
+    const target = mainResult.plan.route[index]
+    if (!target) return
+    if (target.sourceType === 'mandatory') {
+      setRecommendationNotice('该城市是你指定的必去城市，不能直接替换。可改为插入或移除。')
+      return
+    }
+    const prev = index > 0 ? mainResult.plan.route[index - 1] : undefined
+    const next = index < mainResult.plan.route.length - 1 ? mainResult.plan.route[index + 1] : undefined
+    const list = getAlternativeCities(
+      target.cityId,
+      prev?.cityId,
+      next?.cityId,
+      mainResult.plan.totalDays,
+      mainResult.plan.route.map((item) => item.cityId),
+    )
+    setSwapCandidates(list)
+    setSwapIndex(index)
+  }
+
+  const refreshSwapCandidates = () => {
+    if (swapIndex === null || !mainResult) return
+    const target = mainResult.plan.route[swapIndex]
+    if (!target) return
+    const prev = swapIndex > 0 ? mainResult.plan.route[swapIndex - 1] : undefined
+    const next = swapIndex < mainResult.plan.route.length - 1 ? mainResult.plan.route[swapIndex + 1] : undefined
+    const nextBatch = getAlternativeCities(
+      target.cityId,
+      prev?.cityId,
+      next?.cityId,
+      mainResult.plan.totalDays,
+      mainResult.plan.route.map((item) => item.cityId),
+    )
+    setSwapCandidates(nextBatch.sort(() => Math.random() - 0.5))
+  }
+
+  const handleSwapCity = (newCityId: string) => {
+    if (swapIndex === null || !mainResult) return
+    const oldId = mainResult.plan.route[swapIndex]?.cityId
+    if (!oldId) return
+    const next = swapCity(mainResult.plan.route.map((item) => item.cityId), oldId, newCityId)
+    const sourceMap = mainResult.plan.route.reduce<Record<string, 'mandatory' | 'recommended'>>((acc, stop) => {
+      if (stop.cityId === oldId) acc[newCityId] = stop.sourceType ?? 'recommended'
+      else acc[stop.cityId] = stop.sourceType ?? 'recommended'
+      return acc
+    }, {})
+    applyEditedRoute(next, mainResult.plan.totalDays, sourceMap)
+  }
+
+  const handleRemoveCity = (index: number) => {
+    if (!mainResult) return
+    const target = mainResult.plan.route[index]
+    if (!target) return
+    const decision = window.prompt(`移除 ${cityMap.get(target.cityId)?.nameZh ?? target.cityId} 后：输入 A=缩短行程，B=把天数分给其他城市，C=插入新城市替代`, 'A')
+    const mode = (decision ?? 'A').trim().toUpperCase()
+    if (mode === 'C') {
+      openSwapForIndex(index)
+      return
+    }
+    const baseRouteIds = mainResult.plan.route.map((item) => item.cityId)
+    const nextRouteIds = removeCity(baseRouteIds, target.cityId)
+    const nextSourceMap = mainResult.plan.route.reduce<Record<string, 'mandatory' | 'recommended'>>((acc, stop) => {
+      if (stop.cityId !== target.cityId) acc[stop.cityId] = stop.sourceType ?? 'recommended'
+      return acc
+    }, {})
+    const nextTotalDays = mode === 'A'
+      ? Math.max(1, mainResult.plan.totalDays - (target.days ?? 1))
+      : mainResult.plan.totalDays
+    applyEditedRoute(nextRouteIds, nextTotalDays, nextSourceMap)
+  }
+
+  const handleOpenInsert = (prevId: string, nextId: string, atIndex: number) => {
+    setInsertBetween({ prevId, nextId, atIndex })
+  }
+
+  const handleInsertCity = (cityId: string, assignDays: number, mode: 'increase' | 'redistribute') => {
+    if (!mainResult || !insertBetween) return
+    const routeIds = mainResult.plan.route.map((item) => item.cityId)
+    const inserted = insertCity(routeIds, cityId, insertBetween.atIndex)
+    const sourceMap = mainResult.plan.route.reduce<Record<string, 'mandatory' | 'recommended'>>((acc, stop) => {
+      acc[stop.cityId] = stop.sourceType ?? 'recommended'
+      return acc
+    }, {})
+    sourceMap[cityId] = 'recommended'
+    const nextTotalDays = mode === 'increase'
+      ? mainResult.plan.totalDays + assignDays
+      : Math.max(1, mainResult.plan.totalDays)
+    applyEditedRoute(inserted, nextTotalDays, sourceMap)
+  }
+
+  const handleExportPdf = async () => {
+    if (!mainResult || !exportContainerRef.current || exportState === 'loading') return
+    setExportState('loading')
+    await new Promise((resolve) => window.setTimeout(resolve, 80))
+
+    const depName = departureCity === 'london' ? '伦敦' : (cityMap.get(departureCity)?.nameZh ?? departureCity)
+    const routeNames = mainResult.plan.route.map((stop) => cityMap.get(stop.cityId)?.nameZh ?? stop.cityId).join(' → ')
+    const dateRange = planStartDate
+      ? (() => {
+          const start = new Date(planStartDate)
+          const end = new Date(start)
+          end.setDate(start.getDate() + mainResult.plan.totalDays - 1)
+          return `${planStartDate} 至 ${end.toISOString().slice(0, 10)}`
+        })()
+      : `${mainResult.plan.totalDays}天行程`
+
+    const fileDate = new Date().toISOString().slice(0, 10)
+    const fileName = `行程规划_${mainResult.plan.name}_${fileDate}.pdf`
+
+    try {
+      await exportItineraryPDF(exportContainerRef.current, fileName, {
+        title: `${depName} → ${routeNames}`,
+        subtitle: dateRange,
+      })
+      setExportState('success')
+      window.setTimeout(() => setExportState('idle'), 1800)
+    } catch (error) {
+      console.error('PDF 导出失败:', error)
+      setRecommendationNotice('导出失败，请稍后重试')
+      setExportState('idle')
+    }
   }
 
   const excludeCity = (cityId: string) => {
@@ -320,6 +520,20 @@ export default function SmartPlanner() {
     <div className="space-y-4">
       <section className="sticky top-16 z-20 rounded-2xl border border-muted/60 bg-white/95 p-4 backdrop-blur dark:bg-dark-card/95">
         <h1 className="font-title text-center text-3xl">你有几天假？让我帮你规划！</h1>
+        <div className="mt-3 flex flex-wrap justify-center gap-2">
+          <button
+            className={`rounded-full px-4 py-1.5 text-sm ${plannerMode === 'zero' ? 'bg-primary text-white' : 'bg-muted/40'}`}
+            onClick={() => setPlannerMode('zero')}
+          >
+            帮我从零规划
+          </button>
+          <button
+            className={`rounded-full px-4 py-1.5 text-sm ${plannerMode === 'refine' ? 'bg-primary text-white' : 'bg-muted/40'}`}
+            onClick={() => setPlannerMode('refine')}
+          >
+            我有初步想法
+          </button>
+        </div>
 
         <div className="mt-3 grid gap-2 md:grid-cols-2 xl:grid-cols-4">
           {(Object.keys(styleMeta) as TravelStyle[]).map((style) => {
@@ -341,8 +555,33 @@ export default function SmartPlanner() {
           })}
         </div>
 
-        {requiredCityIds.length ? (
+        {plannerMode === 'zero' && requiredCityIds.length ? (
           <p className="mt-2 text-center text-xs text-primary">必经城市：{requiredCityIds.map((id) => cityMap.get(id)?.nameZh ?? id).join(' · ')}</p>
+        ) : null}
+
+        {plannerMode === 'refine' ? (
+          <div className="mt-3 grid gap-3 lg:grid-cols-2">
+            <div className="space-y-2 rounded-xl border border-muted/60 p-3">
+              <p className="text-sm font-medium">必去城市（可拖拽排序）</p>
+              <CityTagInput cities={allCities} value={mandatoryCityIds} onChange={setMandatoryCityIds} placeholder="搜索城市（中英文）" />
+              <p className="text-xs text-slate-500">也可以在地图点选城市加入必去清单</p>
+              <SchengenMap
+                visitedCityIds={visitedCityIds}
+                highlightedCityIds={mandatoryCityIds}
+                onCityClick={(cityId) => setMandatoryCityIds((prev) => (prev.includes(cityId) ? prev : [...prev, cityId]))}
+                compact
+              />
+            </div>
+            <div className="space-y-2 rounded-xl border border-muted/60 p-3 text-sm">
+              <label className="flex items-center justify-between rounded-lg bg-muted/20 px-3 py-2">
+                <span>帮我在这些城市之间补充连接城市</span>
+                <button className={`rounded-full px-3 py-1 text-xs ${fillConnections ? 'bg-primary text-white' : 'bg-muted/50'}`} onClick={() => setFillConnections((prev) => !prev)}>
+                  {fillConnections ? '已开启' : '已关闭'}
+                </button>
+              </label>
+              <p className="text-xs text-slate-500">指定城市会标记为 📌，系统补充城市会标记为 🔗。你仍可在结果中继续编辑路线。</p>
+            </div>
+          </div>
         ) : null}
 
         <div className="mt-4 grid gap-3 md:grid-cols-2 lg:grid-cols-4">
@@ -399,9 +638,13 @@ export default function SmartPlanner() {
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">
-          <button className="rounded-full bg-purple px-5 py-2 text-sm text-white hover:bg-purple/90 disabled:cursor-not-allowed disabled:opacity-60" disabled={loadingRecommend} onClick={() => doGenerate(false)}>{loadingRecommend ? '正在生成...' : '生成旅行方案 ✨'}</button>
-          <button className="rounded-full bg-muted/40 px-4 py-2 text-sm disabled:cursor-not-allowed disabled:opacity-60" disabled={loadingRecommend} onClick={reroll}>换一批推荐</button>
-          <button className="rounded-full bg-secondary/25 px-4 py-2 text-sm disabled:cursor-not-allowed disabled:opacity-60" disabled={loadingRecommend} onClick={() => doGenerate(true)}>再来一套</button>
+          <button className="rounded-full bg-purple px-5 py-2 text-sm text-white hover:bg-purple/90 disabled:cursor-not-allowed disabled:opacity-60" disabled={loadingRecommend} onClick={() => (plannerMode === 'refine' ? doRefineGenerate() : doGenerate(false))}>{loadingRecommend ? '正在生成...' : plannerMode === 'refine' ? '帮我细化行程 ✨' : '生成旅行方案 ✨'}</button>
+          {plannerMode === 'zero' ? (
+            <>
+              <button className="rounded-full bg-muted/40 px-4 py-2 text-sm disabled:cursor-not-allowed disabled:opacity-60" disabled={loadingRecommend} onClick={reroll}>换一批推荐</button>
+              <button className="rounded-full bg-secondary/25 px-4 py-2 text-sm disabled:cursor-not-allowed disabled:opacity-60" disabled={loadingRecommend} onClick={() => doGenerate(true)}>再来一套</button>
+            </>
+          ) : null}
           {mainResult ? <button className="rounded-full bg-primary px-4 py-2 text-sm text-white" onClick={() => savePlan({ ...mainResult.plan, itinerary })}>保存方案</button> : null}
           {showRegenerateHint ? <button className="rounded-full bg-amber-100 px-4 py-2 text-sm text-amber-700" onClick={reroll}>天数已变化，点击重新生成</button> : null}
         </div>
@@ -410,9 +653,26 @@ export default function SmartPlanner() {
 
       {mainResult ? (
         <section className="space-y-3 rounded-2xl border border-muted/60 bg-white p-4 dark:bg-dark-card">
+          <div className="no-pdf-hide flex justify-end">
+            <button
+              onClick={handleExportPdf}
+              disabled={exportState === 'loading'}
+              className="w-full rounded-lg px-4 py-2 text-sm text-white sm:w-auto disabled:opacity-70"
+              style={{ backgroundColor: '#7B9EAE' }}
+            >
+              {exportState === 'loading' ? (
+                <span className="inline-flex items-center gap-2"><span className="inline-block h-3.5 w-3.5 animate-spin rounded-full border-2 border-white border-t-transparent" />正在生成...</span>
+              ) : exportState === 'success' ? (
+                '导出成功 ✓'
+              ) : (
+                '导出 PDF'
+              )}
+            </button>
+          </div>
+          <div ref={exportContainerRef} className="rounded-xl bg-[#FAF8F5] p-2 dark:bg-[#FAF8F5]">
           <div className="flex gap-2 text-sm">
             {['map', 'itinerary', 'inspiration'].map((tab) => (
-              <button key={tab} className={`rounded-full px-3 py-1 ${activeTab === tab ? 'bg-primary text-white' : 'bg-muted/40'}`} onClick={() => setActiveTab(tab as 'map' | 'itinerary' | 'inspiration')}>
+              <button key={tab} className={`no-pdf-hide rounded-full px-3 py-1 ${activeTab === tab ? 'bg-primary text-white' : 'bg-muted/40'}`} onClick={() => setActiveTab(tab as 'map' | 'itinerary' | 'inspiration')}>
                 {tab === 'map' ? '路线地图' : tab === 'itinerary' ? '逐日行程' : '灵感参考'}
               </button>
             ))}
@@ -422,7 +682,7 @@ export default function SmartPlanner() {
             <div className="grid gap-3 lg:grid-cols-3">
               <div className="lg:col-span-2"><SchengenMap visitedCityIds={visitedCityIds} highlightedCityIds={mainResult.routePath} routePath={[departureCity, ...mainResult.routePath]} wishlistCityIds={wishlist} cityStayDays={routeStayDays} cityTransitIcons={routeTransitIcons} /></div>
               <div className="space-y-2">
-                <div className="rounded-xl bg-background/70 p-3 text-sm">
+                <div data-pdf-card="true" className="rounded-xl bg-background/70 p-3 text-sm">
                   <p>{mainResult.summary}</p>
                   {hasVisaCheckData && visaRemainingDays !== null ? (
                     <div className="mt-2 space-y-1 text-xs">
@@ -453,21 +713,75 @@ export default function SmartPlanner() {
                   const city = cityMap.get(stop.cityId)
                   if (!city) return null
                   return (
-                    <div key={stop.cityId} className="rounded-xl border border-muted/50 p-3">
-                      <div className="flex items-center justify-between"><p className="text-sm font-medium">{index + 1}. {city.flag} {city.nameZh}</p><button className="text-xs text-red-500" onClick={() => excludeCity(stop.cityId)}>排除此城市</button></div>
+                    <div key={`${stop.cityId}-${index}`} data-pdf-card="true" className="rounded-xl border border-muted/50 p-3">
+                      <div className="flex items-center justify-between gap-2">
+                        <p className="text-sm font-medium">{index + 1}. {city.flag} {city.nameZh}</p>
+                        <div className="flex flex-wrap items-center gap-1">
+                          {stop.sourceType === 'mandatory' ? (
+                            <span className="rounded-full bg-primary/15 px-2 py-0.5 text-[11px] text-primary">📌 指定</span>
+                          ) : null}
+                          {stop.sourceType === 'recommended' ? (
+                            <span className="rounded-full bg-purple/15 px-2 py-0.5 text-[11px] text-purple">🔗 系统推荐</span>
+                          ) : null}
+                          {stop.sourceType !== 'mandatory' ? (
+                            <button className="no-pdf-hide rounded-full bg-muted/35 px-2 py-0.5 text-[11px]" onClick={() => openSwapForIndex(index)}>🔄 换一个</button>
+                          ) : (
+                            <button className="no-pdf-hide rounded-full bg-muted/35 px-2 py-0.5 text-[11px]" onClick={() => {
+                              const nextDays = Number(window.prompt(`调整 ${city.nameZh} 停留天数`, String(stop.days)))
+                              if (!Number.isFinite(nextDays) || nextDays <= 0 || !mainResult) return
+                              const nextTotalDays = Math.max(1, mainResult.plan.totalDays - stop.days + Math.round(nextDays))
+                              applyEditedRoute(mainResult.plan.route.map((item) => item.cityId), nextTotalDays)
+                            }}>调整天数</button>
+                          )}
+                          <button className="no-pdf-hide rounded-full bg-red-100 px-2 py-0.5 text-[11px] text-red-600" onClick={() => handleRemoveCity(index)}>✕ 移除</button>
+                        </div>
+                      </div>
                       <p className="mt-1 text-xs text-slate-500">停留 {stop.days} 天</p>
                       <div className="mt-2"><BudgetReference budgetPerDay={city.budgetPerDay} days={stop.days} /></div>
+                      {swapIndex === index ? (
+                        <div className="no-pdf-hide mt-2">
+                          <SwapCityPanel
+                            cityName={city.nameZh}
+                            candidates={swapCandidates}
+                            onSwap={handleSwapCity}
+                            onRefresh={refreshSwapCandidates}
+                            onClose={() => setSwapIndex(null)}
+                          />
+                        </div>
+                      ) : null}
+                      {index < mainResult.plan.route.length - 1 ? (
+                        <div className="mt-2">
+                          <button
+                            className="no-pdf-hide rounded-full border border-dashed border-primary/40 px-3 py-1 text-xs text-primary"
+                            onClick={() => handleOpenInsert(stop.cityId, mainResult.plan.route[index + 1].cityId, index + 1)}
+                          >
+                            + 插入一站
+                          </button>
+                          {insertBetween?.atIndex === index + 1 && insertBetween.prevId === stop.cityId ? (
+                            <div className="no-pdf-hide mt-2">
+                              <InsertCityPanel
+                                candidates={getInsertCandidates(stop.cityId, mainResult.plan.route[index + 1].cityId, mainResult.plan.route.map((item) => item.cityId))}
+                                allCities={allCities}
+                                existingCityIds={mainResult.plan.route.map((item) => item.cityId)}
+                                onInsert={handleInsertCity}
+                                onClose={() => setInsertBetween(null)}
+                              />
+                            </div>
+                          ) : null}
+                        </div>
+                      ) : null}
+                      <button className="no-pdf-hide mt-2 text-xs text-red-500" onClick={() => excludeCity(stop.cityId)}>排除此城市</button>
                     </div>
                   )
                 })}
 
-                <div className="rounded-xl border border-muted/50 p-3 text-xs">
+                <div data-pdf-card="true" className="rounded-xl border border-muted/50 p-3 text-xs">
                   <p className="mb-2 font-medium">交通一览</p>
                   <table className="w-full text-left"><thead><tr><th>区间</th><th>方式</th><th>时长</th><th>费用</th></tr></thead><tbody>{trafficRows.map((row, idx) => <tr key={`${row.from.id}-${row.to.id}-${idx}`}><td>{row.from.nameZh}→{row.to.nameZh}</td><td>{iconMap[row.method.type] ?? '🚄'} {row.method.name ?? row.method.type}</td><td>{row.method.duration}</td><td>{row.method.costRange ?? `€${row.method.estimatedCost}`}</td></tr>)}</tbody></table>
                   <p className="mt-2">总交通时间约 {totalTrafficHours.toFixed(1)}h · 总交通费用约 €{totalTrafficCost}</p>
                 </div>
 
-                <div className="rounded-xl border border-primary/30 bg-primary/5 p-3 text-sm">总预算估算：交通 €{mainResult.plan.totalBudget.transit} + 住宿 €{mainResult.plan.totalBudget.accommodation} + 餐饮 €{mainResult.plan.totalBudget.food} + 活动 €{mainResult.plan.totalBudget.activities} = 总计 €{mainResult.plan.totalBudget.total}</div>
+                <div data-pdf-card="true" className="rounded-xl border border-primary/30 bg-primary/5 p-3 text-sm">总预算估算：交通 €{mainResult.plan.totalBudget.transit} + 住宿 €{mainResult.plan.totalBudget.accommodation} + 餐饮 €{mainResult.plan.totalBudget.food} + 活动 €{mainResult.plan.totalBudget.activities} = 总计 €{mainResult.plan.totalBudget.total}</div>
               </div>
             </div>
           ) : null}
@@ -510,14 +824,34 @@ export default function SmartPlanner() {
                       const dayConflicts = visibleHolidayConflicts.filter((item) => item.dayNumber === day.dayNumber)
 
                       return (
-                        <div key={day.dayNumber} className="space-y-3">
-                          {changed && prevCity ? <TransitCard fromCity={prevCity} toCity={city} cityMap={cityMap} /> : null}
+                        <div key={day.dayNumber} data-pdf-card="true" className="space-y-3">
+                          {changed && prevCity ? (
+                            <div className="space-y-2">
+                              <TransitCard
+                                fromCity={prevCity}
+                                toCity={city}
+                                cityMap={cityMap}
+                                onInsertStation={() => handleOpenInsert(prevCity.id, city.id, index)}
+                              />
+                              {insertBetween?.atIndex === index && insertBetween.prevId === prevCity.id && insertBetween.nextId === city.id ? (
+                                <div className="no-pdf-hide">
+                                  <InsertCityPanel
+                                    candidates={getInsertCandidates(prevCity.id, city.id, mainResult.plan.route.map((item) => item.cityId))}
+                                    allCities={allCities}
+                                    existingCityIds={mainResult.plan.route.map((item) => item.cityId)}
+                                    onInsert={handleInsertCity}
+                                    onClose={() => setInsertBetween(null)}
+                                  />
+                                </div>
+                              ) : null}
+                            </div>
+                          ) : null}
                           {dayConflicts.map((conflict) => {
                             const alertId = `${conflict.dayNumber}-${conflict.cityId}-${conflict.holidayName}`
                             return (
-                              <div key={alertId} className="flex items-start justify-between rounded-xl border border-amber-200 bg-amber-50 px-3 py-2 text-xs text-amber-800">
+                              <div key={alertId} data-pdf-card="true" className="flex items-start justify-between rounded-xl border border-amber-200 bg-amber-50 px-3 py-2 text-xs text-amber-800">
                                 <p>⚠️ {conflict.date} 是 {city.countryZh} 的 {conflict.holidayName}，{conflict.impact}</p>
-                                <button onClick={() => setDismissedHolidayAlertIds((prev) => [...prev, alertId])}>×</button>
+                                <button className="no-pdf-hide" onClick={() => setDismissedHolidayAlertIds((prev) => [...prev, alertId])}>×</button>
                               </div>
                             )
                           })}
@@ -531,6 +865,7 @@ export default function SmartPlanner() {
                             showStayComparison={firstDayInCity}
                             arrivalTransportTip={firstDayInCity ? city.localTransport : undefined}
                             onChange={(next) => setItinerary((prevList) => prevList.map((item) => (item.dayNumber === day.dayNumber ? next : item)))}
+                            hideActions={exportState === 'loading'}
                           />
                           {showDayTripSuggestion ? <DayTripSuggestionCard city={city} /> : null}
                         </div>
@@ -540,8 +875,8 @@ export default function SmartPlanner() {
                 </SortableContext>
               </DndContext>
               {visibleHolidayConflicts.length ? (
-                <div className="rounded-2xl border border-amber-200 bg-amber-50/70 p-3">
-                  <button className="flex w-full items-center justify-between text-left" onClick={() => setShowHolidayPanel((prev) => !prev)}>
+                <div data-pdf-card="true" className="rounded-2xl border border-amber-200 bg-amber-50/70 p-3">
+                  <button className="no-pdf-hide flex w-full items-center justify-between text-left" onClick={() => setShowHolidayPanel((prev) => !prev)}>
                     <span className="text-sm font-medium">节假日提醒（{visibleHolidayConflicts.length}）</span>
                     <span className="text-xs">{showHolidayPanel ? '▲' : '▼'}</span>
                   </button>
@@ -567,9 +902,10 @@ export default function SmartPlanner() {
           {activeTab === 'inspiration' ? (
             <div className="space-y-3">
               <p className="rounded-xl bg-warm/70 p-3 text-sm">在做最终决定前，看看别人怎么玩的吧！</p>
-              {mainResult.selectedCities.map((city) => <div key={city.id} className="rounded-xl border border-muted/60 p-3"><p className="font-medium">{city.flag} {city.nameZh}</p><p className="mb-2 text-xs text-slate-500">推荐理由：{city.highlights[0]}</p><InspirationLinks name={city.name} nameZh={city.nameZh} /></div>)}
+              {mainResult.selectedCities.map((city) => <div key={city.id} className="rounded-xl border border-muted/60 p-3"><p className="font-medium">{city.flag} {city.nameZh}</p><p className="mb-2 text-xs text-slate-500">推荐理由：{city.highlights[0]}</p><InspirationLinks name={city.name} nameZh={city.nameZh} country={city.country} /></div>)}
             </div>
           ) : null}
+          </div>
         </section>
       ) : <section className="rounded-2xl border border-dashed border-muted/70 bg-white/70 p-10 text-center text-sm text-slate-500 dark:bg-dark-card/70">还没有生成方案。先设置参数，然后点击“生成旅行方案 ✨”。</section>}
 

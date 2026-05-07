@@ -24,6 +24,20 @@ export default function CityInfoPanel({ city, open, onClose }: CityInfoPanelProp
   if (!city) return null
   const wished = isInWishlist(city.id)
   const closureNotes = getClosureNotes(city.countryCode)
+  const checklistItems = [
+    ...city.highlights.slice(0, 5).map((item) => ({ key: `s-${item}`, text: item })),
+    ...city.foodGuide.mustTry.map((item) => ({ key: `f-${item.name}`, text: `${item.name}（${item.nameZh}）` })),
+    ...city.mustDoExperiences.map((item) => ({ key: `e-${item}`, text: item })),
+  ]
+  const checklistStorageKey = `city-checklist-${city.id}`
+  const checkedMap = (() => {
+    try {
+      return JSON.parse(localStorage.getItem(checklistStorageKey) ?? '{}') as Record<string, boolean>
+    } catch {
+      return {}
+    }
+  })()
+  const checkedCount = checklistItems.filter((item) => checkedMap[item.key]).length
   const upcomingHolidays = getCountryHolidays(city.countryCode).filter((item) => {
     if (!/^\d{2}-\d{2}$/.test(item.date)) return false
     const [month, day] = item.date.split('-').map(Number)
@@ -101,7 +115,7 @@ export default function CityInfoPanel({ city, open, onClose }: CityInfoPanelProp
                 {city.stayAreas.map((area) => {
                   const opened = openStayArea === area.name
                   const bookingLink = `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(`${city.name} ${area.name}`)}`
-                  const airbnbLink = `https://www.airbnb.com/s/${encodeURIComponent(city.name)}--${encodeURIComponent(area.name)}`
+                  const airbnbLink = `https://www.airbnb.com/s/${encodeURIComponent(`${city.name}--${city.country}`)}/homes`
                   return (
                     <div key={area.name} className="rounded-xl border border-muted/50 bg-white/80 p-3 dark:bg-dark-card">
                       <button className="w-full text-left" onClick={() => setOpenStayArea((prev) => (prev === area.name ? null : area.name))}>
@@ -179,6 +193,18 @@ export default function CityInfoPanel({ city, open, onClose }: CityInfoPanelProp
             </section>
 
             <section className="mb-4">
+              <h3 className="mb-2 font-medium">📋 打卡清单（精简）</h3>
+              <div className="rounded-xl border border-muted/50 bg-white/80 p-3 text-xs dark:bg-dark-card">
+                <p className="mb-2">已完成 {checkedCount}/{checklistItems.length}</p>
+                <ul className="list-disc space-y-1 pl-4">
+                  {checklistItems.slice(0, 8).map((item) => (
+                    <li key={item.key} className={checkedMap[item.key] ? 'text-emerald-700 line-through' : ''}>{item.text}</li>
+                  ))}
+                </ul>
+              </div>
+            </section>
+
+            <section className="mb-4">
               <h3 className="mb-2 font-medium">四季天气</h3>
               <div className="grid gap-2 text-sm">
                 {Object.entries(city.weather).map(([season, data]) => (
@@ -209,7 +235,7 @@ export default function CityInfoPanel({ city, open, onClose }: CityInfoPanelProp
             </section>
 
             <section>
-              <InspirationLinks nameZh={city.nameZh} name={city.name} />
+              <InspirationLinks nameZh={city.nameZh} name={city.name} country={city.country} />
             </section>
           </motion.aside>
         </>

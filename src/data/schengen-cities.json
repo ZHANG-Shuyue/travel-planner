@@ -167,7 +167,72 @@
           "link": "https://www.dsb.dk"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Smørrebrød",
+          "nameZh": "丹麦开放三明治",
+          "description": "黑麦面包配海鲜肉类"
+        },
+        {
+          "name": "Frikadeller",
+          "nameZh": "丹麦肉饼",
+          "description": "家常肉类料理"
+        },
+        {
+          "name": "Danish Pastry",
+          "nameZh": "丹麦酥",
+          "description": "黄油层叠甜点"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Aarhus Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Aarhus Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Aarhus Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "奥胡斯景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在奥胡斯老城区步行拍照",
+      "体验奥胡斯当地市集与咖啡馆",
+      "夜间在奥胡斯地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "奥胡斯老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "奥胡斯地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "amalfi",
@@ -327,7 +392,72 @@
           "link": "https://www.romapass.it"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Pasta al Ragù",
+          "nameZh": "肉酱意面",
+          "description": "慢炖肉酱风味浓郁"
+        },
+        {
+          "name": "Pizza Napoletana",
+          "nameZh": "那不勒斯披萨",
+          "description": "高温窑烤饼底蓬松"
+        },
+        {
+          "name": "Gelato",
+          "nameZh": "意式冰淇淋",
+          "description": "口感绵密口味丰富"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Amalfi Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Amalfi Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Amalfi Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "阿马尔菲景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在阿马尔菲老城区步行拍照",
+      "体验阿马尔菲当地市集与咖啡馆",
+      "夜间在阿马尔菲地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "阿马尔菲老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "阿马尔菲地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "amsterdam",
@@ -497,7 +627,72 @@
           "link": "https://www.iamsterdam.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Stroopwafel",
+          "nameZh": "糖浆华夫饼",
+          "description": "薄脆夹焦糖糖浆"
+        },
+        {
+          "name": "Haring",
+          "nameZh": "生腌鲱鱼",
+          "description": "荷兰传统海鲜小吃"
+        },
+        {
+          "name": "Bitterballen",
+          "nameZh": "炸肉丸",
+          "description": "酒吧经典下酒菜"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Amsterdam Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Amsterdam Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Amsterdam Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "阿姆斯特丹景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在阿姆斯特丹老城区步行拍照",
+      "体验阿姆斯特丹当地市集与咖啡馆",
+      "夜间在阿姆斯特丹地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "阿姆斯特丹老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "阿姆斯特丹地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "antwerp",
@@ -657,7 +852,72 @@
           "link": "https://www.belgiantrain.be"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Moules-frites",
+          "nameZh": "青口薯条",
+          "description": "比利时国民组合"
+        },
+        {
+          "name": "Belgian Waffle",
+          "nameZh": "比利时华夫饼",
+          "description": "外脆内软配奶油水果"
+        },
+        {
+          "name": "Carbonnade Flamande",
+          "nameZh": "弗拉芒炖牛肉",
+          "description": "啤酒慢炖牛肉浓香"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Antwerp Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Antwerp Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Antwerp Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "安特卫普景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在安特卫普老城区步行拍照",
+      "体验安特卫普当地市集与咖啡馆",
+      "夜间在安特卫普地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "安特卫普老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "安特卫普地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "athens",
@@ -828,7 +1088,72 @@
           "link": "https://www.oasa.gr"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Moussaka",
+          "nameZh": "希腊千层茄盒",
+          "description": "茄子肉酱焗烤"
+        },
+        {
+          "name": "Souvlaki",
+          "nameZh": "希腊烤串",
+          "description": "街头最常见快餐"
+        },
+        {
+          "name": "Greek Salad",
+          "nameZh": "希腊沙拉",
+          "description": "番茄橄榄羊奶酪"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Athens Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Athens Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Athens Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "雅典景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在雅典老城区步行拍照",
+      "体验雅典当地市集与咖啡馆",
+      "夜间在雅典地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "雅典老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "雅典地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "barcelona",
@@ -999,7 +1324,72 @@
           "link": "https://www.holabarcelona.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Paella",
+          "nameZh": "海鲜饭",
+          "description": "西班牙代表米饭料理"
+        },
+        {
+          "name": "Tapas",
+          "nameZh": "西班牙小食拼盘",
+          "description": "适合多人分享"
+        },
+        {
+          "name": "Churros",
+          "nameZh": "吉事果",
+          "description": "常配热巧克力"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Barcelona Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Barcelona Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Barcelona Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "巴塞罗那景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在巴塞罗那老城区步行拍照",
+      "体验巴塞罗那当地市集与咖啡馆",
+      "夜间在巴塞罗那地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "巴塞罗那老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "巴塞罗那地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "bergen",
@@ -1169,7 +1559,72 @@
           "link": "https://www.vy.no"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Salmon",
+          "nameZh": "挪威三文鱼",
+          "description": "生食或轻烤都常见"
+        },
+        {
+          "name": "Fish Soup",
+          "nameZh": "挪威海鲜汤",
+          "description": "奶油汤底鲜味浓"
+        },
+        {
+          "name": "Brown Cheese Waffle",
+          "nameZh": "棕奶酪华夫",
+          "description": "咸甜混搭"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Bergen Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Bergen Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Bergen Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "卑尔根景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在卑尔根老城区步行拍照",
+      "体验卑尔根当地市集与咖啡馆",
+      "夜间在卑尔根地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "卑尔根老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "卑尔根地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "berlin",
@@ -1339,7 +1794,72 @@
           "link": "https://www.bahn.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Bratwurst",
+          "nameZh": "烤香肠",
+          "description": "德式街头最常见热食"
+        },
+        {
+          "name": "Schnitzel",
+          "nameZh": "炸肉排",
+          "description": "薄炸猪排配土豆沙拉"
+        },
+        {
+          "name": "Pretzel",
+          "nameZh": "椒盐碱水面包",
+          "description": "啤酒花园标配"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Berlin Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Berlin Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Berlin Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "柏林景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在柏林老城区步行拍照",
+      "体验柏林当地市集与咖啡馆",
+      "夜间在柏林地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "柏林老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "柏林地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "bern",
@@ -1496,7 +2016,72 @@
           "link": "https://www.sbb.ch"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Cheese Fondue",
+          "nameZh": "奶酪火锅",
+          "description": "瑞士阿尔卑斯经典"
+        },
+        {
+          "name": "Rösti",
+          "nameZh": "瑞士薯饼",
+          "description": "外脆内软的土豆饼"
+        },
+        {
+          "name": "Raclette",
+          "nameZh": "烤奶酪",
+          "description": "融化奶酪配土豆腌菜"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Bern Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Bern Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Bern Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "伯尔尼景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在伯尔尼老城区步行拍照",
+      "体验伯尔尼当地市集与咖啡馆",
+      "夜间在伯尔尼地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "伯尔尼老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "伯尔尼地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "bilbao",
@@ -1656,7 +2241,72 @@
           "link": "https://www.holabarcelona.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Paella",
+          "nameZh": "海鲜饭",
+          "description": "西班牙代表米饭料理"
+        },
+        {
+          "name": "Tapas",
+          "nameZh": "西班牙小食拼盘",
+          "description": "适合多人分享"
+        },
+        {
+          "name": "Churros",
+          "nameZh": "吉事果",
+          "description": "常配热巧克力"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Bilbao Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Bilbao Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Bilbao Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "毕尔巴鄂景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在毕尔巴鄂老城区步行拍照",
+      "体验毕尔巴鄂当地市集与咖啡馆",
+      "夜间在毕尔巴鄂地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "毕尔巴鄂老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "毕尔巴鄂地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "bled",
@@ -1816,7 +2466,72 @@
           "link": "https://www.lpp.si"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Kranjska Klobasa",
+          "nameZh": "卡尼奥拉香肠",
+          "description": "斯洛文尼亚代表菜"
+        },
+        {
+          "name": "Potica",
+          "nameZh": "核桃卷",
+          "description": "节庆甜点"
+        },
+        {
+          "name": "Idrija Žlikrofi",
+          "nameZh": "伊德里亚饺子",
+          "description": "当地传统面点"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Bled Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Bled Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Bled Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "布莱德景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在布莱德老城区步行拍照",
+      "体验布莱德当地市集与咖啡馆",
+      "夜间在布莱德地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "布莱德老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "布莱德地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "bologna",
@@ -1976,7 +2691,72 @@
           "link": "https://www.romapass.it"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Pasta al Ragù",
+          "nameZh": "肉酱意面",
+          "description": "慢炖肉酱风味浓郁"
+        },
+        {
+          "name": "Pizza Napoletana",
+          "nameZh": "那不勒斯披萨",
+          "description": "高温窑烤饼底蓬松"
+        },
+        {
+          "name": "Gelato",
+          "nameZh": "意式冰淇淋",
+          "description": "口感绵密口味丰富"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Bologna Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Bologna Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Bologna Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "博洛尼亚景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在博洛尼亚老城区步行拍照",
+      "体验博洛尼亚当地市集与咖啡馆",
+      "夜间在博洛尼亚地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "博洛尼亚老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "博洛尼亚地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "bordeaux",
@@ -2136,7 +2916,72 @@
           "link": "https://www.parismuseumpass.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Croissant",
+          "nameZh": "可颂",
+          "description": "黄油层层酥香，法式早餐经典"
+        },
+        {
+          "name": "Steak Frites",
+          "nameZh": "牛排薯条",
+          "description": "法式小酒馆最常见主菜"
+        },
+        {
+          "name": "Crème brûlée",
+          "nameZh": "焦糖布蕾",
+          "description": "香草奶香配焦糖脆壳"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Bordeaux Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Bordeaux Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Bordeaux Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "波尔多景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在波尔多老城区步行拍照",
+      "体验波尔多当地市集与咖啡馆",
+      "夜间在波尔多地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "波尔多老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "波尔多地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "bratislava",
@@ -2306,7 +3151,72 @@
           "link": "https://imhd.sk"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Bryndzové Halušky",
+          "nameZh": "羊奶酪土豆团",
+          "description": "斯洛伐克国菜"
+        },
+        {
+          "name": "Kapustnica",
+          "nameZh": "酸菜汤",
+          "description": "节庆汤品"
+        },
+        {
+          "name": "Trdelník",
+          "nameZh": "烟囱卷",
+          "description": "街头甜点"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Bratislava Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Bratislava Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Bratislava Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "布拉迪斯拉发景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在布拉迪斯拉发老城区步行拍照",
+      "体验布拉迪斯拉发当地市集与咖啡馆",
+      "夜间在布拉迪斯拉发地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "布拉迪斯拉发老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "布拉迪斯拉发地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "brno",
@@ -2476,7 +3386,72 @@
           "link": "https://pid.cz"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Svíčková",
+          "nameZh": "奶油牛肉",
+          "description": "捷克传统节庆菜"
+        },
+        {
+          "name": "Trdelník",
+          "nameZh": "烟囱卷",
+          "description": "街头甜点常见"
+        },
+        {
+          "name": "Goulash",
+          "nameZh": "捷克炖牛肉",
+          "description": "配面包饺子"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Brno Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Brno Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Brno Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "布尔诺景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在布尔诺老城区步行拍照",
+      "体验布尔诺当地市集与咖啡馆",
+      "夜间在布尔诺地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "布尔诺老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "布尔诺地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "bruges",
@@ -2633,7 +3608,72 @@
           "link": "https://www.belgiantrain.be"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Moules-frites",
+          "nameZh": "青口薯条",
+          "description": "比利时国民组合"
+        },
+        {
+          "name": "Belgian Waffle",
+          "nameZh": "比利时华夫饼",
+          "description": "外脆内软配奶油水果"
+        },
+        {
+          "name": "Carbonnade Flamande",
+          "nameZh": "弗拉芒炖牛肉",
+          "description": "啤酒慢炖牛肉浓香"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Bruges Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Bruges Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Bruges Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "布鲁日景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在布鲁日老城区步行拍照",
+      "体验布鲁日当地市集与咖啡馆",
+      "夜间在布鲁日地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "布鲁日老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "布鲁日地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "brussels",
@@ -2790,7 +3830,72 @@
           "link": "https://www.belgiantrain.be"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Moules-frites",
+          "nameZh": "青口薯条",
+          "description": "比利时国民组合"
+        },
+        {
+          "name": "Belgian Waffle",
+          "nameZh": "比利时华夫饼",
+          "description": "外脆内软配奶油水果"
+        },
+        {
+          "name": "Carbonnade Flamande",
+          "nameZh": "弗拉芒炖牛肉",
+          "description": "啤酒慢炖牛肉浓香"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Brussels Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Brussels Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Brussels Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "布鲁塞尔景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在布鲁塞尔老城区步行拍照",
+      "体验布鲁塞尔当地市集与咖啡馆",
+      "夜间在布鲁塞尔地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "布鲁塞尔老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "布鲁塞尔地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "budapest",
@@ -2960,7 +4065,72 @@
           "link": "https://bkk.hu"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Goulash",
+          "nameZh": "匈牙利牛肉汤",
+          "description": "红椒香料浓郁"
+        },
+        {
+          "name": "Lángos",
+          "nameZh": "匈牙利炸面饼",
+          "description": "蒜味酸奶酪常见配料"
+        },
+        {
+          "name": "Dobos Torte",
+          "nameZh": "多博士蛋糕",
+          "description": "层叠焦糖蛋糕"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Budapest Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Budapest Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Budapest Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "布达佩斯景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在布达佩斯老城区步行拍照",
+      "体验布达佩斯当地市集与咖啡馆",
+      "夜间在布达佩斯地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "布达佩斯老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "布达佩斯地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "cesky-krumlov",
@@ -3120,7 +4290,72 @@
           "link": "https://pid.cz"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Svíčková",
+          "nameZh": "奶油牛肉",
+          "description": "捷克传统节庆菜"
+        },
+        {
+          "name": "Trdelník",
+          "nameZh": "烟囱卷",
+          "description": "街头甜点常见"
+        },
+        {
+          "name": "Goulash",
+          "nameZh": "捷克炖牛肉",
+          "description": "配面包饺子"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Český Krumlov Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Český Krumlov Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Český Krumlov Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "切斯基克鲁姆洛夫景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在切斯基克鲁姆洛夫老城区步行拍照",
+      "体验切斯基克鲁姆洛夫当地市集与咖啡馆",
+      "夜间在切斯基克鲁姆洛夫地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "切斯基克鲁姆洛夫老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "切斯基克鲁姆洛夫地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "colmar",
@@ -3280,7 +4515,72 @@
           "link": "https://www.parismuseumpass.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Croissant",
+          "nameZh": "可颂",
+          "description": "黄油层层酥香，法式早餐经典"
+        },
+        {
+          "name": "Steak Frites",
+          "nameZh": "牛排薯条",
+          "description": "法式小酒馆最常见主菜"
+        },
+        {
+          "name": "Crème brûlée",
+          "nameZh": "焦糖布蕾",
+          "description": "香草奶香配焦糖脆壳"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Colmar Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Colmar Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Colmar Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "科尔马景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在科尔马老城区步行拍照",
+      "体验科尔马当地市集与咖啡馆",
+      "夜间在科尔马地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "科尔马老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "科尔马地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "cologne",
@@ -3450,7 +4750,72 @@
           "link": "https://www.bahn.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Bratwurst",
+          "nameZh": "烤香肠",
+          "description": "德式街头最常见热食"
+        },
+        {
+          "name": "Schnitzel",
+          "nameZh": "炸肉排",
+          "description": "薄炸猪排配土豆沙拉"
+        },
+        {
+          "name": "Pretzel",
+          "nameZh": "椒盐碱水面包",
+          "description": "啤酒花园标配"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Cologne Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Cologne Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Cologne Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "科隆景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在科隆老城区步行拍照",
+      "体验科隆当地市集与咖啡馆",
+      "夜间在科隆地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "科隆老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "科隆地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "copenhagen",
@@ -3620,7 +4985,72 @@
           "link": "https://www.dsb.dk"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Smørrebrød",
+          "nameZh": "丹麦开放三明治",
+          "description": "黑麦面包配海鲜肉类"
+        },
+        {
+          "name": "Frikadeller",
+          "nameZh": "丹麦肉饼",
+          "description": "家常肉类料理"
+        },
+        {
+          "name": "Danish Pastry",
+          "nameZh": "丹麦酥",
+          "description": "黄油层叠甜点"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Copenhagen Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Copenhagen Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Copenhagen Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "哥本哈根景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在哥本哈根老城区步行拍照",
+      "体验哥本哈根当地市集与咖啡馆",
+      "夜间在哥本哈根地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "哥本哈根老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "哥本哈根地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "debrecen",
@@ -3790,7 +5220,72 @@
           "link": "https://bkk.hu"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Goulash",
+          "nameZh": "匈牙利牛肉汤",
+          "description": "红椒香料浓郁"
+        },
+        {
+          "name": "Lángos",
+          "nameZh": "匈牙利炸面饼",
+          "description": "蒜味酸奶酪常见配料"
+        },
+        {
+          "name": "Dobos Torte",
+          "nameZh": "多博士蛋糕",
+          "description": "层叠焦糖蛋糕"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Debrecen Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Debrecen Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Debrecen Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "德布勒森景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在德布勒森老城区步行拍照",
+      "体验德布勒森当地市集与咖啡馆",
+      "夜间在德布勒森地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "德布勒森老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "德布勒森地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "dresden",
@@ -3950,7 +5445,72 @@
           "link": "https://www.bahn.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Bratwurst",
+          "nameZh": "烤香肠",
+          "description": "德式街头最常见热食"
+        },
+        {
+          "name": "Schnitzel",
+          "nameZh": "炸肉排",
+          "description": "薄炸猪排配土豆沙拉"
+        },
+        {
+          "name": "Pretzel",
+          "nameZh": "椒盐碱水面包",
+          "description": "啤酒花园标配"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Dresden Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Dresden Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Dresden Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "德累斯顿景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在德累斯顿老城区步行拍照",
+      "体验德累斯顿当地市集与咖啡馆",
+      "夜间在德累斯顿地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "德累斯顿老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "德累斯顿地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "dubrovnik",
@@ -4108,7 +5668,72 @@
           "link": "https://www.hzpp.hr"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Ćevapi",
+          "nameZh": "巴尔干烤肉卷",
+          "description": "碎肉烤肠配皮塔"
+        },
+        {
+          "name": "Black Risotto",
+          "nameZh": "墨鱼汁烩饭",
+          "description": "达尔马提亚海岸代表"
+        },
+        {
+          "name": "Peka",
+          "nameZh": "铁钟焖烤",
+          "description": "慢烤肉类海鲜"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Dubrovnik Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Dubrovnik Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Dubrovnik Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "杜布罗夫尼克景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在杜布罗夫尼克老城区步行拍照",
+      "体验杜布罗夫尼克当地市集与咖啡馆",
+      "夜间在杜布罗夫尼克地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "杜布罗夫尼克老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "杜布罗夫尼克地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "faro",
@@ -4279,7 +5904,72 @@
           "link": "https://www.cp.pt"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Pastel de Nata",
+          "nameZh": "葡式蛋挞",
+          "description": "焦糖奶香蛋挞"
+        },
+        {
+          "name": "Bacalhau",
+          "nameZh": "鳕鱼料理",
+          "description": "葡萄牙家常主角"
+        },
+        {
+          "name": "Francesinha",
+          "nameZh": "葡式三明治",
+          "description": "波尔图重口味名菜"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Faro Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Faro Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Faro Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "法鲁景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在法鲁老城区步行拍照",
+      "体验法鲁当地市集与咖啡馆",
+      "夜间在法鲁地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "法鲁老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "法鲁地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "florence",
@@ -4437,7 +6127,72 @@
           "link": "https://www.trenitalia.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Pasta al Ragù",
+          "nameZh": "肉酱意面",
+          "description": "慢炖肉酱风味浓郁"
+        },
+        {
+          "name": "Pizza Napoletana",
+          "nameZh": "那不勒斯披萨",
+          "description": "高温窑烤饼底蓬松"
+        },
+        {
+          "name": "Gelato",
+          "nameZh": "意式冰淇淋",
+          "description": "口感绵密口味丰富"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Florence Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Florence Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Florence Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "佛罗伦萨景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在佛罗伦萨老城区步行拍照",
+      "体验佛罗伦萨当地市集与咖啡馆",
+      "夜间在佛罗伦萨地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "佛罗伦萨老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "佛罗伦萨地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "frankfurt",
@@ -4607,7 +6362,72 @@
           "link": "https://www.bahn.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Bratwurst",
+          "nameZh": "烤香肠",
+          "description": "德式街头最常见热食"
+        },
+        {
+          "name": "Schnitzel",
+          "nameZh": "炸肉排",
+          "description": "薄炸猪排配土豆沙拉"
+        },
+        {
+          "name": "Pretzel",
+          "nameZh": "椒盐碱水面包",
+          "description": "啤酒花园标配"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Frankfurt Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Frankfurt Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Frankfurt Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "法兰克福景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在法兰克福老城区步行拍照",
+      "体验法兰克福当地市集与咖啡馆",
+      "夜间在法兰克福地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "法兰克福老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "法兰克福地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "gdansk",
@@ -4777,7 +6597,72 @@
           "link": "https://www.intercity.pl"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Pierogi",
+          "nameZh": "波兰饺子",
+          "description": "水煮或煎制多种馅料"
+        },
+        {
+          "name": "Żurek",
+          "nameZh": "波兰酸汤",
+          "description": "黑麦发酵汤底"
+        },
+        {
+          "name": "Bigos",
+          "nameZh": "猎人炖菜",
+          "description": "酸菜与肉类慢炖"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Gdansk Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Gdansk Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Gdansk Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "格但斯克景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在格但斯克老城区步行拍照",
+      "体验格但斯克当地市集与咖啡馆",
+      "夜间在格但斯克地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "格但斯克老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "格但斯克地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "geneva",
@@ -4934,7 +6819,72 @@
           "link": "https://www.sbb.ch"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Cheese Fondue",
+          "nameZh": "奶酪火锅",
+          "description": "瑞士阿尔卑斯经典"
+        },
+        {
+          "name": "Rösti",
+          "nameZh": "瑞士薯饼",
+          "description": "外脆内软的土豆饼"
+        },
+        {
+          "name": "Raclette",
+          "nameZh": "烤奶酪",
+          "description": "融化奶酪配土豆腌菜"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Geneva Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Geneva Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Geneva Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "日内瓦景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在日内瓦老城区步行拍照",
+      "体验日内瓦当地市集与咖啡馆",
+      "夜间在日内瓦地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "日内瓦老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "日内瓦地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "ghent",
@@ -5091,7 +7041,72 @@
           "link": "https://www.belgiantrain.be"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Moules-frites",
+          "nameZh": "青口薯条",
+          "description": "比利时国民组合"
+        },
+        {
+          "name": "Belgian Waffle",
+          "nameZh": "比利时华夫饼",
+          "description": "外脆内软配奶油水果"
+        },
+        {
+          "name": "Carbonnade Flamande",
+          "nameZh": "弗拉芒炖牛肉",
+          "description": "啤酒慢炖牛肉浓香"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Ghent Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Ghent Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Ghent Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "根特景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在根特老城区步行拍照",
+      "体验根特当地市集与咖啡馆",
+      "夜间在根特地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "根特老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "根特地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "gothenburg",
@@ -5261,7 +7276,72 @@
           "link": "https://www.sl.se"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Swedish Meatballs",
+          "nameZh": "瑞典肉丸",
+          "description": "奶油酱搭配越橘酱"
+        },
+        {
+          "name": "Toast Skagen",
+          "nameZh": "北欧虾吐司",
+          "description": "鲜虾蛋黄酱前菜"
+        },
+        {
+          "name": "Kanelbulle",
+          "nameZh": "肉桂卷",
+          "description": "瑞典咖啡文化标配"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Gothenburg Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Gothenburg Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Gothenburg Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "哥德堡景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在哥德堡老城区步行拍照",
+      "体验哥德堡当地市集与咖啡馆",
+      "夜间在哥德堡地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "哥德堡老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "哥德堡地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "granada",
@@ -5432,7 +7512,72 @@
           "link": "https://www.renfe.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Paella",
+          "nameZh": "海鲜饭",
+          "description": "西班牙代表米饭料理"
+        },
+        {
+          "name": "Tapas",
+          "nameZh": "西班牙小食拼盘",
+          "description": "适合多人分享"
+        },
+        {
+          "name": "Churros",
+          "nameZh": "吉事果",
+          "description": "常配热巧克力"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Granada Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Granada Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Granada Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "格拉纳达景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在格拉纳达老城区步行拍照",
+      "体验格拉纳达当地市集与咖啡馆",
+      "夜间在格拉纳达地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "格拉纳达老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "格拉纳达地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "hallstatt",
@@ -5592,7 +7737,72 @@
           "link": "https://www.wien.info"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Wiener Schnitzel",
+          "nameZh": "维也纳炸牛排",
+          "description": "奥地利招牌主菜"
+        },
+        {
+          "name": "Sachertorte",
+          "nameZh": "萨赫蛋糕",
+          "description": "巧克力杏酱经典甜点"
+        },
+        {
+          "name": "Apfelstrudel",
+          "nameZh": "苹果卷",
+          "description": "肉桂苹果馅酥皮"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Hallstatt Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Hallstatt Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Hallstatt Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "哈尔施塔特景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在哈尔施塔特老城区步行拍照",
+      "体验哈尔施塔特当地市集与咖啡馆",
+      "夜间在哈尔施塔特地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "哈尔施塔特老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "哈尔施塔特地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "hamburg",
@@ -5762,7 +7972,72 @@
           "link": "https://www.bahn.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Bratwurst",
+          "nameZh": "烤香肠",
+          "description": "德式街头最常见热食"
+        },
+        {
+          "name": "Schnitzel",
+          "nameZh": "炸肉排",
+          "description": "薄炸猪排配土豆沙拉"
+        },
+        {
+          "name": "Pretzel",
+          "nameZh": "椒盐碱水面包",
+          "description": "啤酒花园标配"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Hamburg Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Hamburg Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Hamburg Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "汉堡景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在汉堡老城区步行拍照",
+      "体验汉堡当地市集与咖啡馆",
+      "夜间在汉堡地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "汉堡老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "汉堡地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "helsinki",
@@ -5932,7 +8207,72 @@
           "link": "https://www.hsl.fi"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Salmon Soup",
+          "nameZh": "芬兰奶油三文鱼汤",
+          "description": "北欧冬季暖汤"
+        },
+        {
+          "name": "Karjalanpiirakka",
+          "nameZh": "卡累利阿馅饼",
+          "description": "米糊黑麦派"
+        },
+        {
+          "name": "Cinnamon Bun",
+          "nameZh": "肉桂卷",
+          "description": "咖啡店常见"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Helsinki Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Helsinki Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Helsinki Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "赫尔辛基景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在赫尔辛基老城区步行拍照",
+      "体验赫尔辛基当地市集与咖啡馆",
+      "夜间在赫尔辛基地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "赫尔辛基老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "赫尔辛基地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "heraklion",
@@ -6092,7 +8432,72 @@
           "link": "https://www.oasa.gr"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Moussaka",
+          "nameZh": "希腊千层茄盒",
+          "description": "茄子肉酱焗烤"
+        },
+        {
+          "name": "Souvlaki",
+          "nameZh": "希腊烤串",
+          "description": "街头最常见快餐"
+        },
+        {
+          "name": "Greek Salad",
+          "nameZh": "希腊沙拉",
+          "description": "番茄橄榄羊奶酪"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Heraklion Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Heraklion Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Heraklion Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "伊拉克利翁景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在伊拉克利翁老城区步行拍照",
+      "体验伊拉克利翁当地市集与咖啡馆",
+      "夜间在伊拉克利翁地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "伊拉克利翁老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "伊拉克利翁地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "innsbruck",
@@ -6249,7 +8654,72 @@
           "link": "https://www.oebb.at"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Wiener Schnitzel",
+          "nameZh": "维也纳炸牛排",
+          "description": "奥地利招牌主菜"
+        },
+        {
+          "name": "Sachertorte",
+          "nameZh": "萨赫蛋糕",
+          "description": "巧克力杏酱经典甜点"
+        },
+        {
+          "name": "Apfelstrudel",
+          "nameZh": "苹果卷",
+          "description": "肉桂苹果馅酥皮"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Innsbruck Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Innsbruck Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Innsbruck Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "因斯布鲁克景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在因斯布鲁克老城区步行拍照",
+      "体验因斯布鲁克当地市集与咖啡馆",
+      "夜间在因斯布鲁克地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "因斯布鲁克老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "因斯布鲁克地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "interlaken",
@@ -6409,7 +8879,72 @@
           "link": "https://www.sbb.ch"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Cheese Fondue",
+          "nameZh": "奶酪火锅",
+          "description": "瑞士阿尔卑斯经典"
+        },
+        {
+          "name": "Rösti",
+          "nameZh": "瑞士薯饼",
+          "description": "外脆内软的土豆饼"
+        },
+        {
+          "name": "Raclette",
+          "nameZh": "烤奶酪",
+          "description": "融化奶酪配土豆腌菜"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Interlaken Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Interlaken Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Interlaken Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "因特拉肯景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在因特拉肯老城区步行拍照",
+      "体验因特拉肯当地市集与咖啡馆",
+      "夜间在因特拉肯地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "因特拉肯老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "因特拉肯地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "karlovy-vary",
@@ -6569,7 +9104,72 @@
           "link": "https://pid.cz"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Svíčková",
+          "nameZh": "奶油牛肉",
+          "description": "捷克传统节庆菜"
+        },
+        {
+          "name": "Trdelník",
+          "nameZh": "烟囱卷",
+          "description": "街头甜点常见"
+        },
+        {
+          "name": "Goulash",
+          "nameZh": "捷克炖牛肉",
+          "description": "配面包饺子"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Karlovy Vary Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Karlovy Vary Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Karlovy Vary Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "卡罗维发利景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在卡罗维发利老城区步行拍照",
+      "体验卡罗维发利当地市集与咖啡馆",
+      "夜间在卡罗维发利地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "卡罗维发利老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "卡罗维发利地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "krakow",
@@ -6739,7 +9339,72 @@
           "link": "https://www.intercity.pl"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Pierogi",
+          "nameZh": "波兰饺子",
+          "description": "水煮或煎制多种馅料"
+        },
+        {
+          "name": "Żurek",
+          "nameZh": "波兰酸汤",
+          "description": "黑麦发酵汤底"
+        },
+        {
+          "name": "Bigos",
+          "nameZh": "猎人炖菜",
+          "description": "酸菜与肉类慢炖"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Krakow Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Krakow Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Krakow Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "克拉科夫景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在克拉科夫老城区步行拍照",
+      "体验克拉科夫当地市集与咖啡馆",
+      "夜间在克拉科夫地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "克拉科夫老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "克拉科夫地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "lisbon",
@@ -6910,7 +9575,72 @@
           "link": "https://www.cp.pt"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Pastel de Nata",
+          "nameZh": "葡式蛋挞",
+          "description": "焦糖奶香蛋挞"
+        },
+        {
+          "name": "Bacalhau",
+          "nameZh": "鳕鱼料理",
+          "description": "葡萄牙家常主角"
+        },
+        {
+          "name": "Francesinha",
+          "nameZh": "葡式三明治",
+          "description": "波尔图重口味名菜"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Lisbon Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Lisbon Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Lisbon Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "里斯本景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在里斯本老城区步行拍照",
+      "体验里斯本当地市集与咖啡馆",
+      "夜间在里斯本地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "里斯本老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "里斯本地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "ljubljana",
@@ -7080,7 +9810,72 @@
           "link": "https://www.lpp.si"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Kranjska Klobasa",
+          "nameZh": "卡尼奥拉香肠",
+          "description": "斯洛文尼亚代表菜"
+        },
+        {
+          "name": "Potica",
+          "nameZh": "核桃卷",
+          "description": "节庆甜点"
+        },
+        {
+          "name": "Idrija Žlikrofi",
+          "nameZh": "伊德里亚饺子",
+          "description": "当地传统面点"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Ljubljana Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Ljubljana Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Ljubljana Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "卢布尔雅那景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在卢布尔雅那老城区步行拍照",
+      "体验卢布尔雅那当地市集与咖啡馆",
+      "夜间在卢布尔雅那地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "卢布尔雅那老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "卢布尔雅那地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "lucerne",
@@ -7240,7 +10035,72 @@
           "link": "https://www.sbb.ch"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Cheese Fondue",
+          "nameZh": "奶酪火锅",
+          "description": "瑞士阿尔卑斯经典"
+        },
+        {
+          "name": "Rösti",
+          "nameZh": "瑞士薯饼",
+          "description": "外脆内软的土豆饼"
+        },
+        {
+          "name": "Raclette",
+          "nameZh": "烤奶酪",
+          "description": "融化奶酪配土豆腌菜"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Lucerne Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Lucerne Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Lucerne Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "卢塞恩景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在卢塞恩老城区步行拍照",
+      "体验卢塞恩当地市集与咖啡馆",
+      "夜间在卢塞恩地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "卢塞恩老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "卢塞恩地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "luxembourg-city",
@@ -7410,7 +10270,72 @@
           "link": "https://www.mobiliteit.lu"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Judd mat Gaardebounen",
+          "nameZh": "烟熏猪颈配蚕豆",
+          "description": "卢森堡代表菜"
+        },
+        {
+          "name": "Gromperekichelcher",
+          "nameZh": "土豆煎饼",
+          "description": "街头小吃"
+        },
+        {
+          "name": "Bouneschlupp",
+          "nameZh": "四季豆汤",
+          "description": "家常暖汤"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Luxembourg City Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Luxembourg City Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Luxembourg City Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "卢森堡市景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在卢森堡市老城区步行拍照",
+      "体验卢森堡市当地市集与咖啡馆",
+      "夜间在卢森堡市地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "卢森堡市老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "卢森堡市地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "lyon",
@@ -7580,7 +10505,72 @@
           "link": "https://www.sncf-connect.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Croissant",
+          "nameZh": "可颂",
+          "description": "黄油层层酥香，法式早餐经典"
+        },
+        {
+          "name": "Steak Frites",
+          "nameZh": "牛排薯条",
+          "description": "法式小酒馆最常见主菜"
+        },
+        {
+          "name": "Crème brûlée",
+          "nameZh": "焦糖布蕾",
+          "description": "香草奶香配焦糖脆壳"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Lyon Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Lyon Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Lyon Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "里昂景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在里昂老城区步行拍照",
+      "体验里昂当地市集与咖啡馆",
+      "夜间在里昂地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "里昂老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "里昂地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "madrid",
@@ -7751,7 +10741,72 @@
           "link": "https://www.renfe.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Paella",
+          "nameZh": "海鲜饭",
+          "description": "西班牙代表米饭料理"
+        },
+        {
+          "name": "Tapas",
+          "nameZh": "西班牙小食拼盘",
+          "description": "适合多人分享"
+        },
+        {
+          "name": "Churros",
+          "nameZh": "吉事果",
+          "description": "常配热巧克力"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Madrid Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Madrid Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Madrid Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "马德里景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在马德里老城区步行拍照",
+      "体验马德里当地市集与咖啡馆",
+      "夜间在马德里地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "马德里老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "马德里地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "malaga",
@@ -7911,7 +10966,72 @@
           "link": "https://www.holabarcelona.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Paella",
+          "nameZh": "海鲜饭",
+          "description": "西班牙代表米饭料理"
+        },
+        {
+          "name": "Tapas",
+          "nameZh": "西班牙小食拼盘",
+          "description": "适合多人分享"
+        },
+        {
+          "name": "Churros",
+          "nameZh": "吉事果",
+          "description": "常配热巧克力"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Málaga Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Málaga Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Málaga Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "马拉加景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在马拉加老城区步行拍照",
+      "体验马拉加当地市集与咖啡馆",
+      "夜间在马拉加地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "马拉加老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "马拉加地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "malmo",
@@ -8071,7 +11191,72 @@
           "link": "https://www.sl.se"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Swedish Meatballs",
+          "nameZh": "瑞典肉丸",
+          "description": "奶油酱搭配越橘酱"
+        },
+        {
+          "name": "Toast Skagen",
+          "nameZh": "北欧虾吐司",
+          "description": "鲜虾蛋黄酱前菜"
+        },
+        {
+          "name": "Kanelbulle",
+          "nameZh": "肉桂卷",
+          "description": "瑞典咖啡文化标配"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Malmö Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Malmö Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Malmö Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "马尔默景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在马尔默老城区步行拍照",
+      "体验马尔默当地市集与咖啡馆",
+      "夜间在马尔默地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "马尔默老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "马尔默地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "marseille",
@@ -8241,7 +11426,72 @@
           "link": "https://www.sncf-connect.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Croissant",
+          "nameZh": "可颂",
+          "description": "黄油层层酥香，法式早餐经典"
+        },
+        {
+          "name": "Steak Frites",
+          "nameZh": "牛排薯条",
+          "description": "法式小酒馆最常见主菜"
+        },
+        {
+          "name": "Crème brûlée",
+          "nameZh": "焦糖布蕾",
+          "description": "香草奶香配焦糖脆壳"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Marseille Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Marseille Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Marseille Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "马赛景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在马赛老城区步行拍照",
+      "体验马赛当地市集与咖啡馆",
+      "夜间在马赛地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "马赛老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "马赛地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "milan",
@@ -8412,7 +11662,72 @@
           "link": "https://www.trenitalia.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Pasta al Ragù",
+          "nameZh": "肉酱意面",
+          "description": "慢炖肉酱风味浓郁"
+        },
+        {
+          "name": "Pizza Napoletana",
+          "nameZh": "那不勒斯披萨",
+          "description": "高温窑烤饼底蓬松"
+        },
+        {
+          "name": "Gelato",
+          "nameZh": "意式冰淇淋",
+          "description": "口感绵密口味丰富"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Milan Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Milan Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Milan Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "米兰景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在米兰老城区步行拍照",
+      "体验米兰当地市集与咖啡馆",
+      "夜间在米兰地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "米兰老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "米兰地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "munich",
@@ -8582,7 +11897,72 @@
           "link": "https://www.mvv-muenchen.de"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Bratwurst",
+          "nameZh": "烤香肠",
+          "description": "德式街头最常见热食"
+        },
+        {
+          "name": "Schnitzel",
+          "nameZh": "炸肉排",
+          "description": "薄炸猪排配土豆沙拉"
+        },
+        {
+          "name": "Pretzel",
+          "nameZh": "椒盐碱水面包",
+          "description": "啤酒花园标配"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Munich Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Munich Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Munich Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "慕尼黑景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在慕尼黑老城区步行拍照",
+      "体验慕尼黑当地市集与咖啡馆",
+      "夜间在慕尼黑地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "慕尼黑老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "慕尼黑地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "naples",
@@ -8753,7 +12133,72 @@
           "link": "https://www.trenitalia.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Pasta al Ragù",
+          "nameZh": "肉酱意面",
+          "description": "慢炖肉酱风味浓郁"
+        },
+        {
+          "name": "Pizza Napoletana",
+          "nameZh": "那不勒斯披萨",
+          "description": "高温窑烤饼底蓬松"
+        },
+        {
+          "name": "Gelato",
+          "nameZh": "意式冰淇淋",
+          "description": "口感绵密口味丰富"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Naples Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Naples Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Naples Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "那不勒斯景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在那不勒斯老城区步行拍照",
+      "体验那不勒斯当地市集与咖啡馆",
+      "夜间在那不勒斯地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "那不勒斯老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "那不勒斯地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "nice",
@@ -8923,7 +12368,72 @@
           "link": "https://www.sncf-connect.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Croissant",
+          "nameZh": "可颂",
+          "description": "黄油层层酥香，法式早餐经典"
+        },
+        {
+          "name": "Steak Frites",
+          "nameZh": "牛排薯条",
+          "description": "法式小酒馆最常见主菜"
+        },
+        {
+          "name": "Crème brûlée",
+          "nameZh": "焦糖布蕾",
+          "description": "香草奶香配焦糖脆壳"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Nice Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Nice Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Nice Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "尼斯景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在尼斯老城区步行拍照",
+      "体验尼斯当地市集与咖啡馆",
+      "夜间在尼斯地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "尼斯老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "尼斯地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "nuremberg",
@@ -9083,7 +12593,72 @@
           "link": "https://www.bahn.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Bratwurst",
+          "nameZh": "烤香肠",
+          "description": "德式街头最常见热食"
+        },
+        {
+          "name": "Schnitzel",
+          "nameZh": "炸肉排",
+          "description": "薄炸猪排配土豆沙拉"
+        },
+        {
+          "name": "Pretzel",
+          "nameZh": "椒盐碱水面包",
+          "description": "啤酒花园标配"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Nuremberg Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Nuremberg Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Nuremberg Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "纽伦堡景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在纽伦堡老城区步行拍照",
+      "体验纽伦堡当地市集与咖啡馆",
+      "夜间在纽伦堡地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "纽伦堡老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "纽伦堡地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "oslo",
@@ -9253,7 +12828,72 @@
           "link": "https://www.vy.no"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Salmon",
+          "nameZh": "挪威三文鱼",
+          "description": "生食或轻烤都常见"
+        },
+        {
+          "name": "Fish Soup",
+          "nameZh": "挪威海鲜汤",
+          "description": "奶油汤底鲜味浓"
+        },
+        {
+          "name": "Brown Cheese Waffle",
+          "nameZh": "棕奶酪华夫",
+          "description": "咸甜混搭"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Oslo Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Oslo Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Oslo Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "奥斯陆景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在奥斯陆老城区步行拍照",
+      "体验奥斯陆当地市集与咖啡馆",
+      "夜间在奥斯陆地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "奥斯陆老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "奥斯陆地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "paris",
@@ -9457,7 +13097,72 @@
           "link": "https://www.parismuseumpass.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Croissant",
+          "nameZh": "可颂",
+          "description": "黄油层层酥香，法式早餐经典"
+        },
+        {
+          "name": "Steak Frites",
+          "nameZh": "牛排薯条",
+          "description": "法式小酒馆最常见主菜"
+        },
+        {
+          "name": "Crème brûlée",
+          "nameZh": "焦糖布蕾",
+          "description": "香草奶香配焦糖脆壳"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Paris Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Paris Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Paris Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "巴黎景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在巴黎老城区步行拍照",
+      "体验巴黎当地市集与咖啡馆",
+      "夜间在巴黎地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "巴黎老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "巴黎地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "pisa",
@@ -9617,7 +13322,72 @@
           "link": "https://www.romapass.it"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Pasta al Ragù",
+          "nameZh": "肉酱意面",
+          "description": "慢炖肉酱风味浓郁"
+        },
+        {
+          "name": "Pizza Napoletana",
+          "nameZh": "那不勒斯披萨",
+          "description": "高温窑烤饼底蓬松"
+        },
+        {
+          "name": "Gelato",
+          "nameZh": "意式冰淇淋",
+          "description": "口感绵密口味丰富"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Pisa Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Pisa Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Pisa Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "比萨景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在比萨老城区步行拍照",
+      "体验比萨当地市集与咖啡馆",
+      "夜间在比萨地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "比萨老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "比萨地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "porto",
@@ -9775,7 +13545,72 @@
           "link": "https://www.cp.pt"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Pastel de Nata",
+          "nameZh": "葡式蛋挞",
+          "description": "焦糖奶香蛋挞"
+        },
+        {
+          "name": "Bacalhau",
+          "nameZh": "鳕鱼料理",
+          "description": "葡萄牙家常主角"
+        },
+        {
+          "name": "Francesinha",
+          "nameZh": "葡式三明治",
+          "description": "波尔图重口味名菜"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Porto Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Porto Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Porto Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "波尔图景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在波尔图老城区步行拍照",
+      "体验波尔图当地市集与咖啡馆",
+      "夜间在波尔图地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "波尔图老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "波尔图地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "prague",
@@ -9945,7 +13780,72 @@
           "link": "https://pid.cz"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Svíčková",
+          "nameZh": "奶油牛肉",
+          "description": "捷克传统节庆菜"
+        },
+        {
+          "name": "Trdelník",
+          "nameZh": "烟囱卷",
+          "description": "街头甜点常见"
+        },
+        {
+          "name": "Goulash",
+          "nameZh": "捷克炖牛肉",
+          "description": "配面包饺子"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Prague Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Prague Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Prague Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "布拉格景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在布拉格老城区步行拍照",
+      "体验布拉格当地市集与咖啡馆",
+      "夜间在布拉格地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "布拉格老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "布拉格地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "reykjavik",
@@ -10115,7 +14015,72 @@
           "link": "https://straeto.is"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Lamb Soup",
+          "nameZh": "冰岛羊肉汤",
+          "description": "高地风味暖汤"
+        },
+        {
+          "name": "Arctic Char",
+          "nameZh": "北极红点鲑",
+          "description": "冰岛清淡鱼类料理"
+        },
+        {
+          "name": "Skyr",
+          "nameZh": "冰岛酸奶",
+          "description": "高蛋白乳制品"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Reykjavik Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Reykjavik Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Reykjavik Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "雷克雅未克景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在雷克雅未克老城区步行拍照",
+      "体验雷克雅未克当地市集与咖啡馆",
+      "夜间在雷克雅未克地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "雷克雅未克老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "雷克雅未克地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "riga",
@@ -10285,7 +14250,72 @@
           "link": "https://www.rigassatiksme.lv"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Grey Peas with Bacon",
+          "nameZh": "灰豆培根",
+          "description": "拉脱维亚传统菜"
+        },
+        {
+          "name": "Rye Bread Soup",
+          "nameZh": "黑麦面包甜汤",
+          "description": "本地甜点"
+        },
+        {
+          "name": "Smoked Fish",
+          "nameZh": "烟熏鱼",
+          "description": "波罗的海经典"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Riga Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Riga Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Riga Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "里加景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在里加老城区步行拍照",
+      "体验里加当地市集与咖啡馆",
+      "夜间在里加地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "里加老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "里加地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "rome",
@@ -10457,7 +14487,72 @@
           "link": "https://www.romapass.it"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Pasta al Ragù",
+          "nameZh": "肉酱意面",
+          "description": "慢炖肉酱风味浓郁"
+        },
+        {
+          "name": "Pizza Napoletana",
+          "nameZh": "那不勒斯披萨",
+          "description": "高温窑烤饼底蓬松"
+        },
+        {
+          "name": "Gelato",
+          "nameZh": "意式冰淇淋",
+          "description": "口感绵密口味丰富"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Rome Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Rome Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Rome Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "罗马景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在罗马老城区步行拍照",
+      "体验罗马当地市集与咖啡馆",
+      "夜间在罗马地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "罗马老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "罗马地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "rotterdam",
@@ -10614,7 +14709,72 @@
           "link": "https://www.ns.nl"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Stroopwafel",
+          "nameZh": "糖浆华夫饼",
+          "description": "薄脆夹焦糖糖浆"
+        },
+        {
+          "name": "Haring",
+          "nameZh": "生腌鲱鱼",
+          "description": "荷兰传统海鲜小吃"
+        },
+        {
+          "name": "Bitterballen",
+          "nameZh": "炸肉丸",
+          "description": "酒吧经典下酒菜"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Rotterdam Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Rotterdam Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Rotterdam Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "鹿特丹景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在鹿特丹老城区步行拍照",
+      "体验鹿特丹当地市集与咖啡馆",
+      "夜间在鹿特丹地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "鹿特丹老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "鹿特丹地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "rovaniemi",
@@ -10784,7 +14944,72 @@
           "link": "https://www.hsl.fi"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Salmon Soup",
+          "nameZh": "芬兰奶油三文鱼汤",
+          "description": "北欧冬季暖汤"
+        },
+        {
+          "name": "Karjalanpiirakka",
+          "nameZh": "卡累利阿馅饼",
+          "description": "米糊黑麦派"
+        },
+        {
+          "name": "Cinnamon Bun",
+          "nameZh": "肉桂卷",
+          "description": "咖啡店常见"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Rovaniemi Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Rovaniemi Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Rovaniemi Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "罗瓦涅米景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在罗瓦涅米老城区步行拍照",
+      "体验罗瓦涅米当地市集与咖啡馆",
+      "夜间在罗瓦涅米地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "罗瓦涅米老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "罗瓦涅米地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "salzburg",
@@ -10941,7 +15166,72 @@
           "link": "https://www.oebb.at"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Wiener Schnitzel",
+          "nameZh": "维也纳炸牛排",
+          "description": "奥地利招牌主菜"
+        },
+        {
+          "name": "Sachertorte",
+          "nameZh": "萨赫蛋糕",
+          "description": "巧克力杏酱经典甜点"
+        },
+        {
+          "name": "Apfelstrudel",
+          "nameZh": "苹果卷",
+          "description": "肉桂苹果馅酥皮"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Salzburg Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Salzburg Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Salzburg Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "萨尔茨堡景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在萨尔茨堡老城区步行拍照",
+      "体验萨尔茨堡当地市集与咖啡馆",
+      "夜间在萨尔茨堡地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "萨尔茨堡老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "萨尔茨堡地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "san-sebastian",
@@ -11101,7 +15391,72 @@
           "link": "https://www.holabarcelona.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Paella",
+          "nameZh": "海鲜饭",
+          "description": "西班牙代表米饭料理"
+        },
+        {
+          "name": "Tapas",
+          "nameZh": "西班牙小食拼盘",
+          "description": "适合多人分享"
+        },
+        {
+          "name": "Churros",
+          "nameZh": "吉事果",
+          "description": "常配热巧克力"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "San Sebastián Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "San Sebastián Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "San Sebastián Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "圣塞巴斯蒂安景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在圣塞巴斯蒂安老城区步行拍照",
+      "体验圣塞巴斯蒂安当地市集与咖啡馆",
+      "夜间在圣塞巴斯蒂安地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "圣塞巴斯蒂安老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "圣塞巴斯蒂安地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "santorini",
@@ -11259,7 +15614,72 @@
           "link": "https://www.oasa.gr"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Moussaka",
+          "nameZh": "希腊千层茄盒",
+          "description": "茄子肉酱焗烤"
+        },
+        {
+          "name": "Souvlaki",
+          "nameZh": "希腊烤串",
+          "description": "街头最常见快餐"
+        },
+        {
+          "name": "Greek Salad",
+          "nameZh": "希腊沙拉",
+          "description": "番茄橄榄羊奶酪"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Santorini Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Santorini Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Santorini Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "圣托里尼景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在圣托里尼老城区步行拍照",
+      "体验圣托里尼当地市集与咖啡馆",
+      "夜间在圣托里尼地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "圣托里尼老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "圣托里尼地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "seville",
@@ -11430,7 +15850,72 @@
           "link": "https://www.renfe.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Paella",
+          "nameZh": "海鲜饭",
+          "description": "西班牙代表米饭料理"
+        },
+        {
+          "name": "Tapas",
+          "nameZh": "西班牙小食拼盘",
+          "description": "适合多人分享"
+        },
+        {
+          "name": "Churros",
+          "nameZh": "吉事果",
+          "description": "常配热巧克力"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Seville Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Seville Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Seville Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "塞维利亚景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在塞维利亚老城区步行拍照",
+      "体验塞维利亚当地市集与咖啡馆",
+      "夜间在塞维利亚地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "塞维利亚老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "塞维利亚地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "sintra",
@@ -11590,7 +16075,72 @@
           "link": "https://www.cp.pt"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Pastel de Nata",
+          "nameZh": "葡式蛋挞",
+          "description": "焦糖奶香蛋挞"
+        },
+        {
+          "name": "Bacalhau",
+          "nameZh": "鳕鱼料理",
+          "description": "葡萄牙家常主角"
+        },
+        {
+          "name": "Francesinha",
+          "nameZh": "葡式三明治",
+          "description": "波尔图重口味名菜"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Sintra Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Sintra Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Sintra Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "辛特拉景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在辛特拉老城区步行拍照",
+      "体验辛特拉当地市集与咖啡馆",
+      "夜间在辛特拉地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "辛特拉老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "辛特拉地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "split",
@@ -11750,7 +16300,72 @@
           "link": "https://www.hzpp.hr"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Ćevapi",
+          "nameZh": "巴尔干烤肉卷",
+          "description": "碎肉烤肠配皮塔"
+        },
+        {
+          "name": "Black Risotto",
+          "nameZh": "墨鱼汁烩饭",
+          "description": "达尔马提亚海岸代表"
+        },
+        {
+          "name": "Peka",
+          "nameZh": "铁钟焖烤",
+          "description": "慢烤肉类海鲜"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Split Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Split Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Split Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "斯普利特景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在斯普利特老城区步行拍照",
+      "体验斯普利特当地市集与咖啡馆",
+      "夜间在斯普利特地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "斯普利特老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "斯普利特地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "stockholm",
@@ -11920,7 +16535,72 @@
           "link": "https://www.sl.se"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Swedish Meatballs",
+          "nameZh": "瑞典肉丸",
+          "description": "奶油酱搭配越橘酱"
+        },
+        {
+          "name": "Toast Skagen",
+          "nameZh": "北欧虾吐司",
+          "description": "鲜虾蛋黄酱前菜"
+        },
+        {
+          "name": "Kanelbulle",
+          "nameZh": "肉桂卷",
+          "description": "瑞典咖啡文化标配"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Stockholm Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Stockholm Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Stockholm Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "斯德哥尔摩景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在斯德哥尔摩老城区步行拍照",
+      "体验斯德哥尔摩当地市集与咖啡馆",
+      "夜间在斯德哥尔摩地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "斯德哥尔摩老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "斯德哥尔摩地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "strasbourg",
@@ -12090,7 +16770,72 @@
           "link": "https://www.sncf-connect.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Croissant",
+          "nameZh": "可颂",
+          "description": "黄油层层酥香，法式早餐经典"
+        },
+        {
+          "name": "Steak Frites",
+          "nameZh": "牛排薯条",
+          "description": "法式小酒馆最常见主菜"
+        },
+        {
+          "name": "Crème brûlée",
+          "nameZh": "焦糖布蕾",
+          "description": "香草奶香配焦糖脆壳"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Strasbourg Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Strasbourg Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Strasbourg Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "斯特拉斯堡景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在斯特拉斯堡老城区步行拍照",
+      "体验斯特拉斯堡当地市集与咖啡馆",
+      "夜间在斯特拉斯堡地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "斯特拉斯堡老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "斯特拉斯堡地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "tallinn",
@@ -12260,7 +17005,72 @@
           "link": "https://www.tallinn.ee"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Kama",
+          "nameZh": "爱沙尼亚谷物甜品",
+          "description": "发酵乳配谷粉"
+        },
+        {
+          "name": "Sprat Sandwich",
+          "nameZh": "小鲱鱼三明治",
+          "description": "波罗的海风味"
+        },
+        {
+          "name": "Verivorst",
+          "nameZh": "血肠",
+          "description": "冬季节庆料理"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Tallinn Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Tallinn Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Tallinn Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "塔林景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在塔林老城区步行拍照",
+      "体验塔林当地市集与咖啡馆",
+      "夜间在塔林地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "塔林老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "塔林地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "the-hague",
@@ -12420,7 +17230,72 @@
           "link": "https://www.iamsterdam.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Stroopwafel",
+          "nameZh": "糖浆华夫饼",
+          "description": "薄脆夹焦糖糖浆"
+        },
+        {
+          "name": "Haring",
+          "nameZh": "生腌鲱鱼",
+          "description": "荷兰传统海鲜小吃"
+        },
+        {
+          "name": "Bitterballen",
+          "nameZh": "炸肉丸",
+          "description": "酒吧经典下酒菜"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "The Hague Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "The Hague Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "The Hague Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "海牙景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在海牙老城区步行拍照",
+      "体验海牙当地市集与咖啡馆",
+      "夜间在海牙地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "海牙老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "海牙地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "thessaloniki",
@@ -12591,7 +17466,72 @@
           "link": "https://www.oasa.gr"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Moussaka",
+          "nameZh": "希腊千层茄盒",
+          "description": "茄子肉酱焗烤"
+        },
+        {
+          "name": "Souvlaki",
+          "nameZh": "希腊烤串",
+          "description": "街头最常见快餐"
+        },
+        {
+          "name": "Greek Salad",
+          "nameZh": "希腊沙拉",
+          "description": "番茄橄榄羊奶酪"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Thessaloniki Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Thessaloniki Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Thessaloniki Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "塞萨洛尼基景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在塞萨洛尼基老城区步行拍照",
+      "体验塞萨洛尼基当地市集与咖啡馆",
+      "夜间在塞萨洛尼基地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "塞萨洛尼基老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "塞萨洛尼基地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "tromso",
@@ -12750,7 +17690,72 @@
           "link": "https://www.vy.no"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Salmon",
+          "nameZh": "挪威三文鱼",
+          "description": "生食或轻烤都常见"
+        },
+        {
+          "name": "Fish Soup",
+          "nameZh": "挪威海鲜汤",
+          "description": "奶油汤底鲜味浓"
+        },
+        {
+          "name": "Brown Cheese Waffle",
+          "nameZh": "棕奶酪华夫",
+          "description": "咸甜混搭"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Tromsø Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Tromsø Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Tromsø Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "特罗姆瑟景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在特罗姆瑟老城区步行拍照",
+      "体验特罗姆瑟当地市集与咖啡馆",
+      "夜间在特罗姆瑟地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "特罗姆瑟老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "特罗姆瑟地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "turin",
@@ -12910,7 +17915,72 @@
           "link": "https://www.romapass.it"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Pasta al Ragù",
+          "nameZh": "肉酱意面",
+          "description": "慢炖肉酱风味浓郁"
+        },
+        {
+          "name": "Pizza Napoletana",
+          "nameZh": "那不勒斯披萨",
+          "description": "高温窑烤饼底蓬松"
+        },
+        {
+          "name": "Gelato",
+          "nameZh": "意式冰淇淋",
+          "description": "口感绵密口味丰富"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Turin Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Turin Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Turin Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "都灵景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在都灵老城区步行拍照",
+      "体验都灵当地市集与咖啡馆",
+      "夜间在都灵地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "都灵老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "都灵地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "utrecht",
@@ -13067,7 +18137,72 @@
           "link": "https://www.ns.nl"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Stroopwafel",
+          "nameZh": "糖浆华夫饼",
+          "description": "薄脆夹焦糖糖浆"
+        },
+        {
+          "name": "Haring",
+          "nameZh": "生腌鲱鱼",
+          "description": "荷兰传统海鲜小吃"
+        },
+        {
+          "name": "Bitterballen",
+          "nameZh": "炸肉丸",
+          "description": "酒吧经典下酒菜"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Utrecht Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Utrecht Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Utrecht Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "乌特勒支景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在乌特勒支老城区步行拍照",
+      "体验乌特勒支当地市集与咖啡馆",
+      "夜间在乌特勒支地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "乌特勒支老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "乌特勒支地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "vaduz",
@@ -13237,7 +18372,72 @@
           "link": "https://liemobil.li"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Käsknöpfle",
+          "nameZh": "奶酪面疙瘩",
+          "description": "阿尔卑斯常见料理"
+        },
+        {
+          "name": "Ribel",
+          "nameZh": "玉米谷物糊",
+          "description": "传统早餐"
+        },
+        {
+          "name": "Alpine Cheese Plate",
+          "nameZh": "阿尔卑斯奶酪拼盘",
+          "description": "本地乳制品"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Vaduz Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Vaduz Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Vaduz Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "瓦杜兹景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在瓦杜兹老城区步行拍照",
+      "体验瓦杜兹当地市集与咖啡馆",
+      "夜间在瓦杜兹地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "瓦杜兹老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "瓦杜兹地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "valencia",
@@ -13408,7 +18608,72 @@
           "link": "https://www.renfe.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Paella",
+          "nameZh": "海鲜饭",
+          "description": "西班牙代表米饭料理"
+        },
+        {
+          "name": "Tapas",
+          "nameZh": "西班牙小食拼盘",
+          "description": "适合多人分享"
+        },
+        {
+          "name": "Churros",
+          "nameZh": "吉事果",
+          "description": "常配热巧克力"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Valencia Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Valencia Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Valencia Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "瓦伦西亚景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在瓦伦西亚老城区步行拍照",
+      "体验瓦伦西亚当地市集与咖啡馆",
+      "夜间在瓦伦西亚地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "瓦伦西亚老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "瓦伦西亚地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "valletta",
@@ -13579,7 +18844,72 @@
           "link": "https://www.publictransport.com.mt"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Pastizzi",
+          "nameZh": "马耳他酥饼",
+          "description": "乳清奶酪或豌豆馅"
+        },
+        {
+          "name": "Ftira",
+          "nameZh": "马耳他面包三明治",
+          "description": "地中海风味"
+        },
+        {
+          "name": "Rabbit Stew",
+          "nameZh": "兔肉炖菜",
+          "description": "传统家常菜"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Valletta Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Valletta Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Valletta Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "瓦莱塔景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在瓦莱塔老城区步行拍照",
+      "体验瓦莱塔当地市集与咖啡馆",
+      "夜间在瓦莱塔地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "瓦莱塔老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "瓦莱塔地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "venice",
@@ -13737,7 +19067,72 @@
           "link": "https://www.trenitalia.com"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Pasta al Ragù",
+          "nameZh": "肉酱意面",
+          "description": "慢炖肉酱风味浓郁"
+        },
+        {
+          "name": "Pizza Napoletana",
+          "nameZh": "那不勒斯披萨",
+          "description": "高温窑烤饼底蓬松"
+        },
+        {
+          "name": "Gelato",
+          "nameZh": "意式冰淇淋",
+          "description": "口感绵密口味丰富"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Venice Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Venice Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Venice Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "威尼斯景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在威尼斯老城区步行拍照",
+      "体验威尼斯当地市集与咖啡馆",
+      "夜间在威尼斯地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "威尼斯老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "威尼斯地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "verona",
@@ -13897,7 +19292,72 @@
           "link": "https://www.romapass.it"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Pasta al Ragù",
+          "nameZh": "肉酱意面",
+          "description": "慢炖肉酱风味浓郁"
+        },
+        {
+          "name": "Pizza Napoletana",
+          "nameZh": "那不勒斯披萨",
+          "description": "高温窑烤饼底蓬松"
+        },
+        {
+          "name": "Gelato",
+          "nameZh": "意式冰淇淋",
+          "description": "口感绵密口味丰富"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Verona Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Verona Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Verona Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "维罗纳景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在维罗纳老城区步行拍照",
+      "体验维罗纳当地市集与咖啡馆",
+      "夜间在维罗纳地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "维罗纳老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "维罗纳地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "vienna",
@@ -14066,7 +19526,72 @@
           "link": "https://www.wien.info"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Wiener Schnitzel",
+          "nameZh": "维也纳炸牛排",
+          "description": "奥地利招牌主菜"
+        },
+        {
+          "name": "Sachertorte",
+          "nameZh": "萨赫蛋糕",
+          "description": "巧克力杏酱经典甜点"
+        },
+        {
+          "name": "Apfelstrudel",
+          "nameZh": "苹果卷",
+          "description": "肉桂苹果馅酥皮"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Vienna Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Vienna Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Vienna Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "维也纳景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在维也纳老城区步行拍照",
+      "体验维也纳当地市集与咖啡馆",
+      "夜间在维也纳地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "维也纳老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "维也纳地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "vilnius",
@@ -14236,7 +19761,72 @@
           "link": "https://judu.lt"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Cepelinai",
+          "nameZh": "土豆肉团",
+          "description": "立陶宛国民菜"
+        },
+        {
+          "name": "Šaltibarščiai",
+          "nameZh": "甜菜冷汤",
+          "description": "夏季代表"
+        },
+        {
+          "name": "Kibinai",
+          "nameZh": "卡拉伊姆馅饼",
+          "description": "特拉凯常见"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Vilnius Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Vilnius Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Vilnius Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "维尔纽斯景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在维尔纽斯老城区步行拍照",
+      "体验维尔纽斯当地市集与咖啡馆",
+      "夜间在维尔纽斯地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "维尔纽斯老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "维尔纽斯地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "warsaw",
@@ -14406,7 +19996,72 @@
           "link": "https://www.intercity.pl"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Pierogi",
+          "nameZh": "波兰饺子",
+          "description": "水煮或煎制多种馅料"
+        },
+        {
+          "name": "Żurek",
+          "nameZh": "波兰酸汤",
+          "description": "黑麦发酵汤底"
+        },
+        {
+          "name": "Bigos",
+          "nameZh": "猎人炖菜",
+          "description": "酸菜与肉类慢炖"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Warsaw Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Warsaw Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Warsaw Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "华沙景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在华沙老城区步行拍照",
+      "体验华沙当地市集与咖啡馆",
+      "夜间在华沙地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "华沙老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "华沙地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "wroclaw",
@@ -14566,7 +20221,72 @@
           "link": "https://www.intercity.pl"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Pierogi",
+          "nameZh": "波兰饺子",
+          "description": "水煮或煎制多种馅料"
+        },
+        {
+          "name": "Żurek",
+          "nameZh": "波兰酸汤",
+          "description": "黑麦发酵汤底"
+        },
+        {
+          "name": "Bigos",
+          "nameZh": "猎人炖菜",
+          "description": "酸菜与肉类慢炖"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Wrocław Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Wrocław Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Wrocław Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "弗罗茨瓦夫景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在弗罗茨瓦夫老城区步行拍照",
+      "体验弗罗茨瓦夫当地市集与咖啡馆",
+      "夜间在弗罗茨瓦夫地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "弗罗茨瓦夫老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "弗罗茨瓦夫地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "zagreb",
@@ -14724,7 +20444,72 @@
           "link": "https://www.hzpp.hr"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Ćevapi",
+          "nameZh": "巴尔干烤肉卷",
+          "description": "碎肉烤肠配皮塔"
+        },
+        {
+          "name": "Black Risotto",
+          "nameZh": "墨鱼汁烩饭",
+          "description": "达尔马提亚海岸代表"
+        },
+        {
+          "name": "Peka",
+          "nameZh": "铁钟焖烤",
+          "description": "慢烤肉类海鲜"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Zagreb Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Zagreb Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Zagreb Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "萨格勒布景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在萨格勒布老城区步行拍照",
+      "体验萨格勒布当地市集与咖啡馆",
+      "夜间在萨格勒布地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "萨格勒布老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "萨格勒布地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   },
   {
     "id": "zurich",
@@ -14881,6 +20666,71 @@
           "link": "https://www.sbb.ch"
         }
       ]
-    }
+    },
+    "foodGuide": {
+      "mustTry": [
+        {
+          "name": "Cheese Fondue",
+          "nameZh": "奶酪火锅",
+          "description": "瑞士阿尔卑斯经典"
+        },
+        {
+          "name": "Rösti",
+          "nameZh": "瑞士薯饼",
+          "description": "外脆内软的土豆饼"
+        },
+        {
+          "name": "Raclette",
+          "nameZh": "烤奶酪",
+          "description": "融化奶酪配土豆腌菜"
+        }
+      ],
+      "restaurants": [
+        {
+          "name": "Zurich Old Town Bistro",
+          "type": "传统餐厅",
+          "priceRange": "€18-35",
+          "specialty": "本地家常菜与当季食材"
+        },
+        {
+          "name": "Zurich Market Eatery",
+          "type": "街头小吃",
+          "priceRange": "€8-18",
+          "specialty": "高性价比本地小吃"
+        },
+        {
+          "name": "Zurich Tavern",
+          "type": "酒吧/餐厅",
+          "priceRange": "€20-40",
+          "specialty": "本地精酿或葡萄酒配特色主菜"
+        }
+      ],
+      "foodTips": "苏黎世景区核心区价格通常偏高，建议避开正点时段并提前查看评分。"
+    },
+    "mustDoExperiences": [
+      "清晨在苏黎世老城区步行拍照",
+      "体验苏黎世当地市集与咖啡馆",
+      "夜间在苏黎世地标周边散步看灯光"
+    ],
+    "dailyTips": [
+      "热门景点建议提前线上预约，通常能节省30-60分钟排队时间。",
+      "中午12:00-14:00餐厅高峰，建议错峰或提前订位。",
+      "城市核心区多为步行友好，穿舒适鞋会显著提升体验。",
+      "雨天优先安排博物馆/教堂等室内景点，机动调整更省心。",
+      "日落前后是拍照黄金时段，提前20分钟到机位最佳。",
+      "交通换乘高峰多在8:00-9:30与17:00-19:00，尽量避开。"
+    ],
+    "photoSpots": [
+      {
+        "name": "苏黎世老城观景点",
+        "tip": "清晨人少，建筑线条与街景更干净",
+        "bestTime": "日出"
+      },
+      {
+        "name": "苏黎世地标广场",
+        "tip": "傍晚蓝调时刻灯光层次最好",
+        "bestTime": "日落"
+      }
+    ]
   }
 ]

@@ -96,7 +96,7 @@ export default function RandomWheel() {
             <WeatherBadge weather={winner.weather} bestMonths={winner.bestMonths} currentMonth={new Date().getMonth() + 1} />
             <BudgetReference budgetPerDay={winner.budgetPerDay} days={winner.avgDaysRecommended} />
           </div>
-          <InspirationLinks name={winner.name} nameZh={winner.nameZh} />
+          <InspirationLinks name={winner.name} nameZh={winner.nameZh} country={winner.country} />
           <div className="flex flex-wrap gap-2">
             <button className="rounded-full bg-primary px-4 py-2 text-xs text-white" onClick={() => navigate('/planner', { state: { requiredCityIds: [winner.id] } })}>以此开始规划</button>
             <button className="rounded-full bg-secondary px-4 py-2 text-xs" onClick={() => addToWishlist(winner.id)}>加入心愿单</button>

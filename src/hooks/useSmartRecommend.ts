@@ -29,6 +29,22 @@ export interface SmartRecommendResult {
   summary: string
 }
 
+export interface AlternativeCityCandidate {
+  city: SchengenCity
+  prevTransitHours?: number
+  nextTransitHours?: number
+  reason: string
+}
+
+interface RefineOptions {
+  departureCity: string
+  travelStyle: TravelStyle
+  budgetLevel: BudgetEstimate['level']
+  preferenceTags: PreferenceTag[]
+  fillConnections: boolean
+  keepOrder: boolean
+}
+
 const allCities = citiesData as SchengenCity[]
 const transitMatrix = transitMatrixData as TransitRoute[]
 const HOT_CITY_IDS = new Set(['paris', 'rome', 'barcelona', 'amsterdam', 'vienna', 'prague', 'lisbon', 'berlin'])
@@ -299,18 +315,22 @@ function buildItinerary(cities: SchengenCity[], daysPerCity: number[], legs: Opt
       let evening = `${h3}（约2小时）`
 
       if (style === 'speedrun') {
-        morning = `早间 ${h1} + 上午 ${h2}`
-        afternoon = `下午 ${h3} + 傍晚 ${h4}`
-        evening = `${city.nameZh}夜景打卡 + 宵夜`
+        morning = `${h1}（1.5h）→ ${h2}（1h）`
+        afternoon = `${h3}（1.5h）→ ${h4}（1h）`
+        evening = `${city.nameZh}夜景点（1h）→ 本地晚餐（1.5h）`
       } else if (style === 'relaxed') {
-        morning = `${h1}（轻松体验）`
-        afternoon = '☕ 下午自由活动（咖啡/逛街/午休）'
-        evening = '氛围晚餐 + 慢节奏散步'
+        morning = `${h1}（1.5h）`
+        afternoon = `${h2}（1.5h）`
+        evening = `${city.nameZh}散步（1h）→ 晚餐（1.5h）`
       } else if (style === 'deep') {
         const theme = themes[(day - 1) % themes.length]
-        morning = `${theme}：${h1}`
-        afternoon = `${theme}：${h2}`
-        evening = `${theme}：本地街区自由探索`
+        morning = `${h1}（2h）→ ${theme}`
+        afternoon = `${h2}（2h）`
+        evening = `${city.nameZh}街区（1.5h）→ 晚餐（1.5h）`
+      } else {
+        morning = `${h1}（1.5h）→ ${h2}（1h）`
+        afternoon = `${h3}（2h）`
+        evening = `${h4}（1h）→ 晚餐（1.5h）`
       }
 
       result.push({
@@ -588,5 +608,197 @@ export function useSmartRecommend() {
     }
   }
 
-  return { allCities, unvisitedCities, wishlistCities, generateRecommendation }
+  const buildPlanFromOrderedCities = (
+    orderedCities: SchengenCity[],
+    totalDays: number,
+    travelStyle: TravelStyle,
+    budgetLevel: BudgetEstimate['level'],
+    departureCity: string,
+    sourceMap?: Record<string, 'mandatory' | 'recommended'>,
+  ): SmartRecommendResult | null => {
+    if (!orderedCities.length) return null
+    const daysPerCity = allocateDaysByStyle(totalDays, orderedCities.length, travelStyle)
+    const styleLegs: OptimizedLeg[] = orderedCities
+      .map((to, index) => {
+        const from = index === 0 ? departureCity : orderedCities[index - 1]?.id
+        if (!from) return null
+        const fromCity = cityMap.get(from)
+        const toCity = cityMap.get(to.id)
+        const fromLat = fromCity?.lat ?? 51.5074
+        const fromLng = fromCity?.lng ?? -0.1278
+        if (!toCity) return null
+        const transit = getTransitOptions(from, to.id, cityMap)
+        const method = chooseMethodByStyle(transit.methods, travelStyle)
+        return { from, to: to.id, method, distanceKm: haversine(fromLat, fromLng, toCity.lat, toCity.lng) }
+      })
+      .filter((leg): leg is OptimizedLeg => Boolean(leg))
+
+    const route: RouteStop[] = orderedCities.map((city, index) => {
+      const leg = styleLegs.find((item) => item.to === city.id)
+      return {
+        cityId: city.id,
+        days: daysPerCity[index] ?? 1,
+        arrivalMethod: leg?.method.type,
+        arrivalDuration: leg?.method.duration,
+        arrivalCost: leg?.method.estimatedCost,
+        sourceType: sourceMap?.[city.id] ?? 'recommended',
+      }
+    })
+
+    const itinerary = buildItinerary(orderedCities, daysPerCity, styleLegs, travelStyle)
+    const totalTransit = Math.round(styleLegs.reduce((sum, item) => sum + item.method.estimatedCost, 0))
+    const stayCostBase = orderedCities.reduce((sum, city, index) => sum + city.budgetPerDay[budgetLevel] * (daysPerCity[index] ?? 1), 0)
+    const accommodation = Math.round(stayCostBase * 0.45)
+    const food = Math.round(stayCostBase * 0.25)
+    const activities = Math.round(stayCostBase * 0.3)
+
+    const totalBudget: BudgetEstimate = {
+      accommodation,
+      food,
+      transit: totalTransit,
+      activities,
+      total: accommodation + food + activities + totalTransit,
+      perDay: Math.round((accommodation + food + activities + totalTransit) / totalDays),
+      level: budgetLevel,
+    }
+
+    const plan: TravelPlan = {
+      id: `smart-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+      name: `${totalDays}天申根细化路线`,
+      createdAt: new Date().toISOString(),
+      totalDays,
+      cities: orderedCities.map((city) => city.id),
+      route,
+      itinerary,
+      totalBudget,
+      status: 'draft',
+      travelStyle,
+    }
+
+    return {
+      plan,
+      selectedCities: orderedCities,
+      routePath: orderedCities.map((city) => city.id),
+      legs: styleLegs,
+      summary: `🧩 细化行程 · ${totalDays}天${orderedCities.length}城`,
+    }
+  }
+
+  const getAlternativeCities = (
+    currentCityId: string,
+    prevCityId: string | undefined,
+    nextCityId: string | undefined,
+    days: number,
+    excludeCityIds: string[] = [],
+  ): AlternativeCityCandidate[] => {
+    const maxLegHours = getMaxLegHours(days)
+    const exclusion = new Set([...excludeCityIds, currentCityId])
+    const prev = prevCityId ? cityMap.get(prevCityId) : undefined
+    const next = nextCityId ? cityMap.get(nextCityId) : undefined
+
+    return unvisitedCities
+      .filter((city) => !exclusion.has(city.id))
+      .map((city) => {
+        const prevTransitHours = prev ? pairTransitHours(prev, city) : undefined
+        const nextTransitHours = next ? pairTransitHours(city, next) : undefined
+        const validPrev = prevTransitHours === undefined || prevTransitHours <= maxLegHours
+        const validNext = nextTransitHours === undefined || nextTransitHours <= maxLegHours
+        if (!validPrev || !validNext) return null
+        const score = (prevTransitHours ?? 0) + (nextTransitHours ?? 0) + (20 - scorePopularity(city, 'balanced'))
+        return {
+          city,
+          prevTransitHours,
+          nextTransitHours,
+          score,
+          reason: `${city.highlights[0] ?? city.vibes[0] ?? '高匹配度'}`,
+        }
+      })
+      .filter((item): item is NonNullable<typeof item> => Boolean(item))
+      .sort((a, b) => a.score - b.score)
+      .slice(0, 8)
+      .map(({ score, ...rest }) => rest)
+  }
+
+  const getInsertCandidates = (prevCityId: string, nextCityId: string, excludeCityIds: string[] = []): AlternativeCityCandidate[] => {
+    const prev = cityMap.get(prevCityId)
+    const next = cityMap.get(nextCityId)
+    if (!prev || !next) return []
+    const baseDistance = haversine(prev.lat, prev.lng, next.lat, next.lng)
+    const exclusion = new Set(excludeCityIds)
+
+    return unvisitedCities
+      .filter((city) => !exclusion.has(city.id))
+      .map((city) => {
+        const d1 = haversine(prev.lat, prev.lng, city.lat, city.lng)
+        const d2 = haversine(city.lat, city.lng, next.lat, next.lng)
+        const detour = Math.abs((d1 + d2) - baseDistance)
+        return {
+          city,
+          prevTransitHours: pairTransitHours(prev, city),
+          nextTransitHours: pairTransitHours(city, next),
+          detour,
+          reason: `位于两城之间，绕行约${Math.round(detour)}km`,
+        }
+      })
+      .sort((a, b) => a.detour - b.detour)
+      .slice(0, 10)
+      .map(({ detour, ...rest }) => rest)
+  }
+
+  const refineUserPlan = (
+    mandatoryCities: string[],
+    totalDays: number,
+    options: RefineOptions,
+  ): { result: SmartRecommendResult | null; warning?: string } => {
+    const uniqueMandatory = [...new Set(mandatoryCities)].map((id) => cityMap.get(id)).filter((item): item is SchengenCity => Boolean(item))
+    if (!uniqueMandatory.length) return { result: null, warning: '请至少选择一个城市' }
+
+    let ordered = options.keepOrder
+      ? uniqueMandatory
+      : [...uniqueMandatory].sort((a, b) => haversine(51.5074, -0.1278, a.lat, a.lng) - haversine(51.5074, -0.1278, b.lat, b.lng))
+
+    const sourceMap: Record<string, 'mandatory' | 'recommended'> = {}
+    ordered.forEach((city) => { sourceMap[city.id] = 'mandatory' })
+
+    if (options.fillConnections && ordered.length >= 2) {
+      let safety = 0
+      while (ordered.length < Math.min(8, totalDays) && safety < 12) {
+        let inserted = false
+        for (let i = 0; i < ordered.length - 1; i += 1) {
+          const candidates = getInsertCandidates(ordered[i].id, ordered[i + 1].id, ordered.map((city) => city.id))
+          const picked = candidates[0]?.city
+          if (picked) {
+            ordered = [...ordered.slice(0, i + 1), picked, ...ordered.slice(i + 1)]
+            sourceMap[picked.id] = 'recommended'
+            inserted = true
+            break
+          }
+        }
+        if (!inserted) break
+        safety += 1
+      }
+    }
+
+    if (ordered.length > totalDays) {
+      return {
+        result: buildPlanFromOrderedCities(ordered.slice(0, totalDays), totalDays, options.travelStyle, options.budgetLevel, options.departureCity, sourceMap),
+        warning: `你选的城市较多，已按${totalDays}天自动压缩。建议增加天数。`,
+      }
+    }
+
+    return {
+      result: buildPlanFromOrderedCities(ordered, totalDays, options.travelStyle, options.budgetLevel, options.departureCity, sourceMap),
+    }
+  }
+
+  return {
+    allCities,
+    unvisitedCities,
+    wishlistCities,
+    generateRecommendation,
+    getAlternativeCities,
+    getInsertCandidates,
+    refineUserPlan,
+    buildPlanFromOrderedCities,
+  }
 }

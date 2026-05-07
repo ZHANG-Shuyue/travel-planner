@@ -140,5 +140,16 @@ export function useRouteOptimize() {
     return { orderedCityIds: ordered, legs }
   }
 
-  return { optimizeRoute }
+  const swapCity = (cityIds: string[], oldCityId: string, newCityId: string) =>
+    cityIds.map((cityId) => (cityId === oldCityId ? newCityId : cityId))
+
+  const removeCity = (cityIds: string[], cityId: string) => cityIds.filter((id) => id !== cityId)
+
+  const insertCity = (cityIds: string[], cityId: string, index: number) => {
+    const next = [...cityIds]
+    next.splice(index, 0, cityId)
+    return next
+  }
+
+  return { optimizeRoute, swapCity, removeCity, insertCity }
 }

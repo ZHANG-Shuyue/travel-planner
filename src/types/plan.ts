@@ -19,6 +19,7 @@ export interface RouteStop {
   arrivalMethod?: string
   arrivalDuration?: string
   arrivalCost?: number
+  sourceType?: 'mandatory' | 'recommended'
 }
 
 export interface DayPlan {

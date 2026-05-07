@@ -23,6 +23,7 @@ interface DayCardProps {
   stayRecommendation?: StayArea
   stayAreas?: StayArea[]
   arrivalTransportTip?: LocalTransport
+  hideActions?: boolean
 }
 
 export default function DayCard({
@@ -38,40 +39,43 @@ export default function DayCard({
   stayRecommendation,
   stayAreas,
   arrivalTransportTip,
+  hideActions = false,
 }: DayCardProps) {
   const [expanded, setExpanded] = useState(true)
   const [showStayDetails, setShowStayDetails] = useState(false)
   const [showTransportDetails, setShowTransportDetails] = useState(false)
+  const [showChecklist, setShowChecklist] = useState(false)
   const currentMonth = useMemo(() => new Date().getMonth() + 1, [])
+  const checklistStorageKey = `city-checklist-${city.id}`
 
-  const compact = travelStyle === 'speedrun'
-  const relaxed = travelStyle === 'relaxed'
+  void travelStyle
+  const todayTip = city.dailyTips[dayPlan.dayNumber % city.dailyTips.length] ?? city.dailyTips[0]
+  const todayPhoto = city.photoSpots[dayPlan.dayNumber % city.photoSpots.length] ?? city.photoSpots[0]
+  const todayDishA = city.foodGuide.mustTry[dayPlan.dayNumber % city.foodGuide.mustTry.length]
+  const todayDishB = city.foodGuide.mustTry[(dayPlan.dayNumber + 1) % city.foodGuide.mustTry.length]
+  const todayRestaurant = city.foodGuide.restaurants[dayPlan.dayNumber % city.foodGuide.restaurants.length]
+  const checklistItems = useMemo(
+    () => [
+      ...city.highlights.slice(0, 5).map((item) => ({ key: `s-${item}`, text: item, category: '景点' as const })),
+      ...city.foodGuide.mustTry.map((item) => ({ key: `f-${item.name}`, text: `${item.name}（${item.nameZh}）`, category: '美食' as const })),
+      ...city.mustDoExperiences.map((item) => ({ key: `e-${item}`, text: item, category: '体验' as const })),
+    ],
+    [city.foodGuide.mustTry, city.highlights, city.mustDoExperiences],
+  )
+  const [checkedItems, setCheckedItems] = useState<Record<string, boolean>>(() => {
+    try {
+      return JSON.parse(localStorage.getItem(checklistStorageKey) ?? '{}') as Record<string, boolean>
+    } catch {
+      return {}
+    }
+  })
+  const checkedCount = checklistItems.filter((item) => checkedItems[item.key]).length
 
-  const updateField = (key: keyof DayPlan, value: string) => {
-    if (!onChange) return
-    onChange({ ...dayPlan, [key]: value })
-  }
-
-  const renderField = (label: string, key: keyof DayPlan, override?: string) => {
-    const value = override ?? String(dayPlan[key] ?? '')
-    return (
-      <div className={`rounded-lg bg-background/70 p-2 ${relaxed ? 'min-h-[96px]' : ''}`}>
-        <p className="text-xs text-slate-500">{label}</p>
-        {editable && !override ? (
-          <input
-            value={value}
-            onChange={(event) => updateField(key, event.target.value)}
-            className={`w-full bg-transparent outline-none ${compact ? 'text-xs' : 'text-sm'}`}
-          />
-        ) : (
-          <p className={`${compact ? 'text-xs' : 'text-sm'} text-slate-700 dark:text-slate-100`}>{value || '—'}</p>
-        )}
-      </div>
-    )
-  }
+  void editable
+  void onChange
 
   return (
-    <article className="overflow-hidden rounded-2xl border border-muted/60 bg-white shadow-sm dark:bg-dark-card">
+    <article data-pdf-card="true" className="overflow-hidden rounded-2xl border border-muted/60 bg-white shadow-sm dark:bg-dark-card">
       <div className="flex items-start justify-between border-b border-muted/40 p-4">
         <div className="flex items-start gap-3">
           <div className={`h-16 w-1.5 rounded-full ${transitBadge ? 'bg-warm' : 'bg-gradient-to-b from-secondary to-primary'}`} />
@@ -81,11 +85,13 @@ export default function DayCard({
             {transitBadge ? <span className="mt-1 inline-block rounded-full bg-warm px-2 py-0.5 text-xs text-slate-700">{transitBadge.icon} 中转日</span> : null}
           </div>
         </div>
-        <div className="flex gap-2">
-          <button onClick={() => setExpanded((prev) => !prev)} className="rounded-full bg-muted/40 px-3 py-1 text-xs">{expanded ? '收起' : '展开'}</button>
-          <button onClick={() => onRegenerate?.(dayPlan.dayNumber)} className="rounded-full bg-primary/20 px-3 py-1 text-xs text-primary">重新生成此天</button>
-          <button onClick={() => onDelete?.(dayPlan.dayNumber)} className="rounded-full bg-red-100 px-3 py-1 text-xs text-red-600">删除</button>
-        </div>
+        {!hideActions ? (
+          <div className="no-pdf-hide flex gap-2">
+            <button onClick={() => setExpanded((prev) => !prev)} className="rounded-full bg-muted/40 px-3 py-1 text-xs">{expanded ? '收起' : '展开'}</button>
+            <button onClick={() => onRegenerate?.(dayPlan.dayNumber)} className="rounded-full bg-primary/20 px-3 py-1 text-xs text-primary">重新生成此天</button>
+            <button onClick={() => onDelete?.(dayPlan.dayNumber)} className="rounded-full bg-red-100 px-3 py-1 text-xs text-red-600">删除</button>
+          </div>
+        ) : null}
       </div>
 
       {expanded ? (
@@ -116,7 +122,7 @@ export default function DayCard({
                           Booking
                         </a>
                         <a
-                          href={`https://www.airbnb.com/s/${encodeURIComponent(city.name)}--${encodeURIComponent(area.name)}`}
+                          href={`https://www.airbnb.com/s/${encodeURIComponent(`${city.name}--${city.country}`)}/homes`}
                           target="_blank"
                           rel="noreferrer"
                           className="rounded-full bg-primary/20 px-2.5 py-1 text-[11px]"
@@ -131,15 +137,32 @@ export default function DayCard({
             </div>
           ) : null}
 
-          <div className="grid gap-2 md:grid-cols-3">
-            {renderField(compact ? '早/上午' : '上午', 'morning', transitBadge?.morningText)}
-            {renderField('下午', 'afternoon')}
-            {renderField(compact ? '晚上/夜间' : '晚上', 'evening')}
+          <div className="space-y-2">
+            <div className="min-h-[80px] rounded-lg bg-background/70 p-2">
+              <p className="text-xs text-slate-500">🌅 上午</p>
+              <p className="text-sm text-slate-700 dark:text-slate-100">{((transitBadge?.morningText ?? String(dayPlan.morning ?? '')) || '—').replace(/，/g, ' → ')}</p>
+            </div>
+            <div className="min-h-[80px] rounded-lg bg-background/70 p-2">
+              <p className="text-xs text-slate-500">🌤️ 下午</p>
+              <p className="text-sm text-slate-700 dark:text-slate-100">{String(dayPlan.afternoon ?? '').replace(/，/g, ' → ') || '—'}</p>
+            </div>
+            <div className="min-h-[80px] rounded-lg bg-background/70 p-2">
+              <p className="text-xs text-slate-500">🌙 晚上</p>
+              <p className="text-sm text-slate-700 dark:text-slate-100">{String(dayPlan.evening ?? '').replace(/，/g, ' → ') || '—'}</p>
+            </div>
           </div>
 
-          <div className="grid gap-2 md:grid-cols-2">
-            {renderField('餐厅推荐', 'restaurant')}
-            {renderField('交通备注', 'transitNote', transitBadge?.text)}
+          <div className="border-t border-muted/40 pt-2 text-sm text-slate-700 dark:text-slate-100">
+            🍽️ 试试 {todayDishA?.name}（{todayDishA?.nameZh}）{todayDishB ? `、${todayDishB.name}` : ''} — 推荐 {todayRestaurant?.name}（{todayRestaurant?.priceRange}）
+          </div>
+          <div className="border-t border-muted/40 pt-2 text-sm text-slate-700 dark:text-slate-100">
+            📷 今日拍照点：{todayPhoto?.name}（{todayPhoto?.bestTime}最佳）
+          </div>
+          <div className="border-t border-muted/40 pt-2 text-xs text-slate-500">
+            💡 今日贴士：{todayTip}
+          </div>
+          <div className="border-t border-muted/40 pt-2 text-xs text-slate-500">
+            交通备注：{transitBadge?.text ?? dayPlan.transitNote ?? '—'}
           </div>
 
           {arrivalTransportTip ? (
@@ -157,6 +180,41 @@ export default function DayCard({
               ) : null}
             </div>
           ) : null}
+
+          <div className="rounded-xl border border-muted/50 bg-white/70 p-3 dark:bg-dark-card/70">
+            <button className="w-full text-left text-sm font-medium" onClick={() => setShowChecklist((prev) => !prev)}>
+              📋 {city.nameZh}打卡清单（{checkedCount}/{checklistItems.length}） {showChecklist ? '▲' : '▼'}
+            </button>
+            <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-muted/40">
+              <div className="h-full bg-primary transition-all" style={{ width: `${(checkedCount / Math.max(checklistItems.length, 1)) * 100}%` }} />
+            </div>
+            {checkedCount === checklistItems.length && checklistItems.length > 0 ? (
+              <p className="mt-2 text-xs text-emerald-700">🎉 {city.nameZh}全部打卡完成！</p>
+            ) : null}
+            {showChecklist ? (
+              <div className="mt-2 grid gap-3 md:grid-cols-3">
+                {(['景点', '美食', '体验'] as const).map((category) => (
+                  <div key={category} className="space-y-1">
+                    <p className="text-xs font-medium">{category === '景点' ? '🏛️ 必逛景点' : category === '美食' ? '🍽️ 必吃美食' : '📸 必打卡体验'}</p>
+                    {checklistItems.filter((item) => item.category === category).map((item) => (
+                      <label key={item.key} className="flex items-start gap-1 text-xs">
+                        <input
+                          type="checkbox"
+                          checked={Boolean(checkedItems[item.key])}
+                          onChange={(event) => {
+                            const next = { ...checkedItems, [item.key]: event.target.checked }
+                            setCheckedItems(next)
+                            localStorage.setItem(checklistStorageKey, JSON.stringify(next))
+                          }}
+                        />
+                        <span>{item.text}</span>
+                      </label>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            ) : null}
+          </div>
 
           <div className="flex flex-wrap items-center gap-2 border-t border-muted/40 pt-3">
             <WeatherBadge weather={city.weather} currentMonth={currentMonth} bestMonths={city.bestMonths} />

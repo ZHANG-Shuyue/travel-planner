@@ -8,6 +8,7 @@ interface TransitCardProps {
   fromCity: SchengenCity
   toCity: SchengenCity
   cityMap: Map<string, SchengenCity>
+  onInsertStation?: () => void
 }
 
 const ICON: Record<string, string> = { train: '🚄', flight: '✈️', bus: '🚌', car: '🚗', ferry: '⛴️' }
@@ -22,7 +23,7 @@ function prettyMethod(method: TransitMethod) {
   return '交通'
 }
 
-export default function TransitCard({ fromCity, toCity, cityMap }: TransitCardProps) {
+export default function TransitCard({ fromCity, toCity, cityMap, onInsertStation }: TransitCardProps) {
   const [expanded, setExpanded] = useState(false)
   const transit = useMemo(() => getTransitOptions(fromCity.id, toCity.id, cityMap), [fromCity.id, toCity.id, cityMap])
 
@@ -83,6 +84,11 @@ export default function TransitCard({ fromCity, toCity, cityMap }: TransitCardPr
       ) : null}
 
       <div className="mt-2 flex flex-wrap gap-2">
+        {onInsertStation ? (
+          <button className="no-pdf-hide rounded-full bg-purple/15 px-3 py-1 text-xs text-purple" onClick={onInsertStation}>
+            + 插入一站
+          </button>
+        ) : null}
         <a className="rounded-full bg-secondary/80 px-3 py-1 text-xs" target="_blank" rel="noreferrer" href={trainlineUrl}>查火车</a>
         <a className="rounded-full bg-secondary/80 px-3 py-1 text-xs" target="_blank" rel="noreferrer" href={skyscannerUrl}>查机票</a>
         <a className="rounded-full bg-secondary/80 px-3 py-1 text-xs" target="_blank" rel="noreferrer" href={flixbusUrl}>查大巴</a>

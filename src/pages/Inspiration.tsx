@@ -13,7 +13,7 @@ export default function Inspiration() {
             {city.flag} {city.nameZh}
           </p>
           <p className="mb-2 text-xs text-slate-500">{city.highlights[0]}</p>
-          <InspirationLinks name={city.name} nameZh={city.nameZh} />
+          <InspirationLinks name={city.name} nameZh={city.nameZh} country={city.country} />
         </div>
       ))}
     </div>

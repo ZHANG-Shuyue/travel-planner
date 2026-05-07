@@ -23,6 +23,10 @@ export interface SchengenCity {
   dayTrips: DayTrip[]
   stayAreas: StayArea[]
   localTransport: LocalTransport
+  foodGuide: FoodGuide
+  mustDoExperiences: string[]
+  dailyTips: string[]
+  photoSpots: PhotoSpot[]
 }
 
 export interface SeasonWeather {
@@ -69,6 +73,31 @@ export interface LocalTransport {
   overview: string
   tips: LocalTransportTip[]
   passes: LocalTransportPass[]
+}
+
+export interface FoodDish {
+  name: string
+  nameZh: string
+  description: string
+}
+
+export interface FoodRestaurant {
+  name: string
+  type: string
+  priceRange: string
+  specialty: string
+}
+
+export interface FoodGuide {
+  mustTry: FoodDish[]
+  restaurants: FoodRestaurant[]
+  foodTips: string
+}
+
+export interface PhotoSpot {
+  name: string
+  tip: string
+  bestTime: string
 }
 
 export interface TransitRoute {

@@ -33,4 +33,15 @@ declare module 'react-simple-maps' {
     coordinates: [number, number]
     children?: ReactNode
   }>
+
+  export const ZoomableGroup: ComponentType<{
+    center?: [number, number]
+    zoom?: number
+    minZoom?: number
+    maxZoom?: number
+    onMoveEnd?: (position: { coordinates: [number, number]; zoom: number }) => void
+    disablePanning?: boolean
+    disableZoom?: boolean
+    children?: ReactNode | ((args: { projection: (coordinates: [number, number]) => [number, number] | null }) => ReactNode)
+  }>
 }

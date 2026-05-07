@@ -6,11 +6,12 @@ interface RoutePolylineProps {
   routePath: string[]
   cities: SchengenCity[]
   projection: (coordinates: [number, number]) => [number, number] | null
+  zoomLevel?: number
 }
 
 const METHOD_ICON: Record<string, string> = { train: '🚄', flight: '✈️', bus: '🚌', ferry: '⛴️', car: '🚗' }
 
-export default function RoutePolyline({ routePath, cities, projection }: RoutePolylineProps) {
+export default function RoutePolyline({ routePath, cities, projection, zoomLevel = 1 }: RoutePolylineProps) {
   if (routePath.length < 2) return null
 
   const cityMap = new Map(cities.map((city) => [city.id, city]))
@@ -62,16 +63,18 @@ export default function RoutePolyline({ routePath, cities, projection }: RoutePo
             transition={{ duration: 0.9, delay: index * 0.18, ease: 'easeOut' }}
           />
 
-          <g>
-            <circle cx={segment.midX} cy={segment.midY - 7} r={11} fill="#F5F2EE" stroke="#C8C2BC" />
-            <text x={segment.midX} y={segment.midY - 4} textAnchor="middle" fontSize={12}>
-              {METHOD_ICON[segment.method.type] ?? '🚄'}
-            </text>
-            <text x={segment.midX} y={segment.midY + 12} textAnchor="middle" fontSize={10} fill="#7B9EAE" stroke="#F5F2EE" strokeWidth={3} paintOrder="stroke">
-              {segment.method.duration.replace(' ', '')}
-            </text>
-            <title>{`${segment.method.name ?? segment.method.type} · ${segment.method.duration} · ${segment.method.costRange ?? `€${segment.method.estimatedCost}`}`}</title>
-          </g>
+          {zoomLevel >= 3 ? (
+            <g>
+              <circle cx={segment.midX} cy={segment.midY - 7} r={11} fill="#F5F2EE" stroke="#C8C2BC" />
+              <text x={segment.midX} y={segment.midY - 4} textAnchor="middle" fontSize={12}>
+                {METHOD_ICON[segment.method.type] ?? '🚄'}
+              </text>
+              <text x={segment.midX} y={segment.midY + 12} textAnchor="middle" fontSize={10} fill="#7B9EAE" stroke="#F5F2EE" strokeWidth={3} paintOrder="stroke">
+                {segment.method.duration.replace(' ', '')}
+              </text>
+              <title>{`${segment.method.name ?? segment.method.type} · ${segment.method.duration} · ${segment.method.costRange ?? `€${segment.method.estimatedCost}`}`}</title>
+            </g>
+          ) : null}
         </g>
       ))}
     </g>

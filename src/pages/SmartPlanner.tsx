@@ -259,6 +259,20 @@ export default function SmartPlanner() {
 
   const totalTrafficHours = trafficRows.reduce((sum, row) => sum + parseDurationToHours(row.method.duration), 0)
   const totalTrafficCost = trafficRows.reduce((sum, row) => sum + row.method.estimatedCost, 0)
+  const routeStayDays = useMemo(() => {
+    if (!mainResult) return {}
+    return mainResult.plan.route.reduce<Record<string, number>>((acc, stop) => {
+      acc[stop.cityId] = stop.days
+      return acc
+    }, {})
+  }, [mainResult])
+  const routeTransitIcons = useMemo(() => {
+    if (!mainResult) return {}
+    return mainResult.plan.route.reduce<Record<string, string>>((acc, stop) => {
+      if (stop.arrivalMethod) acc[stop.cityId] = iconMap[stop.arrivalMethod] ?? '🚄'
+      return acc
+    }, {})
+  }, [mainResult])
   const autoUsedVisaDays = visitedCities.reduce((sum, item) => sum + (item.duration ?? 0), 0)
   const effectiveVisaUsedDays = visaInfo?.autoCountFromFootprints ? autoUsedVisaDays : (visaInfo?.usedDays ?? 0)
   const visaRemainingDays = typeof visaInfo?.allowedDays === 'number' ? visaInfo.allowedDays - effectiveVisaUsedDays : null
@@ -382,7 +396,7 @@ export default function SmartPlanner() {
 
           {activeTab === 'map' ? (
             <div className="grid gap-3 lg:grid-cols-3">
-              <div className="lg:col-span-2"><SchengenMap visitedCityIds={visitedCityIds} highlightedCityIds={mainResult.routePath} routePath={[departureCity, ...mainResult.routePath]} wishlistCityIds={wishlist} /></div>
+              <div className="lg:col-span-2"><SchengenMap visitedCityIds={visitedCityIds} highlightedCityIds={mainResult.routePath} routePath={[departureCity, ...mainResult.routePath]} wishlistCityIds={wishlist} cityStayDays={routeStayDays} cityTransitIcons={routeTransitIcons} /></div>
               <div className="space-y-2">
                 <div className="rounded-xl bg-background/70 p-3 text-sm">
                   <p>{mainResult.summary}</p>

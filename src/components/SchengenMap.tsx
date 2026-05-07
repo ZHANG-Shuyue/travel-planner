@@ -239,7 +239,7 @@ export default function SchengenMap({
 
   return (
     <div
-      className={`relative map-root rounded-2xl border border-muted/60 bg-background p-2 shadow-sm ${compact ? 'h-[200px] md:h-[300px]' : 'h-[420px] md:h-[620px]'}`}
+      className={`relative overflow-hidden map-root rounded-2xl border border-muted/60 bg-background p-2 shadow-sm ${compact ? 'h-[200px] md:h-[300px]' : 'h-[420px] md:h-[620px]'}`}
       onWheel={(event) => event.preventDefault()}
     >
       <ComposableMap
@@ -257,7 +257,7 @@ export default function SchengenMap({
       </ComposableMap>
 
       {enableZoom ? (
-        <div className="absolute bottom-4 right-4 z-20 flex flex-col gap-1">
+        <div className="absolute right-3 bottom-3 z-10 flex flex-col gap-1">
           <button className="h-8 w-8 rounded-md bg-[#d8d2cb] text-sm shadow transition hover:bg-[#9b8ea8] hover:text-white" onClick={zoomIn}>+</button>
           <button className="h-8 w-8 rounded-md bg-[#d8d2cb] text-sm shadow transition hover:bg-[#9b8ea8] hover:text-white" onClick={zoomOut}>−</button>
           <button className="h-8 w-8 rounded-md bg-[#d8d2cb] text-xs shadow transition hover:bg-[#9b8ea8] hover:text-white" onClick={resetView}>⟲</button>

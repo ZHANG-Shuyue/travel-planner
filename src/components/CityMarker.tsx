@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { motion } from 'framer-motion'
 import { Marker } from 'react-simple-maps'
 import type { SchengenCity } from '../types/city'
 
@@ -44,13 +43,10 @@ export default function CityMarker({
         onMouseLeave={() => setHovered(false)}
       >
         {isVisited && (
-          <motion.circle
+          <circle
             r={tinyMode ? 4 : 8}
             fill="#7B9EAE"
             opacity={0.3}
-            initial={{ scale: 1, opacity: 0.35 }}
-            animate={{ scale: [1, 1.5, 1], opacity: [0.35, 0.12, 0.35] }}
-            transition={{ duration: 1.8, repeat: Number.POSITIVE_INFINITY, ease: 'easeInOut' }}
           />
         )}
 

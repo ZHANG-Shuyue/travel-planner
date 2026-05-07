@@ -1,5 +1,5 @@
-import { useCallback, useMemo, useState } from 'react'
-import { ComposableMap, Geographies, Geography, ZoomableGroup } from 'react-simple-maps'
+import { useMemo, useState } from 'react'
+import { ComposableMap, Geographies, Geography } from 'react-simple-maps'
 import citiesData from '../data/schengen-cities.json'
 import countryInfoData from '../data/country-info.json'
 import { useUserStore } from '../stores/useUserStore'
@@ -152,11 +152,6 @@ export default function SchengenMap({
     return result
   }, [wishlistCityIds, cityMap])
 
-  const handleMoveEnd = useCallback(({ coordinates, zoom: nextZoom }: { coordinates: [number, number]; zoom: number }) => {
-    setCenter(coordinates)
-    setZoom(clamp(nextZoom, 1, 8))
-  }, [])
-
   const zoomIn = () => setZoom((prev) => clamp(prev * 1.5, 1, 8))
   const zoomOut = () => setZoom((prev) => clamp(prev / 1.5, 1, 8))
   const resetView = () => {
@@ -206,8 +201,8 @@ export default function SchengenMap({
                   strokeWidth={hasWishlist ? 1.5 : 1}
                   className="map-country"
                   style={{
-                    default: { outline: 'none', strokeDasharray: hasWishlist ? '5 3' : '4 2', pointerEvents: interactive && isSchengen ? 'auto' : 'none', cursor: interactive && isSchengen ? 'pointer' : 'default' },
-                    hover: { outline: 'none', filter: 'brightness(1.1)' },
+                    default: { outline: 'none', strokeDasharray: hasWishlist ? '5 3' : '4 2', pointerEvents: interactive && isSchengen ? 'auto' : 'none', cursor: 'default' },
+                    hover: { outline: 'none' },
                     pressed: { outline: 'none' },
                   }}
                   onClick={() => {
@@ -243,29 +238,22 @@ export default function SchengenMap({
   )
 
   return (
-    <div className={`relative map-root rounded-2xl border border-muted/60 bg-background p-2 shadow-sm ${compact ? 'h-[200px] md:h-[300px]' : 'h-[420px] md:h-[620px]'}`}>
+    <div
+      className={`relative map-root rounded-2xl border border-muted/60 bg-background p-2 shadow-sm ${compact ? 'h-[200px] md:h-[300px]' : 'h-[420px] md:h-[620px]'}`}
+      onWheel={(event) => event.preventDefault()}
+    >
       <ComposableMap
         projection="geoMercator"
-        projectionConfig={{ center: [10, 50], scale: compact ? 420 : 700 }}
+        projectionConfig={{ center, scale: (compact ? 420 : 700) * zoom }}
         width={980}
         height={compact ? 300 : 640}
-        style={{ width: '100%', height: '100%', background: 'transparent', transition: 'all 300ms ease' }}
+        style={{ width: '100%', height: '100%', background: 'transparent', transition: 'transform 300ms ease' }}
       >
         <defs>
           <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="1" result="noise" /><feDisplacementMap in="SourceGraphic" in2="noise" scale="0.2" /></filter>
         </defs>
 
-        <ZoomableGroup
-          center={center}
-          zoom={zoom}
-          minZoom={1}
-          maxZoom={8}
-          onMoveEnd={handleMoveEnd as any}
-          disablePanning={!enableZoom}
-          disableZoom={!enableZoom}
-        >
-          {renderMapContent()}
-        </ZoomableGroup>
+        {renderMapContent()}
       </ComposableMap>
 
       {enableZoom ? (

@@ -1,0 +1,28 @@
+:root {
+  --map-border-color: #c8c2bc;
+}
+
+.dark {
+  --map-border-color: #555555;
+}
+
+.map-root .map-country {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  filter: url(#rough);
+  transition: transform 0.2s ease, filter 0.2s ease, fill 0.2s ease;
+  transform-origin: center;
+}
+
+.map-root .map-country:hover {
+  transform: scale(1.01);
+  filter: brightness(1.06);
+}
+
+.map-root g[transform] {
+  transition: transform 0.2s ease;
+}
+
+.map-root g[transform]:hover {
+  transform: scale(1.06);
+}

@@ -1,0 +1,1140 @@
+{
+  "AT": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Neujahr",
+        "impact": "公共假日，商店普遍关闭"
+      },
+      {
+        "date": "01-06",
+        "name": "主显节 Heilige Drei Könige",
+        "impact": "部分商店缩短营业"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节周末 Ostern",
+        "impact": "周日与周一多数商店关闭，景点时间调整"
+      },
+      {
+        "date": "05-01",
+        "name": "劳动节 Staatsfeiertag",
+        "impact": "商店关闭，公共活动增多"
+      },
+      {
+        "date": "08-15",
+        "name": "圣母升天节 Mariä Himmelfahrt",
+        "impact": "部分地区营业减少"
+      },
+      {
+        "date": "10-26",
+        "name": "国庆日 Nationalfeiertag",
+        "impact": "商店关闭，市中心庆典较多"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Weihnachten",
+        "impact": "多数景点与商店关闭"
+      }
+    ],
+    "closureNotes": [
+      "奥地利博物馆多在周一闭馆",
+      "周日大多数商店不营业（车站店除外）",
+      "阿尔卑斯山区淡季缆车可能停运检修"
+    ]
+  },
+  "BE": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Nieuwjaar",
+        "impact": "公共假日，商店关闭"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节周一 Paasmaandag",
+        "impact": "部分博物馆和商店关闭"
+      },
+      {
+        "date": "05-01",
+        "name": "劳动节 Dag van de Arbeid",
+        "impact": "商店关闭，市区可能有游行"
+      },
+      {
+        "date": "07-21",
+        "name": "比利时国庆日 Nationale Feestdag",
+        "impact": "庆典增多，景点正常但人多"
+      },
+      {
+        "date": "08-15",
+        "name": "圣母升天节 O.L.V. Hemelvaart",
+        "impact": "部分商店关闭"
+      },
+      {
+        "date": "11-01",
+        "name": "万圣节 Allerheiligen",
+        "impact": "部分商店营业缩短"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Kerstmis",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "比利时博物馆常见周一闭馆",
+      "周日除旅游区外零售营业有限",
+      "布鲁塞尔欧盟区工作日午间较拥挤"
+    ]
+  },
+  "CH": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Neujahr",
+        "impact": "全国性休假，商店关闭"
+      },
+      {
+        "date": "约3-4月",
+        "name": "耶稣受难日/复活节 Karfreitag/Ostern",
+        "impact": "各州政策不同，营业时间缩短"
+      },
+      {
+        "date": "05-01",
+        "name": "劳动节 Tag der Arbeit（部分州）",
+        "impact": "城市中心部分商店关闭"
+      },
+      {
+        "date": "08-01",
+        "name": "瑞士国庆日 Bundesfeier",
+        "impact": "庆典活动多，交通繁忙"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Weihnachten",
+        "impact": "多数关闭"
+      },
+      {
+        "date": "12-26",
+        "name": "圣诞次日 Stephanstag",
+        "impact": "多数州仍为假期"
+      }
+    ],
+    "closureNotes": [
+      "瑞士假日按州差异明显，出发前需查当地公告",
+      "部分博物馆周一闭馆",
+      "山区缆车和步道有季节性维护停运"
+    ]
+  },
+  "CZ": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦/国家复兴日 Nový rok",
+        "impact": "商店关闭"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节周一 Velikonoční pondělí",
+        "impact": "部分景点缩短营业"
+      },
+      {
+        "date": "05-01",
+        "name": "劳动节 Svátek práce",
+        "impact": "商店部分关闭"
+      },
+      {
+        "date": "05-08",
+        "name": "解放日 Den vítězství",
+        "impact": "公共机构休息"
+      },
+      {
+        "date": "09-28",
+        "name": "捷克国庆日 Den české státnosti",
+        "impact": "部分商店关闭"
+      },
+      {
+        "date": "12-24",
+        "name": "平安夜 Štědrý den",
+        "impact": "下午起大量商店停业"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 1. svátek vánoční",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "布拉格多数博物馆周一闭馆",
+      "小店周日营业时间较短",
+      "热门城堡景点冬季缩短开放"
+    ]
+  },
+  "DE": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Neujahr",
+        "impact": "公共假日，商店关闭"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节周末 Ostern",
+        "impact": "周日与周一商店关闭"
+      },
+      {
+        "date": "05-01",
+        "name": "劳动节 Tag der Arbeit",
+        "impact": "商店关闭，部分地区有游行"
+      },
+      {
+        "date": "10-03",
+        "name": "德国统一日 Tag der Deutschen Einheit",
+        "impact": "公共假日，商店关闭"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Weihnachten",
+        "impact": "几乎全部关闭"
+      },
+      {
+        "date": "12-26",
+        "name": "圣诞次日 Zweiter Weihnachtstag",
+        "impact": "几乎全部关闭"
+      }
+    ],
+    "closureNotes": [
+      "德国博物馆通常周一闭馆",
+      "周日零售依法关门（车站店、加油站除外）",
+      "各州法定假日差异大，巴伐利亚假日更多"
+    ]
+  },
+  "DK": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Nytårsdag",
+        "impact": "商店关闭"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节 Påske",
+        "impact": "长周末多数商店关闭"
+      },
+      {
+        "date": "06-05",
+        "name": "宪法日 Grundlovsdag",
+        "impact": "部分商店提前关门"
+      },
+      {
+        "date": "约5-6月",
+        "name": "圣灵降临节 Pinse",
+        "impact": "周日商店普遍关闭"
+      },
+      {
+        "date": "12-24",
+        "name": "平安夜 Juleaften",
+        "impact": "下午后多数商店关闭"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Juledag",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "丹麦博物馆常见周一闭馆",
+      "周日大型商超营业时间缩短",
+      "冬季部分海岛航线班次减少"
+    ]
+  },
+  "EE": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Uusaasta",
+        "impact": "公共假日，多数商店关闭"
+      },
+      {
+        "date": "02-24",
+        "name": "独立日 Iseseisvuspäev",
+        "impact": "庆典活动增加，商店关闭"
+      },
+      {
+        "date": "约3-4月",
+        "name": "耶稣受难日/复活节",
+        "impact": "部分景点营业缩短"
+      },
+      {
+        "date": "06-23",
+        "name": "胜利日 Võidupüha",
+        "impact": "部分服务暂停"
+      },
+      {
+        "date": "06-24",
+        "name": "圣约翰节 Jaanipäev",
+        "impact": "全国度假氛围，营业减少"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 jõulupüha",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "塔林老城博物馆周一闭馆较常见",
+      "冬季部分景点开放时间较短",
+      "节日前后本地餐厅可能提前结束营业"
+    ]
+  },
+  "ES": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Año Nuevo",
+        "impact": "商店关闭"
+      },
+      {
+        "date": "01-06",
+        "name": "三王节 Día de Reyes",
+        "impact": "多数商店关闭，前夜游行热闹"
+      },
+      {
+        "date": "约3-4月",
+        "name": "圣周 Semana Santa",
+        "impact": "热门城市庆典多，部分景点时间调整"
+      },
+      {
+        "date": "05-01",
+        "name": "劳动节 Día del Trabajo",
+        "impact": "公共假日，商店关闭"
+      },
+      {
+        "date": "08-15",
+        "name": "圣母升天节 Asunción",
+        "impact": "部分商店关闭"
+      },
+      {
+        "date": "10-12",
+        "name": "西班牙国庆日 Fiesta Nacional",
+        "impact": "市中心有庆典，交通管制可能增加"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Navidad",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "西班牙许多博物馆周一闭馆",
+      "小城商店常有午休时段",
+      "8月部分本地商户休假，非景区餐厅可能停业"
+    ]
+  },
+  "FI": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Uudenvuodenpäivä",
+        "impact": "多数商店关闭"
+      },
+      {
+        "date": "01-06",
+        "name": "主显节 Loppiainen",
+        "impact": "营业时间缩短"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节 Pääsiäinen",
+        "impact": "长周末商店关闭较多"
+      },
+      {
+        "date": "05-01",
+        "name": "五一 Vappu",
+        "impact": "庆祝活动多，部分商店关门"
+      },
+      {
+        "date": "06-24",
+        "name": "仲夏节 Juhannus（约）",
+        "impact": "城市商店缩短营业"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Joulu",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "芬兰博物馆常见周一闭馆",
+      "冬季北部景点日照短，营业窗口有限",
+      "周日超市营业时间普遍较短"
+    ]
+  },
+  "FR": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Jour de l’An",
+        "impact": "大部分商店和景点关闭"
+      },
+      {
+        "date": "05-01",
+        "name": "劳动节 Fête du Travail",
+        "impact": "几乎所有商店关闭，部分景点正常"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节周一 Lundi de Pâques",
+        "impact": "部分景点营业时间调整"
+      },
+      {
+        "date": "07-14",
+        "name": "国庆节 Fête Nationale",
+        "impact": "有庆典活动，景点正常但人多"
+      },
+      {
+        "date": "08-15",
+        "name": "圣母升天 Assomption",
+        "impact": "部分商店关闭"
+      },
+      {
+        "date": "11-01",
+        "name": "万圣节 Toussaint",
+        "impact": "部分商店关闭"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Noël",
+        "impact": "大部分关闭，圣诞市集除外"
+      }
+    ],
+    "closureNotes": [
+      "法国大部分博物馆周二闭馆（卢浮宫周二、奥赛周一）",
+      "8月许多本地小餐厅休假关门",
+      "周日大部分商店不营业"
+    ]
+  },
+  "GR": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Protochronia",
+        "impact": "多数商店关闭"
+      },
+      {
+        "date": "01-06",
+        "name": "主显节 Theophany",
+        "impact": "部分景点营业缩短"
+      },
+      {
+        "date": "约3-4月",
+        "name": "东正教复活节 Orthodox Easter",
+        "impact": "全国庆祝，公共交通班次可能减少"
+      },
+      {
+        "date": "03-25",
+        "name": "独立日 Independence Day",
+        "impact": "游行活动，部分道路管制"
+      },
+      {
+        "date": "08-15",
+        "name": "圣母安息 Dormition",
+        "impact": "多数家庭出行，服务业人手减少"
+      },
+      {
+        "date": "10-28",
+        "name": "Ohi Day",
+        "impact": "公共假日，商店关闭"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Christmas",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "雅典部分博物馆周二闭馆",
+      "夏季中午高温时段小店可能关门休息",
+      "海岛船班受风浪影响，节假日需提前订票"
+    ]
+  },
+  "HR": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Nova godina",
+        "impact": "商店关闭"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节 Uskrs",
+        "impact": "节日期间营业时间缩短"
+      },
+      {
+        "date": "05-01",
+        "name": "劳动节 Praznik rada",
+        "impact": "公共假日，部分餐厅关闭"
+      },
+      {
+        "date": "06-22",
+        "name": "反法西斯斗争日",
+        "impact": "公共服务时段减少"
+      },
+      {
+        "date": "08-05",
+        "name": "感恩节 Victory Day",
+        "impact": "庆典活动多"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Božić",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "杜布罗夫尼克旧城部分博物馆周一闭馆",
+      "夏季海岸城市部分餐厅需预约",
+      "周日非旅游区商店营业时间短"
+    ]
+  },
+  "HU": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Újév",
+        "impact": "商店关闭"
+      },
+      {
+        "date": "03-15",
+        "name": "1848革命纪念日",
+        "impact": "公共假日，庆典活动增多"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节 Húsvét",
+        "impact": "长周末商店关闭较多"
+      },
+      {
+        "date": "05-01",
+        "name": "劳动节 Munka ünnepe",
+        "impact": "商店关闭"
+      },
+      {
+        "date": "08-20",
+        "name": "圣伊什特万日",
+        "impact": "烟火活动多，交通可能管制"
+      },
+      {
+        "date": "10-23",
+        "name": "共和国日",
+        "impact": "公共假日，机构休息"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Karácsony",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "布达佩斯多数博物馆周一闭馆",
+      "温泉浴场节假日仍开放但客流很大",
+      "周日商店营业时间通常较短"
+    ]
+  },
+  "IS": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Nýársdagur",
+        "impact": "多数关闭"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节 Easter",
+        "impact": "长周末商店关闭"
+      },
+      {
+        "date": "06-17",
+        "name": "独立日 National Day",
+        "impact": "庆典活动多，市区拥挤"
+      },
+      {
+        "date": "08-01",
+        "name": "商业日 Verslunarmannahelgi（约8月初）",
+        "impact": "本地出游高峰，住宿紧张"
+      },
+      {
+        "date": "12-24",
+        "name": "平安夜 Aðfangadagur",
+        "impact": "下午后大多停业"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Jóladagur",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "雷克雅未克部分博物馆周一闭馆",
+      "冬季部分高地道路关闭",
+      "恶劣天气会导致一日团临时取消"
+    ]
+  },
+  "IT": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Capodanno",
+        "impact": "多数商店关闭"
+      },
+      {
+        "date": "01-06",
+        "name": "主显节 Epifania",
+        "impact": "部分景点开放但商店关闭较多"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节/复活节周一 Pasqua/Pasquetta",
+        "impact": "郊游高峰，交通拥堵"
+      },
+      {
+        "date": "04-25",
+        "name": "解放日 Festa della Liberazione",
+        "impact": "公共假日，商店关闭"
+      },
+      {
+        "date": "05-01",
+        "name": "劳动节 Festa dei Lavoratori",
+        "impact": "多数商店关闭"
+      },
+      {
+        "date": "08-15",
+        "name": "圣母升天 Ferragosto",
+        "impact": "大量本地商户休假"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Natale",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "意大利国立博物馆常见周一闭馆",
+      "8月 Ferragosto 前后小店休业普遍",
+      "教堂午间可能短暂停止参观"
+    ]
+  },
+  "LI": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Neujahr",
+        "impact": "商店关闭"
+      },
+      {
+        "date": "01-06",
+        "name": "主显节",
+        "impact": "部分服务暂停"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节 Easter",
+        "impact": "公共假日营业缩短"
+      },
+      {
+        "date": "08-15",
+        "name": "国庆日 Staatsfeiertag",
+        "impact": "庆典活动，市区拥挤"
+      },
+      {
+        "date": "11-01",
+        "name": "万圣节 All Saints",
+        "impact": "部分商店关闭"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Weihnachten",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "列支敦士登景点较少，周末营业时间短",
+      "公共交通与瑞士联动，节假日班次会减",
+      "山区步道冬季可能封闭"
+    ]
+  },
+  "LT": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Naujieji metai",
+        "impact": "商店关闭"
+      },
+      {
+        "date": "02-16",
+        "name": "独立日 Independence Day",
+        "impact": "公共假日，机构休息"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节 Velykos",
+        "impact": "商店营业缩短"
+      },
+      {
+        "date": "07-06",
+        "name": "国家日 Statehood Day",
+        "impact": "庆典活动，景点较拥挤"
+      },
+      {
+        "date": "11-01",
+        "name": "万圣节 Vėlinės",
+        "impact": "部分商店关闭"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Kalėdos",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "维尔纽斯博物馆常见周一闭馆",
+      "冬季开放时间普遍缩短",
+      "周日部分商场提前闭店"
+    ]
+  },
+  "LU": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Nouvel An",
+        "impact": "公共假日，商店关闭"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节周一 Lundi de Pâques",
+        "impact": "商店与部分景点关闭"
+      },
+      {
+        "date": "05-09",
+        "name": "欧洲日 Europe Day",
+        "impact": "公共机构休息"
+      },
+      {
+        "date": "06-23",
+        "name": "国庆日 National Day",
+        "impact": "庆典活动多，交通管制可能出现"
+      },
+      {
+        "date": "08-15",
+        "name": "圣母升天 Assomption",
+        "impact": "部分商店关闭"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Noël",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "卢森堡博物馆周一闭馆较常见",
+      "全国公共交通免费但节假日班次会减少",
+      "周日普通商店营业有限"
+    ]
+  },
+  "LV": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Jaunais gads",
+        "impact": "商店关闭"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节 Lieldienas",
+        "impact": "节日周末营业时间缩短"
+      },
+      {
+        "date": "05-01",
+        "name": "劳动节 Darba svētki",
+        "impact": "公共假日，部分服务停摆"
+      },
+      {
+        "date": "06-23",
+        "name": "仲夏前夜 Jāņi Eve",
+        "impact": "本地出行高峰，商店提早关门"
+      },
+      {
+        "date": "06-24",
+        "name": "仲夏节 Jāņi",
+        "impact": "多数商店关闭"
+      },
+      {
+        "date": "11-18",
+        "name": "独立日 Proclamation Day",
+        "impact": "庆典活动增多"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Ziemassvētki",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "里加多数博物馆周一闭馆",
+      "仲夏节前后城内部分餐厅休息",
+      "冬季日照短，景点开放时间有限"
+    ]
+  },
+  "MT": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 New Year’s Day",
+        "impact": "多数商店关闭"
+      },
+      {
+        "date": "02-10",
+        "name": "圣保罗遇难日 St Paul’s Shipwreck",
+        "impact": "部分机构休息"
+      },
+      {
+        "date": "03-31",
+        "name": "自由日 Freedom Day",
+        "impact": "公共活动增多"
+      },
+      {
+        "date": "06-29",
+        "name": "圣彼得与圣保罗 Feast of St Peter and St Paul",
+        "impact": "部分区域庆典"
+      },
+      {
+        "date": "09-21",
+        "name": "独立日 Independence Day",
+        "impact": "公共假日，营业减少"
+      },
+      {
+        "date": "12-08",
+        "name": "圣母无染原罪 Immaculate Conception",
+        "impact": "部分商店关闭"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Christmas",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "马耳他博物馆常见周一闭馆",
+      "夏季高温时段部分小店午后歇业",
+      "节庆烟火期间部分道路临时封闭"
+    ]
+  },
+  "NL": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Nieuwjaar",
+        "impact": "商店关闭"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节 Pasen",
+        "impact": "周日和周一部分商店关闭"
+      },
+      {
+        "date": "04-27",
+        "name": "国王日 Koningsdag",
+        "impact": "全国庆祝，交通拥挤"
+      },
+      {
+        "date": "05-05",
+        "name": "解放日 Bevrijdingsdag（五年一大庆）",
+        "impact": "活动多，营业情况因年份而异"
+      },
+      {
+        "date": "约5-6月",
+        "name": "耶稣升天/圣灵降临 Ascension/Pentecost",
+        "impact": "商店营业缩短"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Eerste Kerstdag",
+        "impact": "多数关闭"
+      },
+      {
+        "date": "12-26",
+        "name": "节礼日 Tweede Kerstdag",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "荷兰博物馆常见周一闭馆（大型馆例外）",
+      "周日超市可营业但时间较短",
+      "国王日前后市中心住宿和交通紧张"
+    ]
+  },
+  "NO": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Nyttårsdag",
+        "impact": "商店关闭"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节 Påske",
+        "impact": "长周末多数商店关闭"
+      },
+      {
+        "date": "05-01",
+        "name": "劳动节 Arbeidernes dag",
+        "impact": "公共假日，商店关闭"
+      },
+      {
+        "date": "05-17",
+        "name": "宪法日 Grunnlovsdag",
+        "impact": "全国庆典，交通拥挤"
+      },
+      {
+        "date": "约5-6月",
+        "name": "耶稣升天/圣灵降临",
+        "impact": "营业时间缩短"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Juledag",
+        "impact": "多数关闭"
+      },
+      {
+        "date": "12-26",
+        "name": "圣诞次日 Andre juledag",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "挪威博物馆不少周一闭馆",
+      "周日普通商店营业受限",
+      "峡湾航线淡季班次减少明显"
+    ]
+  },
+  "PL": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Nowy Rok",
+        "impact": "商店关闭"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节 Wielkanoc",
+        "impact": "长周末商店关闭"
+      },
+      {
+        "date": "05-01",
+        "name": "劳动节 Święto Pracy",
+        "impact": "公共假日，营业减少"
+      },
+      {
+        "date": "05-03",
+        "name": "宪法日 Constitution Day",
+        "impact": "庆典活动，公共机构休息"
+      },
+      {
+        "date": "08-15",
+        "name": "圣母升天/建军节",
+        "impact": "部分商店关闭"
+      },
+      {
+        "date": "11-11",
+        "name": "独立日 Independence Day",
+        "impact": "游行活动，交通管制可能增加"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Boże Narodzenie",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "波兰周日贸易限制，超市常关闭",
+      "多数博物馆周一闭馆",
+      "冬季古城景点可能提前闭馆"
+    ]
+  },
+  "PT": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Ano Novo",
+        "impact": "多数商店关闭"
+      },
+      {
+        "date": "约3-4月",
+        "name": "耶稣受难日/复活节 Sexta-feira Santa/Páscoa",
+        "impact": "部分景点营业时间调整"
+      },
+      {
+        "date": "04-25",
+        "name": "自由日 Dia da Liberdade",
+        "impact": "庆典活动，部分道路管制"
+      },
+      {
+        "date": "05-01",
+        "name": "劳动节 Dia do Trabalhador",
+        "impact": "公共假日，商店关闭"
+      },
+      {
+        "date": "06-10",
+        "name": "葡萄牙国庆日 Dia de Portugal",
+        "impact": "市中心活动增多"
+      },
+      {
+        "date": "08-15",
+        "name": "圣母升天 Assunção",
+        "impact": "部分地区营业减少"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Natal",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "里斯本和波尔图部分博物馆周一闭馆",
+      "老城区小店午后可能短休",
+      "8月本地家庭度假，部分小餐馆休业"
+    ]
+  },
+  "SE": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Nyårsdagen",
+        "impact": "商店关闭"
+      },
+      {
+        "date": "01-06",
+        "name": "主显节 Trettondedag jul",
+        "impact": "部分商店关闭"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节 Påsk",
+        "impact": "长周末营业减少"
+      },
+      {
+        "date": "06-06",
+        "name": "国庆日 Nationaldagen",
+        "impact": "公共假日，部分机构关闭"
+      },
+      {
+        "date": "06-24",
+        "name": "仲夏节 Midsommar（约）",
+        "impact": "本地出游高峰，城市店铺关门较多"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Juldagen",
+        "impact": "多数关闭"
+      },
+      {
+        "date": "12-26",
+        "name": "节礼日 Annandag jul",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "瑞典许多博物馆周一闭馆",
+      "多数商店周日营业时间较短",
+      "仲夏节前后超市与交通非常繁忙"
+    ]
+  },
+  "SI": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦 Novo leto",
+        "impact": "商店关闭"
+      },
+      {
+        "date": "02-08",
+        "name": "文化节 Prešeren Day",
+        "impact": "公共假日，部分机构休息"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节 Easter",
+        "impact": "周末营业时间缩短"
+      },
+      {
+        "date": "04-27",
+        "name": "反占领日 Day of Uprising",
+        "impact": "部分商店关闭"
+      },
+      {
+        "date": "05-01",
+        "name": "劳动节 Labour Day",
+        "impact": "多数关闭"
+      },
+      {
+        "date": "06-25",
+        "name": "国庆日 Statehood Day",
+        "impact": "庆典活动增多"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Christmas",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "卢布尔雅那博物馆不少周一闭馆",
+      "湖区与洞穴景点旺季需提前订票",
+      "周日普通零售店营业有限"
+    ]
+  },
+  "SK": {
+    "holidays": [
+      {
+        "date": "01-01",
+        "name": "元旦/建国日 Deň vzniku SR",
+        "impact": "商店关闭"
+      },
+      {
+        "date": "01-06",
+        "name": "主显节 Zjavenie Pána",
+        "impact": "部分机构休息"
+      },
+      {
+        "date": "约3-4月",
+        "name": "复活节 Easter",
+        "impact": "长周末营业减少"
+      },
+      {
+        "date": "05-01",
+        "name": "劳动节 Sviatok práce",
+        "impact": "公共假日，商店关闭"
+      },
+      {
+        "date": "08-29",
+        "name": "斯洛伐克民族起义纪念日",
+        "impact": "公共假日，营业时间缩短"
+      },
+      {
+        "date": "09-01",
+        "name": "宪法日 Constitution Day",
+        "impact": "机构休息"
+      },
+      {
+        "date": "12-25",
+        "name": "圣诞节 Christmas",
+        "impact": "多数关闭"
+      }
+    ],
+    "closureNotes": [
+      "布拉迪斯拉发老城博物馆常见周一闭馆",
+      "周日多数商店营业时间较短",
+      "与维也纳跨境班次节假日会变化"
+    ]
+  }
+}

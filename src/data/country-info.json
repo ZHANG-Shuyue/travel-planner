@@ -1,0 +1,2922 @@
+{
+  "AT": {
+    "name": "Austria",
+    "nameZh": "奥地利",
+    "flag": "🇦🇹",
+    "capital": "维也纳",
+    "description": "奥地利把古典音乐与阿尔卑斯风景结合得恰到好处。维也纳和萨尔茨堡适合文化旅行，山地城市则适合户外与慢游。",
+    "highlights": [
+      {
+        "name": "美泉宫",
+        "city": "维也纳",
+        "type": "宫殿"
+      },
+      {
+        "name": "维也纳国家歌剧院",
+        "city": "维也纳",
+        "type": "地标"
+      },
+      {
+        "name": "霍夫堡皇宫",
+        "city": "维也纳",
+        "type": "宫殿"
+      },
+      {
+        "name": "萨尔茨堡老城",
+        "city": "萨尔茨堡",
+        "type": "地标"
+      },
+      {
+        "name": "哈尔施塔特湖区",
+        "city": "哈尔施塔特",
+        "type": "自然"
+      },
+      {
+        "name": "因斯布鲁克北链山",
+        "city": "因斯布鲁克",
+        "type": "自然"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "维也纳炸牛排 Wiener Schnitzel",
+        "description": "奥地利最经典主菜"
+      },
+      {
+        "name": "苹果卷 Apfelstrudel",
+        "description": "层层酥皮包裹果香"
+      },
+      {
+        "name": "萨赫蛋糕 Sachertorte",
+        "description": "维也纳著名巧克力蛋糕"
+      },
+      {
+        "name": "凯撒煎饼 Kaiserschmarrn",
+        "description": "松软甜煎饼配果酱"
+      }
+    ],
+    "funFacts": [
+      "维也纳是古典音乐重镇",
+      "奥地利山地面积占比很高"
+    ],
+    "bestSeasons": "春秋最适合城市文化行程，冬季适合滑雪和圣诞市集。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "常见 5-10%，结账时可直接报含小费总额。",
+        "cafe": "可留零钱，非强制。",
+        "taxi": "凑整或加 5% 常见。",
+        "hotel": "行李员 €1-2/件，客房清洁 €1-2/天。",
+        "tour": "半日 €5-10，全日 €10-20。"
+      },
+      "customs": [
+        {
+          "title": "咖啡馆文化",
+          "content": "维也纳咖啡馆可久坐，但高峰时段避免长时间占位。"
+        },
+        {
+          "title": "周日营业较少",
+          "content": "超市周日多休息，车站商店和景区店例外。"
+        },
+        {
+          "title": "交通查票严格",
+          "content": "地铁电车随机查票频繁，上车前确认车票已激活。"
+        },
+        {
+          "title": "山地天气多变",
+          "content": "阿尔卑斯地区昼夜温差大，徒步要备防雨外层。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Grüß Gott",
+          "meaning": "你好（奥地利常用）"
+        },
+        {
+          "local": "Danke",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Die Rechnung, bitte",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Sprechen Sie Englisch?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112；133（警察）；144（急救）"
+    }
+  },
+  "BE": {
+    "name": "Belgium",
+    "nameZh": "比利时",
+    "flag": "🇧🇪",
+    "capital": "布鲁塞尔",
+    "description": "比利时国土不大却非常耐逛。中世纪古城、巧克力与啤酒文化让每座城市都有鲜明记忆点。",
+    "highlights": [
+      {
+        "name": "大广场",
+        "city": "布鲁塞尔",
+        "type": "地标"
+      },
+      {
+        "name": "原子球塔",
+        "city": "布鲁塞尔",
+        "type": "地标"
+      },
+      {
+        "name": "布鲁日钟楼",
+        "city": "布鲁日",
+        "type": "地标"
+      },
+      {
+        "name": "根特圣巴夫主教座堂",
+        "city": "根特",
+        "type": "博物馆"
+      },
+      {
+        "name": "安特卫普中央车站",
+        "city": "安特卫普",
+        "type": "地标"
+      },
+      {
+        "name": "那慕尔城堡",
+        "city": "那慕尔",
+        "type": "宫殿"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "比利时华夫 Belgian Waffle",
+        "description": "外酥内软的经典甜点"
+      },
+      {
+        "name": "青口薯条 Moules-frites",
+        "description": "海鲜与薯条的代表组合"
+      },
+      {
+        "name": "比利时巧克力 Belgian Chocolate",
+        "description": "工艺细致、风味层次丰富"
+      },
+      {
+        "name": "炸薯条 Frites",
+        "description": "街头人气小吃"
+      }
+    ],
+    "funFacts": [
+      "欧盟总部位于布鲁塞尔",
+      "比利时啤酒风格非常丰富"
+    ],
+    "bestSeasons": "5-9 月最适合古城漫步，冬季圣诞氛围也很强。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "账单通常含服务费，满意可留 5% 或凑整。",
+        "cafe": "一般不需要，留零钱即可。",
+        "taxi": "凑整常见。",
+        "hotel": "可选 €1-2/件行李。",
+        "tour": "€5-10/人常见。"
+      },
+      "customs": [
+        {
+          "title": "多语环境",
+          "content": "布鲁塞尔常见法语和荷兰语，先用英语礼貌询问最稳妥。"
+        },
+        {
+          "title": "啤酒文化",
+          "content": "比利时啤酒度数差异大，点单前看 ABV。"
+        },
+        {
+          "title": "用餐预约",
+          "content": "周末热门餐厅建议提前预约。"
+        },
+        {
+          "title": "公共秩序",
+          "content": "排队秩序强，电车进出站先下后上。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Bonjour / Goedendag",
+          "meaning": "你好（法语/荷兰语）"
+        },
+        {
+          "local": "Merci / Dank u",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "L’addition, s’il vous plaît",
+          "meaning": "请买单"
+        },
+        {
+          "local": "Spreekt u Engels?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "CH": {
+    "name": "Switzerland",
+    "nameZh": "瑞士",
+    "flag": "🇨🇭",
+    "capital": "伯尔尼",
+    "description": "瑞士以高山湖泊和高品质交通体验著称。火车观景线路密度高，适合把城市与自然打包体验。",
+    "highlights": [
+      {
+        "name": "马特洪峰",
+        "city": "采尔马特",
+        "type": "自然"
+      },
+      {
+        "name": "少女峰",
+        "city": "因特拉肯",
+        "type": "自然"
+      },
+      {
+        "name": "卢塞恩湖",
+        "city": "卢塞恩",
+        "type": "自然"
+      },
+      {
+        "name": "伯尔尼老城",
+        "city": "伯尔尼",
+        "type": "地标"
+      },
+      {
+        "name": "西庸城堡",
+        "city": "蒙特勒",
+        "type": "宫殿"
+      },
+      {
+        "name": "苏黎世湖",
+        "city": "苏黎世",
+        "type": "地标"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "奶酪火锅 Fondue",
+        "description": "瑞士冬季代表性料理"
+      },
+      {
+        "name": "土豆饼 Rösti",
+        "description": "简单但很有地方特色"
+      },
+      {
+        "name": "芝士焗烤 Raclette",
+        "description": "融化奶酪配土豆与腌菜"
+      },
+      {
+        "name": "瑞士巧克力 Swiss Chocolate",
+        "description": "口感细腻，品质稳定"
+      }
+    ],
+    "funFacts": [
+      "瑞士铁路准点率长期领先",
+      "全国有四种官方语言"
+    ],
+    "bestSeasons": "6-9 月适合山地徒步，12-2 月适合雪景与滑雪。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "服务费已含，常见凑整到整法郎或额外留 5%。",
+        "cafe": "不强制，零钱即可。",
+        "taxi": "凑整即可。",
+        "hotel": "可选 CHF 1-2/件行李。",
+        "tour": "半日 CHF 5-10，全日 CHF 10-20。"
+      },
+      "customs": [
+        {
+          "title": "多语言国家",
+          "content": "德语/法语/意语区并存，英语在旅游场景基本可沟通。"
+        },
+        {
+          "title": "准点文化",
+          "content": "火车和预约时间观念很强，建议提前 5-10 分钟到。"
+        },
+        {
+          "title": "安静规则",
+          "content": "住宅区夜间注重安静，公共场合音量偏低。"
+        },
+        {
+          "title": "山地安全",
+          "content": "山区天气变化快，缆车和步道要看实时公告。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Grüezi / Bonjour",
+          "meaning": "你好"
+        },
+        {
+          "local": "Danke / Merci",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Die Rechnung, bitte",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Sprechen Sie Englisch?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112；117（警察）；144（急救）"
+    }
+  },
+  "CZ": {
+    "name": "Czech Republic",
+    "nameZh": "捷克",
+    "flag": "🇨🇿",
+    "capital": "布拉格",
+    "description": "捷克有浓郁的中世纪童话感。布拉格步行体验极佳，建筑密度高，适合摄影和历史爱好者。",
+    "highlights": [
+      {
+        "name": "查理大桥",
+        "city": "布拉格",
+        "type": "地标"
+      },
+      {
+        "name": "布拉格城堡",
+        "city": "布拉格",
+        "type": "宫殿"
+      },
+      {
+        "name": "老城天文钟",
+        "city": "布拉格",
+        "type": "地标"
+      },
+      {
+        "name": "圣维特大教堂",
+        "city": "布拉格",
+        "type": "地标"
+      },
+      {
+        "name": "库特纳霍拉人骨教堂",
+        "city": "库特纳霍拉",
+        "type": "博物馆"
+      },
+      {
+        "name": "什皮尔伯克城堡",
+        "city": "布尔诺",
+        "type": "宫殿"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "烤猪膝 Vepřové koleno",
+        "description": "啤酒馆经典主菜"
+      },
+      {
+        "name": "炖牛肉配面包 Knedlíky",
+        "description": "传统家常组合"
+      },
+      {
+        "name": "炸奶酪 Smažený sýr",
+        "description": "平价高人气小食"
+      },
+      {
+        "name": "特德洛面包 Trdelník",
+        "description": "街头热门甜点"
+      }
+    ],
+    "funFacts": [
+      "捷克人均啤酒消费长期很高",
+      "布拉格老城跨越多个建筑时代"
+    ],
+    "bestSeasons": "春秋最宜步行，冬季圣诞市场也很有氛围。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "常见 5-10%，结账时直接说总额。",
+        "cafe": "一般留零钱。",
+        "taxi": "建议用 App，凑整即可。",
+        "hotel": "可选 €1/件。",
+        "tour": "€5-10 常见。"
+      },
+      "customs": [
+        {
+          "title": "啤酒与餐饮",
+          "content": "捷克啤酒文化浓厚，很多餐厅啤酒比软饮便宜。"
+        },
+        {
+          "title": "交通票验证",
+          "content": "电车和地铁会抽查，电子票也要确认生效。"
+        },
+        {
+          "title": "石板路较多",
+          "content": "老城地面不平，拖箱建议选耐磨轮。"
+        },
+        {
+          "title": "小店支付",
+          "content": "大店可刷卡，部分小店更偏好现金。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Dobrý den",
+          "meaning": "你好"
+        },
+        {
+          "local": "Děkuji",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Účet, prosím",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Mluvíte anglicky?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "DE": {
+    "name": "Germany",
+    "nameZh": "德国",
+    "flag": "🇩🇪",
+    "capital": "柏林",
+    "description": "德国兼具历史深度与现代效率。柏林、慕尼黑、科隆等城市风格差异大，铁路网络发达，适合多城串联。",
+    "highlights": [
+      {
+        "name": "勃兰登堡门",
+        "city": "柏林",
+        "type": "地标"
+      },
+      {
+        "name": "博物馆岛",
+        "city": "柏林",
+        "type": "博物馆"
+      },
+      {
+        "name": "新天鹅堡",
+        "city": "菲森",
+        "type": "宫殿"
+      },
+      {
+        "name": "科隆大教堂",
+        "city": "科隆",
+        "type": "地标"
+      },
+      {
+        "name": "黑森林",
+        "city": "巴登-符腾堡",
+        "type": "自然"
+      },
+      {
+        "name": "仓库城",
+        "city": "汉堡",
+        "type": "地标"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "德式香肠 Bratwurst",
+        "description": "街头与啤酒馆常见主角"
+      },
+      {
+        "name": "猪肘 Eisbein",
+        "description": "外脆里嫩的重口味经典"
+      },
+      {
+        "name": "椒盐卷饼 Pretzel",
+        "description": "啤酒节标配"
+      },
+      {
+        "name": "黑森林蛋糕 Schwarzwälder Kirschtorte",
+        "description": "樱桃奶油层次分明"
+      }
+    ],
+    "funFacts": [
+      "德国高速路部分路段不限速",
+      "圣诞市集文化影响全球"
+    ],
+    "bestSeasons": "5-6 月和 9 月最舒适，冬季适合圣诞主题旅行。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "常见 5-10%，常在结账时当面报总额。",
+        "cafe": "可留 €0.5-1，非强制。",
+        "taxi": "凑整或 5-10%。",
+        "hotel": "行李员 €1-2/件，清洁 €1-2/天。",
+        "tour": "步行团 €5-10，全天团 €10-20。"
+      },
+      "customs": [
+        {
+          "title": "守时文化",
+          "content": "德国对准时非常重视，迟到请提前通知。"
+        },
+        {
+          "title": "交通规则",
+          "content": "即使没车也常等绿灯，闯红灯会被提醒。"
+        },
+        {
+          "title": "安静时段",
+          "content": "周日和夜间住宅区避免大声喧哗。"
+        },
+        {
+          "title": "现金与卡并用",
+          "content": "大城市普遍可刷卡，小店仍可能偏好现金。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Guten Tag",
+          "meaning": "你好"
+        },
+        {
+          "local": "Danke",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Die Rechnung, bitte",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Sprechen Sie Englisch?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112（急救/消防）；110（警察）"
+    }
+  },
+  "DK": {
+    "name": "Denmark",
+    "nameZh": "丹麦",
+    "flag": "🇩🇰",
+    "capital": "哥本哈根",
+    "description": "丹麦旅行关键词是“舒适”和“设计”。哥本哈根骑行友好，城市节奏松弛，适合轻度度假。",
+    "highlights": [
+      {
+        "name": "新港 Nyhavn",
+        "city": "哥本哈根",
+        "type": "地标"
+      },
+      {
+        "name": "小美人鱼像",
+        "city": "哥本哈根",
+        "type": "地标"
+      },
+      {
+        "name": "蒂沃利公园",
+        "city": "哥本哈根",
+        "type": "地标"
+      },
+      {
+        "name": "克伦堡宫",
+        "city": "赫尔辛格",
+        "type": "宫殿"
+      },
+      {
+        "name": "阿罗斯美术馆",
+        "city": "奥胡斯",
+        "type": "博物馆"
+      },
+      {
+        "name": "腓特烈堡宫",
+        "city": "希勒勒",
+        "type": "宫殿"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "开放三明治 Smørrebrød",
+        "description": "丹麦传统冷食代表"
+      },
+      {
+        "name": "丹麦酥 Danish Pastry",
+        "description": "全球知名甜点"
+      },
+      {
+        "name": "肉丸 Frikadeller",
+        "description": "家常主菜"
+      },
+      {
+        "name": "红肠 Pølse",
+        "description": "街头热狗风味"
+      }
+    ],
+    "funFacts": [
+      "丹麦常年幸福指数很高",
+      "哥本哈根是全球骑行友好城市"
+    ],
+    "bestSeasons": "5-9 月体感最佳，冬季风大但节日氛围好。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "账单已含服务费，通常无需额外小费。",
+        "cafe": "一般不需要。",
+        "taxi": "凑整即可。",
+        "hotel": "通常无需小费。",
+        "tour": "可选少量 DKK 表达感谢。"
+      },
+      "customs": [
+        {
+          "title": "骑行优先",
+          "content": "自行车道优先级高，过街先看自行车流。"
+        },
+        {
+          "title": "守时与预约",
+          "content": "约会和餐厅预订普遍讲究准时。"
+        },
+        {
+          "title": "无现金支付",
+          "content": "银行卡和手机支付普及，现金需求低。"
+        },
+        {
+          "title": "公共礼仪",
+          "content": "排队有序，车厢内保持安静。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Hej",
+          "meaning": "你好"
+        },
+        {
+          "local": "Tak",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Regningen, tak",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Taler du engelsk?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "EE": {
+    "name": "Estonia",
+    "nameZh": "爱沙尼亚",
+    "flag": "🇪🇪",
+    "capital": "塔林",
+    "description": "爱沙尼亚把中世纪古城和数字化生活结合得很好。塔林老城适合慢走，城市尺度也很友好。",
+    "highlights": [
+      {
+        "name": "塔林老城",
+        "city": "塔林",
+        "type": "地标"
+      },
+      {
+        "name": "图姆佩阿城堡",
+        "city": "塔林",
+        "type": "宫殿"
+      },
+      {
+        "name": "市政厅广场",
+        "city": "塔林",
+        "type": "地标"
+      },
+      {
+        "name": "水上飞机港博物馆",
+        "city": "塔林",
+        "type": "博物馆"
+      },
+      {
+        "name": "拉赫马国家公园",
+        "city": "北部",
+        "type": "自然"
+      },
+      {
+        "name": "帕尔努海滩",
+        "city": "帕尔努",
+        "type": "海滨"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "黑麦面包 Rye Bread",
+        "description": "波罗的海主食代表"
+      },
+      {
+        "name": "血肠 Verivorst",
+        "description": "节庆传统料理"
+      },
+      {
+        "name": "烟熏鱼 Smoked Fish",
+        "description": "沿海风味显著"
+      },
+      {
+        "name": "奶酪点心 Kohuke",
+        "description": "常见甜食"
+      }
+    ],
+    "funFacts": [
+      "爱沙尼亚电子政务发展领先",
+      "塔林老城保存度很高"
+    ],
+    "bestSeasons": "6-8 月最舒适，冬季可体验雪景与节日市场。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "不强制，满意可留 5-10%。",
+        "cafe": "留零钱即可。",
+        "taxi": "凑整常见。",
+        "hotel": "可选 €1-2。",
+        "tour": "€5-10。"
+      },
+      "customs": [
+        {
+          "title": "数字化社会",
+          "content": "电子支付和线上服务普及，刷卡非常方便。"
+        },
+        {
+          "title": "冬季日照短",
+          "content": "冬季白天短，行程安排留意天黑时间。"
+        },
+        {
+          "title": "老城路面",
+          "content": "老城石板路较多，穿舒适鞋更好。"
+        },
+        {
+          "title": "安静文化",
+          "content": "公共空间音量偏低，排队秩序好。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Tere",
+          "meaning": "你好"
+        },
+        {
+          "local": "Aitäh",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Arve, palun",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Kas te räägite inglise keelt?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "ES": {
+    "name": "Spain",
+    "nameZh": "西班牙",
+    "flag": "🇪🇸",
+    "capital": "马德里",
+    "description": "西班牙热情而有生活感。巴塞罗那、马德里和安达卢西亚各具气质，建筑、美食和夜生活都很强。",
+    "highlights": [
+      {
+        "name": "圣家堂",
+        "city": "巴塞罗那",
+        "type": "地标"
+      },
+      {
+        "name": "普拉多博物馆",
+        "city": "马德里",
+        "type": "博物馆"
+      },
+      {
+        "name": "阿尔罕布拉宫",
+        "city": "格拉纳达",
+        "type": "宫殿"
+      },
+      {
+        "name": "塞维利亚王宫",
+        "city": "塞维利亚",
+        "type": "宫殿"
+      },
+      {
+        "name": "艺术科学城",
+        "city": "瓦伦西亚",
+        "type": "地标"
+      },
+      {
+        "name": "太阳海岸",
+        "city": "马拉加",
+        "type": "海滨"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "海鲜饭 Paella",
+        "description": "瓦伦西亚招牌米饭"
+      },
+      {
+        "name": "土豆饼 Tortilla Española",
+        "description": "国民家常菜"
+      },
+      {
+        "name": "伊比利亚火腿 Jamón Ibérico",
+        "description": "西班牙风味名片"
+      },
+      {
+        "name": "油条 Churros",
+        "description": "蘸热巧克力的经典甜点"
+      }
+    ],
+    "funFacts": [
+      "西班牙午后休息文化影响深远",
+      "高铁网络在欧洲名列前茅"
+    ],
+    "bestSeasons": "春秋最舒服，夏季适合海滨度假。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "不强制，常见留 5-10% 或零钱。",
+        "cafe": "通常不需要，偶尔留零钱。",
+        "taxi": "凑整即可。",
+        "hotel": "可选 €1-2/件行李。",
+        "tour": "半日 €5-10，全日 €10-20。"
+      },
+      "customs": [
+        {
+          "title": "作息偏晚",
+          "content": "午餐常在 13:30 后，晚餐 20:00 后更热闹。"
+        },
+        {
+          "title": "午间休息",
+          "content": "小城部分店铺下午会短暂休息。"
+        },
+        {
+          "title": "Tapas 共享",
+          "content": "多人用餐常分享小盘，分摊账单很常见。"
+        },
+        {
+          "title": "防扒重点",
+          "content": "巴塞罗那和马德里景区地铁注意防盗。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Hola",
+          "meaning": "你好"
+        },
+        {
+          "local": "Gracias",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "La cuenta, por favor",
+          "meaning": "请结账"
+        },
+        {
+          "local": "¿Habla inglés?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "FI": {
+    "name": "Finland",
+    "nameZh": "芬兰",
+    "flag": "🇫🇮",
+    "capital": "赫尔辛基",
+    "description": "芬兰结合北欧极简设计和纯净自然。赫尔辛基适合城市文化探索，北部拉普兰是冬季热门目的地。",
+    "highlights": [
+      {
+        "name": "岩石教堂",
+        "city": "赫尔辛基",
+        "type": "地标"
+      },
+      {
+        "name": "芬兰堡",
+        "city": "赫尔辛基",
+        "type": "地标"
+      },
+      {
+        "name": "圣诞老人村",
+        "city": "罗瓦涅米",
+        "type": "地标"
+      },
+      {
+        "name": "乌斯潘斯基教堂",
+        "city": "赫尔辛基",
+        "type": "地标"
+      },
+      {
+        "name": "极光观测区",
+        "city": "拉普兰",
+        "type": "自然"
+      },
+      {
+        "name": "萨翁林纳城堡",
+        "city": "萨翁林纳",
+        "type": "宫殿"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "三文鱼汤 Lohikeitto",
+        "description": "奶香与莳萝风味清爽"
+      },
+      {
+        "name": "卡累利阿馅饼 Karjalanpiirakka",
+        "description": "芬兰传统点心"
+      },
+      {
+        "name": "肉桂卷 Korvapuusti",
+        "description": "咖啡时间灵魂搭配"
+      },
+      {
+        "name": "驯鹿肉 Poronkäristys",
+        "description": "北部特色主菜"
+      }
+    ],
+    "funFacts": [
+      "芬兰有“千湖之国”之称",
+      "桑拿文化深入日常生活"
+    ],
+    "bestSeasons": "6-8 月适合湖区，12-3 月适合雪景和极光。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "通常不需要小费，服务费已含。",
+        "cafe": "一般不需要。",
+        "taxi": "凑整即可。",
+        "hotel": "通常无需。",
+        "tour": "可选 €5-10。"
+      },
+      "customs": [
+        {
+          "title": "安静与秩序",
+          "content": "公共场所讲话音量偏低，排队礼让明显。"
+        },
+        {
+          "title": "桑拿礼仪",
+          "content": "入桑拿前先冲洗，并遵守场馆规则。"
+        },
+        {
+          "title": "冬季防滑",
+          "content": "路面结冰常见，建议穿防滑鞋。"
+        },
+        {
+          "title": "电子支付",
+          "content": "多数场景可刷卡，现金使用较少。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Hei",
+          "meaning": "你好"
+        },
+        {
+          "local": "Kiitos",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Lasku, kiitos",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Puhutko englantia?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "FR": {
+    "name": "France",
+    "nameZh": "法国",
+    "flag": "🇫🇷",
+    "capital": "巴黎",
+    "description": "法国是浪漫、艺术与美食的代表国家。你可以在巴黎看世界级博物馆，也能在南法海岸享受慢节奏假期。城堡、葡萄园与小镇文化让旅行层次非常丰富。",
+    "highlights": [
+      {
+        "name": "埃菲尔铁塔",
+        "city": "巴黎",
+        "type": "地标"
+      },
+      {
+        "name": "卢浮宫",
+        "city": "巴黎",
+        "type": "博物馆"
+      },
+      {
+        "name": "凡尔赛宫",
+        "city": "凡尔赛",
+        "type": "宫殿"
+      },
+      {
+        "name": "圣米歇尔山",
+        "city": "诺曼底",
+        "type": "自然"
+      },
+      {
+        "name": "薰衣草花田",
+        "city": "普罗旺斯",
+        "type": "自然"
+      },
+      {
+        "name": "蔚蓝海岸",
+        "city": "尼斯",
+        "type": "海滨"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "法式牛角包 Croissant",
+        "description": "黄油层叠的经典早餐"
+      },
+      {
+        "name": "红酒炖牛肉 Boeuf Bourguignon",
+        "description": "勃艮第传统慢炖菜"
+      },
+      {
+        "name": "法式洋葱汤 Soupe à l'oignon",
+        "description": "浓郁奶酪覆盖的暖汤"
+      },
+      {
+        "name": "可丽饼 Crêpe",
+        "description": "薄饼搭配甜咸各种馅料"
+      },
+      {
+        "name": "马卡龙 Macaron",
+        "description": "色彩缤纷的杏仁小甜饼"
+      }
+    ],
+    "funFacts": [
+      "法国是全球游客最多的国家之一",
+      "法国有超过 1500 种奶酪"
+    ],
+    "bestSeasons": "春季（4-6月）和秋季（9-10月）气候宜人，避开盛夏旅游旺季。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "账单通常已含服务费，满意可再留 5-10% 或凑整。",
+        "cafe": "一般不强制，留 €0.5-1 零钱即可。",
+        "taxi": "凑整即可。",
+        "hotel": "行李员 €1-2/件，清洁 €1-2/天（可选）。",
+        "tour": "半日 €5-10，全日 €10-20。"
+      },
+      "customs": [
+        {
+          "title": "先问候再提需求",
+          "content": "进店先说 Bonjour 很重要，不问候会显得失礼。"
+        },
+        {
+          "title": "买单要主动",
+          "content": "法国餐厅通常不会主动送账单，需要招呼服务员。"
+        },
+        {
+          "title": "着装与场合",
+          "content": "博物馆和教堂建议得体着装，高档餐厅偏 smart casual。"
+        },
+        {
+          "title": "防扒提醒",
+          "content": "巴黎地铁和热门景点周边注意手机与证件。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Bonjour",
+          "meaning": "你好（白天）"
+        },
+        {
+          "local": "Merci",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "L'addition, s'il vous plaît",
+          "meaning": "请买单"
+        },
+        {
+          "local": "Parlez-vous anglais ?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112；17（警察）；15（急救）；18（消防）"
+    }
+  },
+  "GR": {
+    "name": "Greece",
+    "nameZh": "希腊",
+    "flag": "🇬🇷",
+    "capital": "雅典",
+    "description": "希腊把古典文明遗迹与海岛假期结合得很自然。雅典适合历史探索，爱琴海岛屿适合阳光海景慢生活。",
+    "highlights": [
+      {
+        "name": "卫城",
+        "city": "雅典",
+        "type": "地标"
+      },
+      {
+        "name": "帕台农神庙",
+        "city": "雅典",
+        "type": "地标"
+      },
+      {
+        "name": "伊亚日落",
+        "city": "圣托里尼",
+        "type": "海滨"
+      },
+      {
+        "name": "米科诺斯风车",
+        "city": "米科诺斯",
+        "type": "地标"
+      },
+      {
+        "name": "梅黛奥拉修道院",
+        "city": "卡兰巴卡",
+        "type": "自然"
+      },
+      {
+        "name": "白塔",
+        "city": "塞萨洛尼基",
+        "type": "地标"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "希腊沙拉 Greek Salad",
+        "description": "清爽橄榄油风味"
+      },
+      {
+        "name": "烤肉卷 Gyros",
+        "description": "街头经典主食"
+      },
+      {
+        "name": "穆萨卡 Moussaka",
+        "description": "茄子与肉酱层叠烘烤"
+      },
+      {
+        "name": "蜂蜜酸奶 Greek Yogurt",
+        "description": "浓稠酸奶搭配蜂蜜坚果"
+      }
+    ],
+    "funFacts": [
+      "希腊拥有数千座岛屿",
+      "希腊夏季日照时间很长"
+    ],
+    "bestSeasons": "5-6 月和 9 月最推荐，避开 7-8 月酷热。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "不强制，满意可留 5-10%。",
+        "cafe": "可留零钱。",
+        "taxi": "凑整常见。",
+        "hotel": "可选 €1-2。",
+        "tour": "半日 €5-10，全日 €10-20。"
+      },
+      "customs": [
+        {
+          "title": "教堂着装",
+          "content": "修道院和教堂需遮肩遮膝。"
+        },
+        {
+          "title": "午后高温",
+          "content": "夏季中午炎热，活动尽量避开暴晒时段。"
+        },
+        {
+          "title": "共享点餐",
+          "content": "多人聚餐常点多道共享。"
+        },
+        {
+          "title": "海岛交通",
+          "content": "船班受天气影响，旺季最好提前订票。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Γειά σας (Yia sas)",
+          "meaning": "你好"
+        },
+        {
+          "local": "Ευχαριστώ (Efcharistó)",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Τον λογαριασμό, παρακαλώ",
+          "meaning": "请买单"
+        },
+        {
+          "local": "Μιλάτε αγγλικά;",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "HR": {
+    "name": "Croatia",
+    "nameZh": "克罗地亚",
+    "flag": "🇭🇷",
+    "capital": "萨格勒布",
+    "description": "克罗地亚兼具亚得里亚海海岸与历史古城。杜布罗夫尼克和达尔马提亚海岸适合海滨+古城组合。",
+    "highlights": [
+      {
+        "name": "杜布罗夫尼克古城墙",
+        "city": "杜布罗夫尼克",
+        "type": "地标"
+      },
+      {
+        "name": "普利特维采湖群",
+        "city": "利卡",
+        "type": "自然"
+      },
+      {
+        "name": "戴克里先宫",
+        "city": "斯普利特",
+        "type": "宫殿"
+      },
+      {
+        "name": "萨格勒布上城",
+        "city": "萨格勒布",
+        "type": "地标"
+      },
+      {
+        "name": "赫瓦尔岛",
+        "city": "赫瓦尔",
+        "type": "海滨"
+      },
+      {
+        "name": "扎达尔海风琴",
+        "city": "扎达尔",
+        "type": "地标"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "黑烩饭 Crni Rižot",
+        "description": "墨鱼汁海鲜风味"
+      },
+      {
+        "name": "烤章鱼 Peka",
+        "description": "慢烤海鲜代表"
+      },
+      {
+        "name": "奶酪馅卷 Strukli",
+        "description": "萨格勒布经典"
+      },
+      {
+        "name": "达尔马提亚火腿 Pršut",
+        "description": "海岸风干火腿"
+      }
+    ],
+    "funFacts": [
+      "克罗地亚岛屿数量很多",
+      "杜布罗夫尼克是热门影视取景地"
+    ],
+    "bestSeasons": "5-6 月和 9 月最舒适，盛夏适合海滨度假。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "不强制，常见 5-10%。",
+        "cafe": "可留零钱。",
+        "taxi": "凑整即可。",
+        "hotel": "可选 €1-2。",
+        "tour": "€5-10 常见。"
+      },
+      "customs": [
+        {
+          "title": "旺季预订",
+          "content": "海岸城市夏季住宿和船票紧张，建议提前预订。"
+        },
+        {
+          "title": "古城地面湿滑",
+          "content": "杜布罗夫尼克旧城石板路雨后较滑。"
+        },
+        {
+          "title": "防晒补水",
+          "content": "夏季日照强，户外行程注意补水。"
+        },
+        {
+          "title": "老城秩序",
+          "content": "夜间居民区注意音量控制。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Dobar dan",
+          "meaning": "你好"
+        },
+        {
+          "local": "Hvala",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Račun, molim",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Govorite li engleski?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "HU": {
+    "name": "Hungary",
+    "nameZh": "匈牙利",
+    "flag": "🇭🇺",
+    "capital": "布达佩斯",
+    "description": "匈牙利将多瑙河夜景、温泉文化和中欧建筑风格融合得很有辨识度。布达佩斯是高性价比的城市旅行地。",
+    "highlights": [
+      {
+        "name": "国会大厦",
+        "city": "布达佩斯",
+        "type": "地标"
+      },
+      {
+        "name": "渔人堡",
+        "city": "布达佩斯",
+        "type": "地标"
+      },
+      {
+        "name": "塞切尼温泉",
+        "city": "布达佩斯",
+        "type": "地标"
+      },
+      {
+        "name": "链子桥",
+        "city": "布达佩斯",
+        "type": "地标"
+      },
+      {
+        "name": "圣伊什特万圣殿",
+        "city": "布达佩斯",
+        "type": "地标"
+      },
+      {
+        "name": "霍尔托巴吉国家公园",
+        "city": "德布勒森周边",
+        "type": "自然"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "匈牙利炖牛肉 Gulyás",
+        "description": "甜椒风味浓郁"
+      },
+      {
+        "name": "烟囱卷 Kürtőskalács",
+        "description": "街头经典甜点"
+      },
+      {
+        "name": "辣椒鸡 Paprikás Csirke",
+        "description": "奶香辣椒酱主菜"
+      },
+      {
+        "name": "鹅肝 Foie Gras",
+        "description": "匈牙利高品质食材"
+      }
+    ],
+    "funFacts": [
+      "布达佩斯有“多瑙河明珠”之称",
+      "温泉浴场文化非常成熟"
+    ],
+    "bestSeasons": "4-6 月和 9-10 月最舒适。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "常见 10%，先看账单是否含服务费。",
+        "cafe": "可留零钱。",
+        "taxi": "凑整常见，建议 App 打车。",
+        "hotel": "可选 500-1000 HUF。",
+        "tour": "2000-5000 HUF 视时长。"
+      },
+      "customs": [
+        {
+          "title": "温泉礼仪",
+          "content": "不同浴场对泳帽和拖鞋规则不同，按现场提示执行。"
+        },
+        {
+          "title": "交通查票",
+          "content": "布达佩斯地铁入口检票严格，车票需验证。"
+        },
+        {
+          "title": "现金备用",
+          "content": "大店可刷卡，小店和市场备些福林更方便。"
+        },
+        {
+          "title": "夜游热门",
+          "content": "多瑙河夜游旺季排队久，建议提前预定。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Jó napot",
+          "meaning": "你好"
+        },
+        {
+          "local": "Köszönöm",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "A számlát kérem",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Beszél angolul?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "IS": {
+    "name": "Iceland",
+    "nameZh": "冰岛",
+    "flag": "🇮🇸",
+    "capital": "雷克雅未克",
+    "description": "冰岛拥有火山、冰川、瀑布与地热景观，地貌独特。自然奇观密度极高，是摄影与自驾爱好者天堂。",
+    "highlights": [
+      {
+        "name": "黄金圈",
+        "city": "雷克雅未克周边",
+        "type": "自然"
+      },
+      {
+        "name": "蓝湖温泉",
+        "city": "雷克雅未克周边",
+        "type": "自然"
+      },
+      {
+        "name": "塞里雅兰瀑布",
+        "city": "南岸",
+        "type": "自然"
+      },
+      {
+        "name": "黑沙滩",
+        "city": "维克",
+        "type": "自然"
+      },
+      {
+        "name": "辛格维利尔国家公园",
+        "city": "黄金圈",
+        "type": "自然"
+      },
+      {
+        "name": "哈帕音乐厅",
+        "city": "雷克雅未克",
+        "type": "地标"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "羊肉汤 Kjötsúpa",
+        "description": "寒冷天气里的暖身汤"
+      },
+      {
+        "name": "龙虾汤 Lobster Soup",
+        "description": "冰岛海鲜代表"
+      },
+      {
+        "name": "发酵鲨鱼 Hákarl",
+        "description": "挑战型传统食物"
+      },
+      {
+        "name": "热狗 Pylsa",
+        "description": "雷市高人气街头小吃"
+      }
+    ],
+    "funFacts": [
+      "冰岛大量使用地热能源",
+      "夏季有极昼、冬季有极夜"
+    ],
+    "bestSeasons": "6-8 月适合环岛自驾，10-3 月适合追极光。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "不需要，价格已含服务成本。",
+        "cafe": "通常不需要。",
+        "taxi": "不强制。",
+        "hotel": "通常无需。",
+        "tour": "口头感谢即可。"
+      },
+      "customs": [
+        {
+          "title": "自然保护严格",
+          "content": "不要离开标记道路踩踏苔原，违规可能罚款。"
+        },
+        {
+          "title": "天气瞬变",
+          "content": "一天四季常见，防风防雨层必备。"
+        },
+        {
+          "title": "温泉礼仪",
+          "content": "入池前需彻底淋浴。"
+        },
+        {
+          "title": "物价较高",
+          "content": "餐饮和交通成本高，建议预先做预算。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Halló",
+          "meaning": "你好"
+        },
+        {
+          "local": "Takk",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Reikninginn, takk",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Talar þú ensku?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "IT": {
+    "name": "Italy",
+    "nameZh": "意大利",
+    "flag": "🇮🇹",
+    "capital": "罗马",
+    "description": "意大利是古典文明与生活美学的代表。每座城市都像露天博物馆，美食与历史体验密不可分。",
+    "highlights": [
+      {
+        "name": "斗兽场",
+        "city": "罗马",
+        "type": "地标"
+      },
+      {
+        "name": "乌菲兹美术馆",
+        "city": "佛罗伦萨",
+        "type": "博物馆"
+      },
+      {
+        "name": "圣马可广场",
+        "city": "威尼斯",
+        "type": "地标"
+      },
+      {
+        "name": "米兰大教堂",
+        "city": "米兰",
+        "type": "地标"
+      },
+      {
+        "name": "阿马尔菲海岸",
+        "city": "那不勒斯周边",
+        "type": "海滨"
+      },
+      {
+        "name": "五渔村",
+        "city": "利古里亚",
+        "type": "自然"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "玛格丽特披萨 Pizza Margherita",
+        "description": "那不勒斯传统代表"
+      },
+      {
+        "name": "碳ara意面 Carbonara",
+        "description": "罗马经典奶香蛋黄面"
+      },
+      {
+        "name": "提拉米苏 Tiramisu",
+        "description": "意式甜点代表"
+      },
+      {
+        "name": "冰淇淋 Gelato",
+        "description": "口感绵密，口味丰富"
+      }
+    ],
+    "funFacts": [
+      "意大利世界遗产数量长期居前",
+      "咖啡文化深入日常生活"
+    ],
+    "bestSeasons": "4-6 月和 9-10 月最宜出行。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "一般不强制；若账单含 coperto，满意再留 5-10% 即可。",
+        "cafe": "吧台喝咖啡通常不留，坐席可留少量零钱。",
+        "taxi": "多为凑整。",
+        "hotel": "可选 €1-2。",
+        "tour": "半日 €5-10，全日 €10-20。"
+      },
+      "customs": [
+        {
+          "title": "咖啡吧台更便宜",
+          "content": "同一杯咖啡坐席价常高于吧台价。"
+        },
+        {
+          "title": "教堂着装",
+          "content": "进入教堂需遮肩遮膝。"
+        },
+        {
+          "title": "晚餐时间偏晚",
+          "content": "很多餐厅 19:30 后才进入高峰。"
+        },
+        {
+          "title": "防扒提醒",
+          "content": "大站和热门景点地铁注意防盗。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Buongiorno",
+          "meaning": "你好"
+        },
+        {
+          "local": "Grazie",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Il conto, per favore",
+          "meaning": "请买单"
+        },
+        {
+          "local": "Parla inglese?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "LI": {
+    "name": "Liechtenstein",
+    "nameZh": "列支敦士登",
+    "flag": "🇱🇮",
+    "capital": "瓦杜兹",
+    "description": "列支敦士登是阿尔卑斯中的袖珍国家，节奏安静精致。适合 1-2 天慢游和山地轻徒步。",
+    "highlights": [
+      {
+        "name": "瓦杜兹城堡观景点",
+        "city": "瓦杜兹",
+        "type": "地标"
+      },
+      {
+        "name": "国家博物馆",
+        "city": "瓦杜兹",
+        "type": "博物馆"
+      },
+      {
+        "name": "艺术博物馆",
+        "city": "瓦杜兹",
+        "type": "博物馆"
+      },
+      {
+        "name": "马尔本滑雪区",
+        "city": "马尔本",
+        "type": "自然"
+      },
+      {
+        "name": "莱茵河谷步道",
+        "city": "沙恩",
+        "type": "自然"
+      },
+      {
+        "name": "王子葡萄园",
+        "city": "瓦杜兹",
+        "type": "自然"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "奶酪面 Käsknöpfle",
+        "description": "德语区经典风味"
+      },
+      {
+        "name": "玉米糊 Ribel",
+        "description": "本地传统主食"
+      },
+      {
+        "name": "烤香肠 Würstle",
+        "description": "常见小吃"
+      },
+      {
+        "name": "苹果甜点 Apfelküchle",
+        "description": "家常甜食"
+      }
+    ],
+    "funFacts": [
+      "列支敦士登没有机场",
+      "邮票收藏文化很有名"
+    ],
+    "bestSeasons": "5-9 月适合徒步，冬季适合雪上活动。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "服务费通常已含，凑整或 5% 即可。",
+        "cafe": "不强制。",
+        "taxi": "凑整即可。",
+        "hotel": "可选 CHF 1-2。",
+        "tour": "可选 CHF 5-10。"
+      },
+      "customs": [
+        {
+          "title": "与瑞士联动紧密",
+          "content": "货币和交通与瑞士衔接度高。"
+        },
+        {
+          "title": "周日营业较少",
+          "content": "周日可购物点位有限，提前采购。"
+        },
+        {
+          "title": "国家体量小",
+          "content": "核心景点可公交+步行完成。"
+        },
+        {
+          "title": "山地天气",
+          "content": "徒步前查看天气和步道信息。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Grüezi",
+          "meaning": "你好"
+        },
+        {
+          "local": "Danke",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Die Rechnung, bitte",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Sprechen Sie Englisch?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "LT": {
+    "name": "Lithuania",
+    "nameZh": "立陶宛",
+    "flag": "🇱🇹",
+    "capital": "维尔纽斯",
+    "description": "立陶宛拥有巴洛克老城、文艺街区和森林湖泊。维尔纽斯年轻有活力，适合慢节奏探索。",
+    "highlights": [
+      {
+        "name": "维尔纽斯老城",
+        "city": "维尔纽斯",
+        "type": "地标"
+      },
+      {
+        "name": "格迪米纳斯塔楼",
+        "city": "维尔纽斯",
+        "type": "地标"
+      },
+      {
+        "name": "乌祖皮斯区",
+        "city": "维尔纽斯",
+        "type": "地标"
+      },
+      {
+        "name": "特拉凯城堡",
+        "city": "特拉凯",
+        "type": "宫殿"
+      },
+      {
+        "name": "十字架山",
+        "city": "希奥利艾",
+        "type": "地标"
+      },
+      {
+        "name": "库尔斯沙嘴",
+        "city": "克莱佩达周边",
+        "type": "自然"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "土豆饺子 Cepelinai",
+        "description": "立陶宛国民料理"
+      },
+      {
+        "name": "冷甜菜汤 Šaltibarščiai",
+        "description": "夏季清爽汤品"
+      },
+      {
+        "name": "黑麦面包 Juoda duona",
+        "description": "传统主食"
+      },
+      {
+        "name": "蜂蜜蛋糕 Medaus tortas",
+        "description": "传统甜点"
+      }
+    ],
+    "funFacts": [
+      "维尔纽斯老城规模很大",
+      "立陶宛森林覆盖率较高"
+    ],
+    "bestSeasons": "5-9 月舒适，秋季树林色彩很美。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "常见 5-10%。",
+        "cafe": "可留零钱。",
+        "taxi": "凑整常见。",
+        "hotel": "可选 €1。",
+        "tour": "€5-10。"
+      },
+      "customs": [
+        {
+          "title": "老城安静时段",
+          "content": "晚间居民区注意音量。"
+        },
+        {
+          "title": "冬季路滑",
+          "content": "冬季路面结冰常见，建议防滑鞋。"
+        },
+        {
+          "title": "电子支付普及",
+          "content": "主要商户支持刷卡。"
+        },
+        {
+          "title": "历史场所礼仪",
+          "content": "纪念场馆内保持安静和尊重。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Laba diena",
+          "meaning": "你好"
+        },
+        {
+          "local": "Ačiū",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Sąskaitą, prašau",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Ar kalbate angliškai?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "LU": {
+    "name": "Luxembourg",
+    "nameZh": "卢森堡",
+    "flag": "🇱🇺",
+    "capital": "卢森堡市",
+    "description": "卢森堡虽小却精致，峡谷地形与古堡防御体系非常有辨识度。适合与比法德线路联游。",
+    "highlights": [
+      {
+        "name": "伯克炮台遗址",
+        "city": "卢森堡市",
+        "type": "地标"
+      },
+      {
+        "name": "康尼施步道",
+        "city": "卢森堡市",
+        "type": "地标"
+      },
+      {
+        "name": "大公宫",
+        "city": "卢森堡市",
+        "type": "宫殿"
+      },
+      {
+        "name": "维安登城堡",
+        "city": "维安登",
+        "type": "宫殿"
+      },
+      {
+        "name": "佩特罗斯峡谷",
+        "city": "卢森堡市",
+        "type": "自然"
+      },
+      {
+        "name": "阿登森林",
+        "city": "北部",
+        "type": "自然"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "土豆饼 Gromperekichelcher",
+        "description": "街头常见香脆小食"
+      },
+      {
+        "name": "熏猪颈 Judd mat Gaardebounen",
+        "description": "传统国民菜"
+      },
+      {
+        "name": "卢森堡饺子 Kniddelen",
+        "description": "面团料理配奶油"
+      },
+      {
+        "name": "苹果派 Quetschentaart",
+        "description": "甜点代表"
+      }
+    ],
+    "funFacts": [
+      "卢森堡公共交通全国免费",
+      "国家常用三种语言"
+    ],
+    "bestSeasons": "春末到初秋最适合徒步和古城漫游。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "账单多含服务费，满意可凑整或加 5%。",
+        "cafe": "一般不需要。",
+        "taxi": "凑整即可。",
+        "hotel": "可选 €1-2。",
+        "tour": "€5-10。"
+      },
+      "customs": [
+        {
+          "title": "公共交通免费",
+          "content": "全国公共交通二等车厢免费（跨境段除外）。"
+        },
+        {
+          "title": "多语环境",
+          "content": "卢森堡语/法语/德语并行，英语也常用。"
+        },
+        {
+          "title": "商务节奏快",
+          "content": "工作日午间热门餐厅建议提前订位。"
+        },
+        {
+          "title": "跨境通勤",
+          "content": "高峰期进出城道路可能拥堵。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Moien",
+          "meaning": "你好（卢森堡语）"
+        },
+        {
+          "local": "Merci",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "L’addition, s’il vous plaît",
+          "meaning": "请买单"
+        },
+        {
+          "local": "Schwätzt Dir Englesch?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "LV": {
+    "name": "Latvia",
+    "nameZh": "拉脱维亚",
+    "flag": "🇱🇻",
+    "capital": "里加",
+    "description": "拉脱维亚首都里加以新艺术建筑和波罗的海文化著称。城市小而精，节奏舒适。",
+    "highlights": [
+      {
+        "name": "里加老城",
+        "city": "里加",
+        "type": "地标"
+      },
+      {
+        "name": "黑头宫",
+        "city": "里加",
+        "type": "地标"
+      },
+      {
+        "name": "中央市场",
+        "city": "里加",
+        "type": "地标"
+      },
+      {
+        "name": "尤尔马拉海滩",
+        "city": "尤尔马拉",
+        "type": "海滨"
+      },
+      {
+        "name": "新艺术区",
+        "city": "里加",
+        "type": "地标"
+      },
+      {
+        "name": "高亚国家公园",
+        "city": "锡古尔达",
+        "type": "自然"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "黑麦面包 Rupjmaize",
+        "description": "波罗的海主食"
+      },
+      {
+        "name": "灰豌豆 Speķa zirņi",
+        "description": "传统节庆菜"
+      },
+      {
+        "name": "熏鱼 Smoked Sprats",
+        "description": "沿海经典风味"
+      },
+      {
+        "name": "冷汤 Aukstā zupa",
+        "description": "夏季清爽料理"
+      }
+    ],
+    "funFacts": [
+      "里加新艺术建筑密度在欧洲前列",
+      "拉脱维亚有长期歌唱节传统"
+    ],
+    "bestSeasons": "5-9 月最适合老城与海边联游。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "常见 5-10%，先看账单是否含服务费。",
+        "cafe": "可留零钱。",
+        "taxi": "凑整常见。",
+        "hotel": "可选 €1。",
+        "tour": "€5-10。"
+      },
+      "customs": [
+        {
+          "title": "冬季保暖",
+          "content": "海风较冷，冬季帽子手套很重要。"
+        },
+        {
+          "title": "老城礼仪",
+          "content": "宗教场所拍照先看告示。"
+        },
+        {
+          "title": "现金备用",
+          "content": "市集和个别小店备少量现金更方便。"
+        },
+        {
+          "title": "周末餐厅",
+          "content": "热门餐厅周末晚间建议预约。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Sveiki",
+          "meaning": "你好"
+        },
+        {
+          "local": "Paldies",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Rēķinu, lūdzu",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Vai jūs runājat angliski?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "MT": {
+    "name": "Malta",
+    "nameZh": "马耳他",
+    "flag": "🇲🇹",
+    "capital": "瓦莱塔",
+    "description": "马耳他是地中海小岛国，历史古城和海岸度假并重。瓦莱塔很适合慢步行，海边活动丰富。",
+    "highlights": [
+      {
+        "name": "瓦莱塔老城",
+        "city": "瓦莱塔",
+        "type": "地标"
+      },
+      {
+        "name": "圣约翰大教堂",
+        "city": "瓦莱塔",
+        "type": "地标"
+      },
+      {
+        "name": "蓝色泻湖",
+        "city": "科米诺岛",
+        "type": "海滨"
+      },
+      {
+        "name": "姆迪纳古城",
+        "city": "姆迪纳",
+        "type": "地标"
+      },
+      {
+        "name": "戈佐岛海岸",
+        "city": "戈佐岛",
+        "type": "自然"
+      },
+      {
+        "name": "三姐妹城",
+        "city": "科斯皮夸",
+        "type": "地标"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "兔肉炖菜 Stuffat tal-Fenek",
+        "description": "马耳他传统名菜"
+      },
+      {
+        "name": "马耳他馅饼 Pastizzi",
+        "description": "街头高人气点心"
+      },
+      {
+        "name": "海鲜汤 Aljotta",
+        "description": "地中海清爽汤品"
+      },
+      {
+        "name": "蜂蜜环 Qagħaq tal-Għasel",
+        "description": "节庆常见甜点"
+      }
+    ],
+    "funFacts": [
+      "马耳他年均日照超过 300 天",
+      "英语是官方语言之一"
+    ],
+    "bestSeasons": "4-6 月和 9-10 月最佳，盛夏更适合海岛度假。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "不少餐厅含服务费；未含时常见留 5-10%。",
+        "cafe": "可留零钱。",
+        "taxi": "凑整常见。",
+        "hotel": "可选 €1-2。",
+        "tour": "€5-10。"
+      },
+      "customs": [
+        {
+          "title": "英语普及",
+          "content": "英语在马耳他沟通基本无障碍。"
+        },
+        {
+          "title": "夏季日照强",
+          "content": "海边活动务必防晒补水。"
+        },
+        {
+          "title": "教堂着装",
+          "content": "参观宗教建筑建议遮肩遮膝。"
+        },
+        {
+          "title": "船班看海况",
+          "content": "前往戈佐岛等需留意风浪公告。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Hello / Bonsu",
+          "meaning": "你好"
+        },
+        {
+          "local": "Grazzi",
+          "meaning": "谢谢（马耳他语）"
+        },
+        {
+          "local": "The bill, please",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Do you speak English?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "NL": {
+    "name": "Netherlands",
+    "nameZh": "荷兰",
+    "flag": "🇳🇱",
+    "capital": "阿姆斯特丹",
+    "description": "荷兰以运河城市、设计文化和骑行生活闻名。城市间距离近，适合短时间多城联游。",
+    "highlights": [
+      {
+        "name": "运河环带",
+        "city": "阿姆斯特丹",
+        "type": "地标"
+      },
+      {
+        "name": "梵高博物馆",
+        "city": "阿姆斯特丹",
+        "type": "博物馆"
+      },
+      {
+        "name": "库肯霍夫公园",
+        "city": "利瑟",
+        "type": "自然"
+      },
+      {
+        "name": "小孩堤防风车村",
+        "city": "鹿特丹周边",
+        "type": "地标"
+      },
+      {
+        "name": "海牙和平宫",
+        "city": "海牙",
+        "type": "地标"
+      },
+      {
+        "name": "乌特勒支老运河",
+        "city": "乌特勒支",
+        "type": "地标"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "荷兰小煎饼 Poffertjes",
+        "description": "外焦内软的迷你甜点"
+      },
+      {
+        "name": "炸丸子 Bitterballen",
+        "description": "酒吧常见小食"
+      },
+      {
+        "name": "鲱鱼 Haring",
+        "description": "荷兰街头经典"
+      },
+      {
+        "name": "焦糖华夫 Stroopwafel",
+        "description": "热咖啡搭配甜点"
+      }
+    ],
+    "funFacts": [
+      "荷兰自行车数量常年超过人口",
+      "阿姆斯特丹运河列入世界遗产"
+    ],
+    "bestSeasons": "4-6 月花季最美，9 月初天气稳定。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "账单常已含服务费，满意可留 5-10% 或凑整。",
+        "cafe": "可不留，偶尔留零钱。",
+        "taxi": "凑整常见。",
+        "hotel": "非强制，可酌情 €1-2。",
+        "tour": "€5-10 常见。"
+      },
+      "customs": [
+        {
+          "title": "自行车优先",
+          "content": "过街和转弯先看自行车道。"
+        },
+        {
+          "title": "预约习惯",
+          "content": "热门餐厅和博物馆建议提前预约。"
+        },
+        {
+          "title": "电子支付主流",
+          "content": "很多店仅支持银行卡支付。"
+        },
+        {
+          "title": "公共规则明确",
+          "content": "大麻仅限合法场所，公共区域遵守地方条例。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Hallo",
+          "meaning": "你好"
+        },
+        {
+          "local": "Dank je wel",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Mag ik afrekenen?",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Spreekt u Engels?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "NO": {
+    "name": "Norway",
+    "nameZh": "挪威",
+    "flag": "🇳🇴",
+    "capital": "奥斯陆",
+    "description": "挪威以峡湾和山海地貌闻名。城市不大但自然景观非常震撼，适合户外和摄影旅行。",
+    "highlights": [
+      {
+        "name": "盖朗厄尔峡湾",
+        "city": "盖朗厄尔",
+        "type": "自然"
+      },
+      {
+        "name": "布吕根码头",
+        "city": "卑尔根",
+        "type": "地标"
+      },
+      {
+        "name": "布道石",
+        "city": "斯塔万格",
+        "type": "自然"
+      },
+      {
+        "name": "奥斯陆歌剧院",
+        "city": "奥斯陆",
+        "type": "地标"
+      },
+      {
+        "name": "松恩峡湾",
+        "city": "弗洛姆",
+        "type": "自然"
+      },
+      {
+        "name": "特罗姆瑟极光观测",
+        "city": "特罗姆瑟",
+        "type": "自然"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "挪威三文鱼 Salmon",
+        "description": "新鲜海产代表"
+      },
+      {
+        "name": "鳕鱼干 Klippfisk",
+        "description": "传统渔业风味"
+      },
+      {
+        "name": "肉丸 Kjøttkaker",
+        "description": "北欧家常菜"
+      },
+      {
+        "name": "棕色奶酪 Brunost",
+        "description": "带焦糖香味奶酪"
+      }
+    ],
+    "funFacts": [
+      "挪威海岸线非常曲折",
+      "北部冬季可见极夜现象"
+    ],
+    "bestSeasons": "6-9 月适合峡湾，11-3 月适合极光。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "通常不必给，满意可留 5%。",
+        "cafe": "一般不需要。",
+        "taxi": "不强制，凑整即可。",
+        "hotel": "通常无需。",
+        "tour": "可选 50-100 NOK。"
+      },
+      "customs": [
+        {
+          "title": "户外文化",
+          "content": "徒步和自然活动普及，注意不留垃圾。"
+        },
+        {
+          "title": "酒精管制",
+          "content": "高酒精饮品主要在 Vinmonopolet 销售。"
+        },
+        {
+          "title": "高物价",
+          "content": "餐饮和交通费用较高，建议提前预算。"
+        },
+        {
+          "title": "天气多变",
+          "content": "峡湾和山区天气变化快，备防雨防风层。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Hei",
+          "meaning": "你好"
+        },
+        {
+          "local": "Takk",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Regningen, takk",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Snakker du engelsk?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112（警察）；113（急救）"
+    }
+  },
+  "PL": {
+    "name": "Poland",
+    "nameZh": "波兰",
+    "flag": "🇵🇱",
+    "capital": "华沙",
+    "description": "波兰城市兼具历史厚度与现代活力。旅行预算友好，适合停留更久。",
+    "highlights": [
+      {
+        "name": "华沙老城",
+        "city": "华沙",
+        "type": "地标"
+      },
+      {
+        "name": "瓦维尔城堡",
+        "city": "克拉科夫",
+        "type": "宫殿"
+      },
+      {
+        "name": "中央集市广场",
+        "city": "克拉科夫",
+        "type": "地标"
+      },
+      {
+        "name": "马尔堡城堡",
+        "city": "马尔堡",
+        "type": "宫殿"
+      },
+      {
+        "name": "团结工会遗址",
+        "city": "格但斯克",
+        "type": "博物馆"
+      },
+      {
+        "name": "奥斯维辛纪念馆",
+        "city": "奥斯威辛",
+        "type": "博物馆"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "波兰饺子 Pierogi",
+        "description": "可甜可咸的国民料理"
+      },
+      {
+        "name": "酸菜炖肉 Bigos",
+        "description": "传统冬季炖菜"
+      },
+      {
+        "name": "红菜汤 Barszcz",
+        "description": "东欧风味汤品"
+      },
+      {
+        "name": "炸猪排 Kotlet schabowy",
+        "description": "家常主菜代表"
+      }
+    ],
+    "funFacts": [
+      "华沙老城在战后重建并列入世界遗产",
+      "波兰琥珀文化历史悠久"
+    ],
+    "bestSeasons": "5-6 月与 9 月舒适，冬季较冷但节庆氛围好。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "常见 10% 左右。",
+        "cafe": "可留零钱。",
+        "taxi": "凑整常见，App 更透明。",
+        "hotel": "可选 5-10 PLN。",
+        "tour": "20-50 PLN/人视时长。"
+      },
+      "customs": [
+        {
+          "title": "周日购物限制",
+          "content": "多数周日大型超市关闭，便利店例外。"
+        },
+        {
+          "title": "历史场所礼仪",
+          "content": "在纪念馆保持安静和尊重。"
+        },
+        {
+          "title": "冬季保暖",
+          "content": "冬季风大体感低，注意保暖层。"
+        },
+        {
+          "title": "交通打票",
+          "content": "上车后确认是否需打票，查票严格。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Dzień dobry",
+          "meaning": "你好"
+        },
+        {
+          "local": "Dziękuję",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Rachunek, proszę",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Czy mówi Pan/Pani po angielsku?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "PT": {
+    "name": "Portugal",
+    "nameZh": "葡萄牙",
+    "flag": "🇵🇹",
+    "capital": "里斯本",
+    "description": "葡萄牙拥有温暖海岸、复古城市和友好的旅行成本。里斯本与波尔图气质鲜明，阿尔加维适合度假。",
+    "highlights": [
+      {
+        "name": "贝伦塔",
+        "city": "里斯本",
+        "type": "地标"
+      },
+      {
+        "name": "阿尔法玛老城",
+        "city": "里斯本",
+        "type": "地标"
+      },
+      {
+        "name": "路易一世大桥",
+        "city": "波尔图",
+        "type": "地标"
+      },
+      {
+        "name": "佩纳宫",
+        "city": "辛特拉",
+        "type": "宫殿"
+      },
+      {
+        "name": "杜罗河谷",
+        "city": "波尔图周边",
+        "type": "自然"
+      },
+      {
+        "name": "法鲁海岸潟湖",
+        "city": "法鲁",
+        "type": "海滨"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "葡式蛋挞 Pastel de Nata",
+        "description": "外酥内嫩的国民甜点"
+      },
+      {
+        "name": "鳕鱼料理 Bacalhau",
+        "description": "葡萄牙人最爱的鱼类"
+      },
+      {
+        "name": "海鲜饭 Arroz de Marisco",
+        "description": "浓郁海味米饭"
+      },
+      {
+        "name": "炭烤沙丁鱼 Sardinhas Assadas",
+        "description": "夏季节庆常见菜"
+      }
+    ],
+    "funFacts": [
+      "葡萄牙是航海时代重要发源地",
+      "波尔图是波特酒的故乡"
+    ],
+    "bestSeasons": "4-6 月和 9-10 月最适宜。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "不强制，满意可留 5-10%。",
+        "cafe": "一般留少量零钱。",
+        "taxi": "凑整即可。",
+        "hotel": "可选 €1-2。",
+        "tour": "半日 €5-10，全日 €10-20。"
+      },
+      "customs": [
+        {
+          "title": "开胃菜收费",
+          "content": "桌上面包、橄榄、奶酪通常按食用收费。"
+        },
+        {
+          "title": "晚餐偏晚",
+          "content": "多数餐厅 19:30 后更热闹。"
+        },
+        {
+          "title": "坡道路面",
+          "content": "里斯本石板坡多，雨天注意防滑。"
+        },
+        {
+          "title": "电车拥挤",
+          "content": "热门线路如 28E 易拥挤，注意防盗。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Olá",
+          "meaning": "你好"
+        },
+        {
+          "local": "Obrigado/Obrigada",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "A conta, por favor",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Fala inglês?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "SE": {
+    "name": "Sweden",
+    "nameZh": "瑞典",
+    "flag": "🇸🇪",
+    "capital": "斯德哥尔摩",
+    "description": "瑞典结合北欧设计感与自然生活方式。夏季白昼长，非常适合城市+户外结合行程。",
+    "highlights": [
+      {
+        "name": "老城 Gamla Stan",
+        "city": "斯德哥尔摩",
+        "type": "地标"
+      },
+      {
+        "name": "瓦萨博物馆",
+        "city": "斯德哥尔摩",
+        "type": "博物馆"
+      },
+      {
+        "name": "群岛航线",
+        "city": "斯德哥尔摩",
+        "type": "自然"
+      },
+      {
+        "name": "利瑟贝里乐园",
+        "city": "哥德堡",
+        "type": "地标"
+      },
+      {
+        "name": "阿比斯库国家公园",
+        "city": "拉普兰",
+        "type": "自然"
+      },
+      {
+        "name": "市政厅",
+        "city": "斯德哥尔摩",
+        "type": "地标"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "瑞典肉丸 Köttbullar",
+        "description": "最具代表性的北欧美食"
+      },
+      {
+        "name": "腌鲱鱼 Pickled Herring",
+        "description": "节庆餐桌常见"
+      },
+      {
+        "name": "肉桂卷 Kanelbulle",
+        "description": "Fika 文化灵魂点心"
+      },
+      {
+        "name": "三明治蛋糕 Smörgåstårta",
+        "description": "北欧派对热门菜"
+      }
+    ],
+    "funFacts": [
+      "瑞典有 Fika 咖啡休息文化",
+      "斯德哥尔摩由众多岛屿组成"
+    ],
+    "bestSeasons": "6-8 月天气最佳；冬季适合雪景与极光路线。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "非强制，刷卡界面可选 5-10%。",
+        "cafe": "通常不需要。",
+        "taxi": "凑整即可。",
+        "hotel": "通常无需。",
+        "tour": "可选 50-100 SEK。"
+      },
+      "customs": [
+        {
+          "title": "排队与空间感",
+          "content": "瑞典重视排队和个人空间。"
+        },
+        {
+          "title": "无现金社会",
+          "content": "很多门店不收现金，带好可刷卡设备。"
+        },
+        {
+          "title": "Fika 文化",
+          "content": "下午咖啡与甜点休息是日常社交。"
+        },
+        {
+          "title": "环保分类",
+          "content": "垃圾分类严格，按标识投放。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Hej",
+          "meaning": "你好"
+        },
+        {
+          "local": "Tack",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Notan, tack",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Pratar du engelska?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "SI": {
+    "name": "Slovenia",
+    "nameZh": "斯洛文尼亚",
+    "flag": "🇸🇮",
+    "capital": "卢布尔雅那",
+    "description": "斯洛文尼亚是“高密度自然景观”国家。湖区、溶洞、海岸和古城距离都很近，适合轻松慢游。",
+    "highlights": [
+      {
+        "name": "布莱德湖",
+        "city": "布莱德",
+        "type": "自然"
+      },
+      {
+        "name": "卢布尔雅那城堡",
+        "city": "卢布尔雅那",
+        "type": "宫殿"
+      },
+      {
+        "name": "波斯托伊纳溶洞",
+        "city": "波斯托伊纳",
+        "type": "自然"
+      },
+      {
+        "name": "皮兰古城",
+        "city": "皮兰",
+        "type": "海滨"
+      },
+      {
+        "name": "特里格拉夫国家公园",
+        "city": "西北部",
+        "type": "自然"
+      },
+      {
+        "name": "龙桥",
+        "city": "卢布尔雅那",
+        "type": "地标"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "香肠 Kranjska klobasa",
+        "description": "斯洛文尼亚代表香肠"
+      },
+      {
+        "name": "核桃卷 Potica",
+        "description": "节日常见甜点"
+      },
+      {
+        "name": "布莱德奶油蛋糕 Kremšnita",
+        "description": "湖区名甜点"
+      },
+      {
+        "name": "饺子 Štruklji",
+        "description": "奶酪或香草馅点心"
+      }
+    ],
+    "funFacts": [
+      "全国森林覆盖率很高",
+      "首都到山地和海边都很近"
+    ],
+    "bestSeasons": "5-9 月最适合湖区和徒步，冬季可滑雪。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "不强制，常见 5-10%。",
+        "cafe": "留零钱即可。",
+        "taxi": "凑整常见。",
+        "hotel": "可选 €1-2。",
+        "tour": "€5-10。"
+      },
+      "customs": [
+        {
+          "title": "重视自然保护",
+          "content": "徒步和湖区活动请走官方步道。"
+        },
+        {
+          "title": "城市节奏慢",
+          "content": "老城以步行为主，夜间相对安静。"
+        },
+        {
+          "title": "旺季预约",
+          "content": "湖区和洞穴景点旺季建议提前订票。"
+        },
+        {
+          "title": "支付方式",
+          "content": "城市刷卡方便，山区备少量现金。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Dober dan",
+          "meaning": "你好"
+        },
+        {
+          "local": "Hvala",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Račun, prosim",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Govorite angleško?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  },
+  "SK": {
+    "name": "Slovakia",
+    "nameZh": "斯洛伐克",
+    "flag": "🇸🇰",
+    "capital": "布拉迪斯拉发",
+    "description": "斯洛伐克拥有多瑙河边历史城市和高塔特拉山自然景观。适合和维也纳、布达佩斯连线游玩。",
+    "highlights": [
+      {
+        "name": "布拉迪斯拉发城堡",
+        "city": "布拉迪斯拉发",
+        "type": "宫殿"
+      },
+      {
+        "name": "旧城区",
+        "city": "布拉迪斯拉发",
+        "type": "地标"
+      },
+      {
+        "name": "高塔特拉山",
+        "city": "波普拉德",
+        "type": "自然"
+      },
+      {
+        "name": "斯皮什城堡",
+        "city": "斯皮什",
+        "type": "宫殿"
+      },
+      {
+        "name": "多瑙河步道",
+        "city": "布拉迪斯拉发",
+        "type": "地标"
+      },
+      {
+        "name": "冰洞",
+        "city": "多布希纳",
+        "type": "自然"
+      }
+    ],
+    "cuisine": [
+      {
+        "name": "羊奶酪土豆团 Bryndzové halušky",
+        "description": "斯洛伐克国民菜"
+      },
+      {
+        "name": "卷心菜汤 Kapustnica",
+        "description": "冬季传统汤"
+      },
+      {
+        "name": "炸奶酪 Vyprážaný syr",
+        "description": "中欧常见小吃"
+      },
+      {
+        "name": "蜂蜜蛋糕 Medovník",
+        "description": "节庆甜点"
+      }
+    ],
+    "funFacts": [
+      "斯洛伐克城堡数量很多",
+      "首都距离维也纳非常近"
+    ],
+    "bestSeasons": "春秋适合城市+山地结合，冬季适合滑雪。",
+    "etiquette": {
+      "tipping": {
+        "restaurant": "常见 5-10%。",
+        "cafe": "留零钱即可。",
+        "taxi": "凑整或 5%。",
+        "hotel": "可选 €1。",
+        "tour": "€5-10。"
+      },
+      "customs": [
+        {
+          "title": "老城步行友好",
+          "content": "布拉迪斯拉发老城景点集中，步行为主。"
+        },
+        {
+          "title": "交通查票",
+          "content": "电车公交随机查票，务必确认车票生效。"
+        },
+        {
+          "title": "跨境通勤常见",
+          "content": "与维也纳往返班次多，节假日先查时刻。"
+        },
+        {
+          "title": "现金备用",
+          "content": "主流商户可刷卡，小店备现金更稳妥。"
+        }
+      ],
+      "usefulPhrases": [
+        {
+          "local": "Dobrý deň",
+          "meaning": "你好"
+        },
+        {
+          "local": "Ďakujem",
+          "meaning": "谢谢"
+        },
+        {
+          "local": "Účet, prosím",
+          "meaning": "请结账"
+        },
+        {
+          "local": "Hovoríte po anglicky?",
+          "meaning": "你会说英语吗？"
+        }
+      ],
+      "emergencyNumber": "112"
+    }
+  }
+}

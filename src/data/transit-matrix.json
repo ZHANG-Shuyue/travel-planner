@@ -1,0 +1,4916 @@
+[
+  {
+    "from": "aarhus",
+    "to": "bergen",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 43m",
+        "estimatedCost": 101,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 13m",
+        "estimatedCost": 75,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "7h 6m",
+        "estimatedCost": 43,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "aarhus",
+    "to": "berlin",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 36m",
+        "estimatedCost": 90,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 46m",
+        "estimatedCost": 66,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 57m",
+        "estimatedCost": 37,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "aarhus",
+    "to": "copenhagen",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 21m",
+        "estimatedCost": 36,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 19m",
+        "estimatedCost": 19,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "aarhus",
+    "to": "gothenburg",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 34m",
+        "estimatedCost": 40,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 52m",
+        "estimatedCost": 22,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "aarhus",
+    "to": "hamburg",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 23m",
+        "estimatedCost": 70,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "1h 59m",
+        "estimatedCost": 49,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 57m",
+        "estimatedCost": 27,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "aarhus",
+    "to": "oslo",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 33m",
+        "estimatedCost": 85,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 36m",
+        "estimatedCost": 62,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 30m",
+        "estimatedCost": 35,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "aarhus",
+    "to": "reykjavik",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "4h 35m",
+        "estimatedCost": 270,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "amalfi",
+    "to": "naples",
+    "methods": [
+      {
+        "type": "bus",
+        "duration": "1h 30m",
+        "estimatedCost": 10,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 30m",
+        "estimatedCost": 8,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "amalfi",
+    "to": "rome",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "3h 10m",
+        "estimatedCost": 36,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 10m",
+        "estimatedCost": 25,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "antwerp",
+    "to": "amsterdam",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 20m",
+        "estimatedCost": 20,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 20m",
+        "estimatedCost": 14,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "amsterdam",
+    "to": "berlin",
+    "methods": [
+      {
+        "type": "train",
+        "name": "ICE/IC",
+        "duration": "6h 15m",
+        "estimatedCost": 95,
+        "costRange": "€50-150",
+        "recommended": true
+      },
+      {
+        "type": "flight",
+        "name": "KLM / easyJet",
+        "duration": "1h 20m",
+        "estimatedCost": 110,
+        "costRange": "€65-190",
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "amsterdam",
+    "to": "bruges",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 25m",
+        "estimatedCost": 37,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 31m",
+        "estimatedCost": 20,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "amsterdam",
+    "to": "brussels",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 25m",
+        "estimatedCost": 37,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 31m",
+        "estimatedCost": 20,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "amsterdam",
+    "to": "cologne",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 37m",
+        "estimatedCost": 41,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 0m",
+        "estimatedCost": 23,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "amsterdam",
+    "to": "ghent",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 24m",
+        "estimatedCost": 37,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 26m",
+        "estimatedCost": 20,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "amsterdam",
+    "to": "hamburg",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 29m",
+        "estimatedCost": 79,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 20m",
+        "estimatedCost": 57,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 51m",
+        "estimatedCost": 32,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "amsterdam",
+    "to": "london",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 28m",
+        "estimatedCost": 78,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 18m",
+        "estimatedCost": 56,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 46m",
+        "estimatedCost": 31,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "paris",
+    "to": "amsterdam",
+    "methods": [
+      {
+        "type": "train",
+        "name": "Thalys",
+        "duration": "3h 20m",
+        "estimatedCost": 110,
+        "costRange": "€45-160",
+        "recommended": true
+      },
+      {
+        "type": "flight",
+        "name": "KLM / Air France",
+        "duration": "1h 20m",
+        "estimatedCost": 120,
+        "costRange": "€70-200",
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "amsterdam",
+    "to": "rotterdam",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "0h 52m",
+        "estimatedCost": 26,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 6m",
+        "estimatedCost": 13,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "the-hague",
+    "to": "amsterdam",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "50m",
+        "estimatedCost": 11,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "50m",
+        "estimatedCost": 8,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "amsterdam",
+    "to": "utrecht",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "0h 46m",
+        "estimatedCost": 23,
+        "recommended": false
+      },
+      {
+        "type": "bus",
+        "duration": "0h 49m",
+        "estimatedCost": 12,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "antwerp",
+    "to": "bruges",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 25m",
+        "estimatedCost": 14,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 25m",
+        "estimatedCost": 9,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "antwerp",
+    "to": "brussels",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "45m",
+        "estimatedCost": 10,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "45m",
+        "estimatedCost": 8,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "athens",
+    "to": "dubrovnik",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 56m",
+        "estimatedCost": 120,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 57m",
+        "estimatedCost": 90,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "heraklion",
+    "to": "athens",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "55m",
+        "estimatedCost": 50,
+        "recommended": true
+      },
+      {
+        "type": "train",
+        "duration": "6h 0m",
+        "estimatedCost": 40,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "athens",
+    "to": "london",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "5h 9m",
+        "estimatedCost": 322,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "athens",
+    "to": "naples",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 9m",
+        "estimatedCost": 140,
+        "recommended": true
+      },
+      {
+        "type": "train",
+        "duration": "4h 45m",
+        "estimatedCost": 107,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "athens",
+    "to": "rome",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 23m",
+        "estimatedCost": 161,
+        "recommended": true
+      },
+      {
+        "type": "train",
+        "duration": "5h 36m",
+        "estimatedCost": 125,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "athens",
+    "to": "santorini",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 18m",
+        "estimatedCost": 63,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "1h 43m",
+        "estimatedCost": 43,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 15m",
+        "estimatedCost": 24,
+        "recommended": false
+      },
+      {
+        "type": "ferry",
+        "duration": "6h 0m",
+        "estimatedCost": 44,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "athens",
+    "to": "thessaloniki",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 24m",
+        "estimatedCost": 71,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 3m",
+        "estimatedCost": 50,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 6m",
+        "estimatedCost": 28,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "athens",
+    "to": "valletta",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 7m",
+        "estimatedCost": 137,
+        "recommended": true
+      },
+      {
+        "type": "train",
+        "duration": "4h 39m",
+        "estimatedCost": 105,
+        "recommended": false
+      },
+      {
+        "type": "ferry",
+        "duration": "19h 42m",
+        "estimatedCost": 93,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bilbao",
+    "to": "barcelona",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "1h 10m",
+        "estimatedCost": 45,
+        "recommended": true
+      },
+      {
+        "type": "train",
+        "duration": "6h 0m",
+        "estimatedCost": 36,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "barcelona",
+    "to": "geneva",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 49m",
+        "estimatedCost": 110,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 34m",
+        "estimatedCost": 82,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "barcelona",
+    "to": "granada",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 54m",
+        "estimatedCost": 117,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 51m",
+        "estimatedCost": 88,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "barcelona",
+    "to": "london",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 30m",
+        "estimatedCost": 172,
+        "recommended": true
+      },
+      {
+        "type": "train",
+        "duration": "6h 1m",
+        "estimatedCost": 134,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "barcelona",
+    "to": "lyon",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 42m",
+        "estimatedCost": 99,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 8m",
+        "estimatedCost": 73,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "6h 53m",
+        "estimatedCost": 42,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "barcelona",
+    "to": "madrid",
+    "methods": [
+      {
+        "type": "train",
+        "name": "AVE 高铁",
+        "duration": "2h 45m",
+        "estimatedCost": 85,
+        "costRange": "€40-140",
+        "recommended": true
+      },
+      {
+        "type": "flight",
+        "name": "Iberia / Vueling",
+        "duration": "1h 25m",
+        "estimatedCost": 90,
+        "costRange": "€45-150",
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "barcelona",
+    "to": "marseille",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 27m",
+        "estimatedCost": 76,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 13m",
+        "estimatedCost": 54,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 31m",
+        "estimatedCost": 30,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "barcelona",
+    "to": "nice",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 39m",
+        "estimatedCost": 94,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 56m",
+        "estimatedCost": 69,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "6h 23m",
+        "estimatedCost": 39,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "san-sebastian",
+    "to": "barcelona",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "1h 15m",
+        "estimatedCost": 48,
+        "recommended": true
+      },
+      {
+        "type": "train",
+        "duration": "6h 0m",
+        "estimatedCost": 38,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "barcelona",
+    "to": "seville",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 5m",
+        "estimatedCost": 135,
+        "recommended": true
+      },
+      {
+        "type": "train",
+        "duration": "4h 33m",
+        "estimatedCost": 103,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "barcelona",
+    "to": "valencia",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 24m",
+        "estimatedCost": 71,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 3m",
+        "estimatedCost": 50,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 6m",
+        "estimatedCost": 28,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "colmar",
+    "to": "basel",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "45m",
+        "estimatedCost": 18,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "45m",
+        "estimatedCost": 12,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bergen",
+    "to": "copenhagen",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 53m",
+        "estimatedCost": 116,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 49m",
+        "estimatedCost": 88,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "bergen",
+    "to": "gothenburg",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 38m",
+        "estimatedCost": 93,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 54m",
+        "estimatedCost": 68,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "6h 17m",
+        "estimatedCost": 39,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bergen",
+    "to": "oslo",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 24m",
+        "estimatedCost": 72,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 3m",
+        "estimatedCost": 51,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 7m",
+        "estimatedCost": 28,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bergen",
+    "to": "reykjavik",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 55m",
+        "estimatedCost": 210,
+        "recommended": true
+      },
+      {
+        "type": "ferry",
+        "duration": "33h 12m",
+        "estimatedCost": 142,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bergen",
+    "to": "stockholm",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 57m",
+        "estimatedCost": 121,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "4h 2m",
+        "estimatedCost": 92,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "tromso",
+    "to": "bergen",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 0m",
+        "estimatedCost": 88,
+        "recommended": true
+      },
+      {
+        "type": "train",
+        "duration": "6h 0m",
+        "estimatedCost": 70,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "berlin",
+    "to": "brno",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 34m",
+        "estimatedCost": 87,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 40m",
+        "estimatedCost": 63,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 41m",
+        "estimatedCost": 36,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "berlin",
+    "to": "cologne",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 38m",
+        "estimatedCost": 92,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 52m",
+        "estimatedCost": 68,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "6h 13m",
+        "estimatedCost": 39,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "berlin",
+    "to": "copenhagen",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 28m",
+        "estimatedCost": 78,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 17m",
+        "estimatedCost": 56,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 44m",
+        "estimatedCost": 31,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "dresden",
+    "to": "berlin",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 50m",
+        "estimatedCost": 28,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 50m",
+        "estimatedCost": 19,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "berlin",
+    "to": "frankfurt",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 33m",
+        "estimatedCost": 86,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 37m",
+        "estimatedCost": 62,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 34m",
+        "estimatedCost": 35,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "berlin",
+    "to": "gdansk",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 32m",
+        "estimatedCost": 83,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 31m",
+        "estimatedCost": 60,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 18m",
+        "estimatedCost": 34,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "berlin",
+    "to": "hamburg",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 20m",
+        "estimatedCost": 66,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "1h 49m",
+        "estimatedCost": 46,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 31m",
+        "estimatedCost": 25,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "berlin",
+    "to": "london",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 14m",
+        "estimatedCost": 147,
+        "recommended": true
+      },
+      {
+        "type": "train",
+        "duration": "5h 2m",
+        "estimatedCost": 113,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "berlin",
+    "to": "munich",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 40m",
+        "estimatedCost": 96,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 0m",
+        "estimatedCost": 70,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "6h 33m",
+        "estimatedCost": 40,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "berlin",
+    "to": "prague",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 22m",
+        "estimatedCost": 69,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "1h 56m",
+        "estimatedCost": 48,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 50m",
+        "estimatedCost": 27,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "berlin",
+    "to": "warsaw",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 41m",
+        "estimatedCost": 97,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 4m",
+        "estimatedCost": 72,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "6h 42m",
+        "estimatedCost": 41,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bern",
+    "to": "geneva",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 13m",
+        "estimatedCost": 33,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 59m",
+        "estimatedCost": 18,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "interlaken",
+    "to": "bern",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "55m",
+        "estimatedCost": 16,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "55m",
+        "estimatedCost": 11,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "lucerne",
+    "to": "bern",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 0m",
+        "estimatedCost": 18,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 0m",
+        "estimatedCost": 12,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bern",
+    "to": "lyon",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 45m",
+        "estimatedCost": 44,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 19m",
+        "estimatedCost": 24,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bern",
+    "to": "marseille",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 35m",
+        "estimatedCost": 87,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 41m",
+        "estimatedCost": 64,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 44m",
+        "estimatedCost": 36,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bern",
+    "to": "milan",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 37m",
+        "estimatedCost": 41,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 0m",
+        "estimatedCost": 23,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bern",
+    "to": "nice",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 28m",
+        "estimatedCost": 78,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 19m",
+        "estimatedCost": 56,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 48m",
+        "estimatedCost": 32,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bern",
+    "to": "strasbourg",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 28m",
+        "estimatedCost": 38,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 37m",
+        "estimatedCost": 21,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bern",
+    "to": "vaduz",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 21m",
+        "estimatedCost": 36,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 20m",
+        "estimatedCost": 20,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bern",
+    "to": "zurich",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 3m",
+        "estimatedCost": 30,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 34m",
+        "estimatedCost": 16,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bordeaux",
+    "to": "bilbao",
+    "methods": [
+      {
+        "type": "bus",
+        "duration": "4h 0m",
+        "estimatedCost": 36,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 0m",
+        "estimatedCost": 25,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bilbao",
+    "to": "madrid",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "1h 5m",
+        "estimatedCost": 42,
+        "recommended": true
+      },
+      {
+        "type": "train",
+        "duration": "6h 0m",
+        "estimatedCost": 33,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bilbao",
+    "to": "san-sebastian",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "2h 35m",
+        "estimatedCost": 18,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 35m",
+        "estimatedCost": 12,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bled",
+    "to": "ljubljana",
+    "methods": [
+      {
+        "type": "bus",
+        "duration": "55m",
+        "estimatedCost": 8,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "55m",
+        "estimatedCost": 8,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bled",
+    "to": "salzburg",
+    "methods": [
+      {
+        "type": "bus",
+        "duration": "3h 20m",
+        "estimatedCost": 24,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 20m",
+        "estimatedCost": 16,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bled",
+    "to": "vienna",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "5h 10m",
+        "estimatedCost": 36,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 10m",
+        "estimatedCost": 25,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bologna",
+    "to": "florence",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "37m",
+        "estimatedCost": 20,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "37m",
+        "estimatedCost": 14,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bologna",
+    "to": "milan",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 5m",
+        "estimatedCost": 24,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 5m",
+        "estimatedCost": 16,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bologna",
+    "to": "venice",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 35m",
+        "estimatedCost": 28,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 35m",
+        "estimatedCost": 19,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bordeaux",
+    "to": "lyon",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "4h 35m",
+        "estimatedCost": 68,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 35m",
+        "estimatedCost": 47,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bordeaux",
+    "to": "paris",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "2h 10m",
+        "estimatedCost": 45,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 10m",
+        "estimatedCost": 31,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bratislava",
+    "to": "brno",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 11m",
+        "estimatedCost": 32,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 53m",
+        "estimatedCost": 17,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bratislava",
+    "to": "budapest",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 22m",
+        "estimatedCost": 36,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 22m",
+        "estimatedCost": 20,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bratislava",
+    "to": "debrecen",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 27m",
+        "estimatedCost": 76,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 14m",
+        "estimatedCost": 54,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 36m",
+        "estimatedCost": 31,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bratislava",
+    "to": "krakow",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 23m",
+        "estimatedCost": 71,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 1m",
+        "estimatedCost": 50,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 1m",
+        "estimatedCost": 28,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bratislava",
+    "to": "prague",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 23m",
+        "estimatedCost": 70,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "1h 59m",
+        "estimatedCost": 49,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 56m",
+        "estimatedCost": 27,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bratislava",
+    "to": "vienna",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "0h 52m",
+        "estimatedCost": 25,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 4m",
+        "estimatedCost": 13,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bratislava",
+    "to": "zagreb",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 22m",
+        "estimatedCost": 68,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "1h 54m",
+        "estimatedCost": 47,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 44m",
+        "estimatedCost": 26,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "brno",
+    "to": "budapest",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 21m",
+        "estimatedCost": 66,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "1h 50m",
+        "estimatedCost": 46,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 35m",
+        "estimatedCost": 26,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "cesky-krumlov",
+    "to": "brno",
+    "methods": [
+      {
+        "type": "bus",
+        "duration": "3h 0m",
+        "estimatedCost": 18,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 0m",
+        "estimatedCost": 12,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "brno",
+    "to": "debrecen",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 33m",
+        "estimatedCost": 85,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 34m",
+        "estimatedCost": 61,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 27m",
+        "estimatedCost": 35,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "brno",
+    "to": "krakow",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 20m",
+        "estimatedCost": 66,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "1h 50m",
+        "estimatedCost": 46,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 34m",
+        "estimatedCost": 26,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "brno",
+    "to": "prague",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 29m",
+        "estimatedCost": 38,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 39m",
+        "estimatedCost": 21,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "brno",
+    "to": "vienna",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 8m",
+        "estimatedCost": 31,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 45m",
+        "estimatedCost": 17,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "brno",
+    "to": "warsaw",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 36m",
+        "estimatedCost": 90,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 47m",
+        "estimatedCost": 66,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 59m",
+        "estimatedCost": 37,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bruges",
+    "to": "brussels",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 1m",
+        "estimatedCost": 29,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 29m",
+        "estimatedCost": 15,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bruges",
+    "to": "cologne",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 21m",
+        "estimatedCost": 67,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "1h 51m",
+        "estimatedCost": 46,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 36m",
+        "estimatedCost": 26,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bruges",
+    "to": "ghent",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "0h 47m",
+        "estimatedCost": 24,
+        "recommended": false
+      },
+      {
+        "type": "bus",
+        "duration": "0h 52m",
+        "estimatedCost": 12,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "bruges",
+    "to": "paris",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 21m",
+        "estimatedCost": 67,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "1h 53m",
+        "estimatedCost": 47,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 41m",
+        "estimatedCost": 26,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bruges",
+    "to": "rotterdam",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 10m",
+        "estimatedCost": 32,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 50m",
+        "estimatedCost": 17,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "bruges",
+    "to": "utrecht",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 23m",
+        "estimatedCost": 36,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 24m",
+        "estimatedCost": 20,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "brussels",
+    "to": "cologne",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 28m",
+        "estimatedCost": 38,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 38m",
+        "estimatedCost": 21,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "brussels",
+    "to": "frankfurt",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 25m",
+        "estimatedCost": 73,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 7m",
+        "estimatedCost": 52,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 16m",
+        "estimatedCost": 29,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "brussels",
+    "to": "ghent",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "0h 50m",
+        "estimatedCost": 25,
+        "recommended": false
+      },
+      {
+        "type": "bus",
+        "duration": "1h 1m",
+        "estimatedCost": 13,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "brussels",
+    "to": "london",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 25m",
+        "estimatedCost": 73,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 8m",
+        "estimatedCost": 52,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 19m",
+        "estimatedCost": 29,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "brussels",
+    "to": "luxembourg-city",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 29m",
+        "estimatedCost": 39,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 41m",
+        "estimatedCost": 21,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "paris",
+    "to": "brussels",
+    "methods": [
+      {
+        "type": "train",
+        "name": "Thalys",
+        "duration": "1h 25m",
+        "estimatedCost": 70,
+        "costRange": "€35-120",
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "name": "FlixBus",
+        "duration": "4h",
+        "estimatedCost": 28,
+        "costRange": "€15-45",
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "brussels",
+    "to": "rotterdam",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 10m",
+        "estimatedCost": 32,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 52m",
+        "estimatedCost": 17,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "budapest",
+    "to": "debrecen",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 32m",
+        "estimatedCost": 39,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 46m",
+        "estimatedCost": 22,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "budapest",
+    "to": "krakow",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 23m",
+        "estimatedCost": 70,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 0m",
+        "estimatedCost": 49,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 58m",
+        "estimatedCost": 28,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "budapest",
+    "to": "london",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 54m",
+        "estimatedCost": 209,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "vienna",
+    "to": "budapest",
+    "methods": [
+      {
+        "type": "train",
+        "name": "Railjet",
+        "duration": "2h 40m",
+        "estimatedCost": 45,
+        "costRange": "€20-75",
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "name": "RegioJet/FlixBus",
+        "duration": "3h 15m",
+        "estimatedCost": 22,
+        "costRange": "€12-35",
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "budapest",
+    "to": "zagreb",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 24m",
+        "estimatedCost": 71,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 1m",
+        "estimatedCost": 50,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 3m",
+        "estimatedCost": 28,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "cesky-krumlov",
+    "to": "prague",
+    "methods": [
+      {
+        "type": "bus",
+        "duration": "2h 45m",
+        "estimatedCost": 14,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 45m",
+        "estimatedCost": 9,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "cesky-krumlov",
+    "to": "vienna",
+    "methods": [
+      {
+        "type": "bus",
+        "duration": "3h 0m",
+        "estimatedCost": 18,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 0m",
+        "estimatedCost": 12,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "colmar",
+    "to": "strasbourg",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "30m",
+        "estimatedCost": 12,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "30m",
+        "estimatedCost": 8,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "colmar",
+    "to": "zurich",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "2h 0m",
+        "estimatedCost": 36,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 0m",
+        "estimatedCost": 25,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "cologne",
+    "to": "frankfurt",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 20m",
+        "estimatedCost": 35,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 16m",
+        "estimatedCost": 19,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "cologne",
+    "to": "hamburg",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 28m",
+        "estimatedCost": 78,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 18m",
+        "estimatedCost": 56,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 45m",
+        "estimatedCost": 31,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "cologne",
+    "to": "london",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 39m",
+        "estimatedCost": 95,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 58m",
+        "estimatedCost": 70,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "6h 28m",
+        "estimatedCost": 40,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "cologne",
+    "to": "munich",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 36m",
+        "estimatedCost": 90,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 46m",
+        "estimatedCost": 66,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 58m",
+        "estimatedCost": 37,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "copenhagen",
+    "to": "london",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 15m",
+        "estimatedCost": 150,
+        "recommended": true
+      },
+      {
+        "type": "train",
+        "duration": "5h 9m",
+        "estimatedCost": 116,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "malmo",
+    "to": "copenhagen",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "38m",
+        "estimatedCost": 12,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "38m",
+        "estimatedCost": 8,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "copenhagen",
+    "to": "stockholm",
+    "methods": [
+      {
+        "type": "train",
+        "name": "SJ 高速列车",
+        "duration": "5h 20m",
+        "estimatedCost": 85,
+        "costRange": "€45-130",
+        "recommended": true
+      },
+      {
+        "type": "flight",
+        "name": "SAS / Norwegian",
+        "duration": "1h 10m",
+        "estimatedCost": 95,
+        "costRange": "€55-160",
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "karlovy-vary",
+    "to": "dresden",
+    "methods": [
+      {
+        "type": "bus",
+        "duration": "2h 30m",
+        "estimatedCost": 16,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 30m",
+        "estimatedCost": 11,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "dresden",
+    "to": "munich",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "4h 20m",
+        "estimatedCost": 52,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 20m",
+        "estimatedCost": 36,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "dresden",
+    "to": "prague",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "2h 15m",
+        "estimatedCost": 26,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 15m",
+        "estimatedCost": 18,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "dubrovnik",
+    "to": "london",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "4h 13m",
+        "estimatedCost": 238,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "split",
+    "to": "dubrovnik",
+    "methods": [
+      {
+        "type": "bus",
+        "duration": "4h 0m",
+        "estimatedCost": 24,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 0m",
+        "estimatedCost": 16,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "dubrovnik",
+    "to": "zagreb",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 31m",
+        "estimatedCost": 82,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 27m",
+        "estimatedCost": 59,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 9m",
+        "estimatedCost": 33,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "faro",
+    "to": "lisbon",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 38m",
+        "estimatedCost": 42,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 3m",
+        "estimatedCost": 23,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "faro",
+    "to": "porto",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 37m",
+        "estimatedCost": 91,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 49m",
+        "estimatedCost": 66,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "6h 4m",
+        "estimatedCost": 38,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "florence",
+    "to": "milan",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 47m",
+        "estimatedCost": 45,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 27m",
+        "estimatedCost": 25,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "florence",
+    "to": "naples",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 32m",
+        "estimatedCost": 84,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 33m",
+        "estimatedCost": 61,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 23m",
+        "estimatedCost": 34,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "pisa",
+    "to": "florence",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "50m",
+        "estimatedCost": 12,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "50m",
+        "estimatedCost": 8,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "rome",
+    "to": "florence",
+    "methods": [
+      {
+        "type": "train",
+        "name": "Frecciarossa",
+        "duration": "1h 36m",
+        "estimatedCost": 65,
+        "costRange": "€25-95",
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "name": "Itabus",
+        "duration": "3h 15m",
+        "estimatedCost": 20,
+        "costRange": "€12-35",
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "florence",
+    "to": "venice",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 34m",
+        "estimatedCost": 40,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 53m",
+        "estimatedCost": 22,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "frankfurt",
+    "to": "hamburg",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 31m",
+        "estimatedCost": 82,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 28m",
+        "estimatedCost": 59,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 12m",
+        "estimatedCost": 34,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "frankfurt",
+    "to": "london",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 50m",
+        "estimatedCost": 112,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 38m",
+        "estimatedCost": 84,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "frankfurt",
+    "to": "munich",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 24m",
+        "estimatedCost": 72,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 3m",
+        "estimatedCost": 50,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 7m",
+        "estimatedCost": 28,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "nuremberg",
+    "to": "frankfurt",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "2h 10m",
+        "estimatedCost": 38,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 10m",
+        "estimatedCost": 26,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "gdansk",
+    "to": "krakow",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 38m",
+        "estimatedCost": 93,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 55m",
+        "estimatedCost": 68,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "6h 19m",
+        "estimatedCost": 39,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "gdansk",
+    "to": "warsaw",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 22m",
+        "estimatedCost": 69,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "1h 57m",
+        "estimatedCost": 48,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 51m",
+        "estimatedCost": 27,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "interlaken",
+    "to": "geneva",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "2h 50m",
+        "estimatedCost": 32,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 50m",
+        "estimatedCost": 22,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "geneva",
+    "to": "london",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 59m",
+        "estimatedCost": 125,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "4h 9m",
+        "estimatedCost": 95,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "turin",
+    "to": "geneva",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "4h 0m",
+        "estimatedCost": 46,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 0m",
+        "estimatedCost": 32,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "geneva",
+    "to": "zurich",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 40m",
+        "estimatedCost": 42,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 8m",
+        "estimatedCost": 23,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "malmo",
+    "to": "gothenburg",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "2h 30m",
+        "estimatedCost": 28,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 30m",
+        "estimatedCost": 19,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "gothenburg",
+    "to": "stockholm",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 31m",
+        "estimatedCost": 83,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 29m",
+        "estimatedCost": 60,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 14m",
+        "estimatedCost": 34,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "granada",
+    "to": "madrid",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 28m",
+        "estimatedCost": 78,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 19m",
+        "estimatedCost": 56,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 48m",
+        "estimatedCost": 32,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "malaga",
+    "to": "granada",
+    "methods": [
+      {
+        "type": "bus",
+        "duration": "1h 35m",
+        "estimatedCost": 14,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 35m",
+        "estimatedCost": 9,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "granada",
+    "to": "seville",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 37m",
+        "estimatedCost": 41,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 59m",
+        "estimatedCost": 23,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "granada",
+    "to": "valencia",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 30m",
+        "estimatedCost": 81,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 24m",
+        "estimatedCost": 58,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 2m",
+        "estimatedCost": 33,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "hallstatt",
+    "to": "munich",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "3h 45m",
+        "estimatedCost": 40,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 45m",
+        "estimatedCost": 28,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "hallstatt",
+    "to": "salzburg",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "2h 20m",
+        "estimatedCost": 22,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 20m",
+        "estimatedCost": 15,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "hallstatt",
+    "to": "vienna",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "3h 30m",
+        "estimatedCost": 34,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 30m",
+        "estimatedCost": 23,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "hamburg",
+    "to": "london",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 57m",
+        "estimatedCost": 121,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "4h 2m",
+        "estimatedCost": 92,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "hamburg",
+    "to": "munich",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 48m",
+        "estimatedCost": 108,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 31m",
+        "estimatedCost": 81,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "helsinki",
+    "to": "london",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "4h 24m",
+        "estimatedCost": 254,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "helsinki",
+    "to": "rovaniemi",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 56m",
+        "estimatedCost": 120,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 58m",
+        "estimatedCost": 91,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "helsinki",
+    "to": "stockholm",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 31m",
+        "estimatedCost": 82,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 29m",
+        "estimatedCost": 60,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 14m",
+        "estimatedCost": 34,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "heraklion",
+    "to": "santorini",
+    "methods": [
+      {
+        "type": "ferry",
+        "duration": "2h 0m",
+        "estimatedCost": 34,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 0m",
+        "estimatedCost": 23,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "munich",
+    "to": "innsbruck",
+    "methods": [
+      {
+        "type": "train",
+        "name": "EC 跨境列车",
+        "duration": "1h 45m",
+        "estimatedCost": 40,
+        "costRange": "€20-65",
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "name": "FlixBus",
+        "duration": "2h 15m",
+        "estimatedCost": 18,
+        "costRange": "€10-30",
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "innsbruck",
+    "to": "salzburg",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 15m",
+        "estimatedCost": 34,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 5m",
+        "estimatedCost": 18,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "innsbruck",
+    "to": "vienna",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 30m",
+        "estimatedCost": 81,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 26m",
+        "estimatedCost": 59,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 6m",
+        "estimatedCost": 33,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "lucerne",
+    "to": "interlaken",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 50m",
+        "estimatedCost": 24,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 50m",
+        "estimatedCost": 16,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "interlaken",
+    "to": "milan",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "3h 40m",
+        "estimatedCost": 44,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 40m",
+        "estimatedCost": 30,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "karlovy-vary",
+    "to": "prague",
+    "methods": [
+      {
+        "type": "bus",
+        "duration": "2h 15m",
+        "estimatedCost": 12,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 15m",
+        "estimatedCost": 8,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "krakow",
+    "to": "london",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 52m",
+        "estimatedCost": 205,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "krakow",
+    "to": "warsaw",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 20m",
+        "estimatedCost": 65,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "1h 48m",
+        "estimatedCost": 45,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 28m",
+        "estimatedCost": 25,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "wroclaw",
+    "to": "krakow",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "3h 0m",
+        "estimatedCost": 28,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 0m",
+        "estimatedCost": 19,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "lille",
+    "methods": [
+      {
+        "type": "train",
+        "name": "Eurostar",
+        "duration": "1h 30m",
+        "estimatedCost": 80,
+        "costRange": "€40-100",
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "name": "Coach",
+        "duration": "4h 45m",
+        "estimatedCost": 35,
+        "costRange": "€20-55",
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "lisbon",
+    "to": "london",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "4h 5m",
+        "estimatedCost": 225,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "lisbon",
+    "to": "porto",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 22m",
+        "estimatedCost": 68,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "1h 54m",
+        "estimatedCost": 47,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 45m",
+        "estimatedCost": 26,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "sintra",
+    "to": "lisbon",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "40m",
+        "estimatedCost": 6,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "40m",
+        "estimatedCost": 8,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "ljubljana",
+    "to": "zagreb",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 10m",
+        "estimatedCost": 32,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 50m",
+        "estimatedCost": 17,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "luxembourg-city",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 39m",
+        "estimatedCost": 94,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 56m",
+        "estimatedCost": 69,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "6h 22m",
+        "estimatedCost": 39,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "lyon",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 58m",
+        "estimatedCost": 123,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "4h 6m",
+        "estimatedCost": 94,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "madrid",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 40m",
+        "estimatedCost": 187,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "milan",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 16m",
+        "estimatedCost": 150,
+        "recommended": true
+      },
+      {
+        "type": "train",
+        "duration": "5h 10m",
+        "estimatedCost": 116,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "munich",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 13m",
+        "estimatedCost": 145,
+        "recommended": true
+      },
+      {
+        "type": "train",
+        "duration": "4h 58m",
+        "estimatedCost": 112,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "oslo",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 31m",
+        "estimatedCost": 173,
+        "recommended": true
+      },
+      {
+        "type": "train",
+        "duration": "6h 6m",
+        "estimatedCost": 135,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "paris",
+    "methods": [
+      {
+        "type": "train",
+        "name": "Eurostar",
+        "duration": "2h 20m",
+        "estimatedCost": 120,
+        "costRange": "€60-180",
+        "recommended": true
+      },
+      {
+        "type": "flight",
+        "name": "British Airways / easyJet",
+        "duration": "1h 15m",
+        "estimatedCost": 95,
+        "costRange": "€45-160",
+        "recommended": false
+      },
+      {
+        "type": "bus",
+        "name": "Night Coach",
+        "duration": "8h 30m",
+        "estimatedCost": 40,
+        "costRange": "€25-65",
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "porto",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 44m",
+        "estimatedCost": 194,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "prague",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 22m",
+        "estimatedCost": 159,
+        "recommended": true
+      },
+      {
+        "type": "train",
+        "duration": "5h 32m",
+        "estimatedCost": 123,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "reykjavik",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "4h 29m",
+        "estimatedCost": 262,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "riga",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "4h 12m",
+        "estimatedCost": 236,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "rome",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 53m",
+        "estimatedCost": 207,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "rotterdam",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 25m",
+        "estimatedCost": 73,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 8m",
+        "estimatedCost": 52,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 19m",
+        "estimatedCost": 29,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "stockholm",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 53m",
+        "estimatedCost": 207,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "strasbourg",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 51m",
+        "estimatedCost": 113,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 42m",
+        "estimatedCost": 85,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "tallinn",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "4h 21m",
+        "estimatedCost": 249,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "utrecht",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 29m",
+        "estimatedCost": 79,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 21m",
+        "estimatedCost": 57,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 52m",
+        "estimatedCost": 32,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "valletta",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "4h 45m",
+        "estimatedCost": 286,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "vienna",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 38m",
+        "estimatedCost": 183,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "vilnius",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "4h 16m",
+        "estimatedCost": 242,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "warsaw",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 54m",
+        "estimatedCost": 209,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "zagreb",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 46m",
+        "estimatedCost": 196,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "london",
+    "to": "zurich",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "3h 1m",
+        "estimatedCost": 128,
+        "recommended": true
+      },
+      {
+        "type": "train",
+        "duration": "4h 18m",
+        "estimatedCost": 98,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "lucerne",
+    "to": "zurich",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "50m",
+        "estimatedCost": 16,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "50m",
+        "estimatedCost": 11,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "lyon",
+    "to": "marseille",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 22m",
+        "estimatedCost": 68,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "1h 55m",
+        "estimatedCost": 48,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 47m",
+        "estimatedCost": 27,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "lyon",
+    "to": "nice",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 24m",
+        "estimatedCost": 71,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 1m",
+        "estimatedCost": 50,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 2m",
+        "estimatedCost": 28,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "paris",
+    "to": "lyon",
+    "methods": [
+      {
+        "type": "train",
+        "name": "TGV INOUI",
+        "duration": "1h 58m",
+        "estimatedCost": 75,
+        "costRange": "€35-120",
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "name": "BlaBlaCar Bus",
+        "duration": "5h 30m",
+        "estimatedCost": 30,
+        "costRange": "€18-50",
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "lyon",
+    "to": "strasbourg",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 30m",
+        "estimatedCost": 81,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 25m",
+        "estimatedCost": 58,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 4m",
+        "estimatedCost": 33,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "turin",
+    "to": "lyon",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "4h 30m",
+        "estimatedCost": 52,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 30m",
+        "estimatedCost": 36,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "malaga",
+    "to": "madrid",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "2h 45m",
+        "estimatedCost": 38,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 45m",
+        "estimatedCost": 26,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "san-sebastian",
+    "to": "madrid",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "4h 50m",
+        "estimatedCost": 42,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 50m",
+        "estimatedCost": 29,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "madrid",
+    "to": "seville",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 31m",
+        "estimatedCost": 82,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 27m",
+        "estimatedCost": 59,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 10m",
+        "estimatedCost": 33,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "madrid",
+    "to": "valencia",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 24m",
+        "estimatedCost": 71,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 2m",
+        "estimatedCost": 50,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 5m",
+        "estimatedCost": 28,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "malaga",
+    "to": "seville",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "2h 0m",
+        "estimatedCost": 26,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 0m",
+        "estimatedCost": 18,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "malmo",
+    "to": "stockholm",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "4h 30m",
+        "estimatedCost": 42,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 30m",
+        "estimatedCost": 29,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "marseille",
+    "to": "nice",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 22m",
+        "estimatedCost": 36,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 21m",
+        "estimatedCost": 20,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "marseille",
+    "to": "paris",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 52m",
+        "estimatedCost": 114,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 45m",
+        "estimatedCost": 86,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "marseille",
+    "to": "strasbourg",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 49m",
+        "estimatedCost": 109,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 32m",
+        "estimatedCost": 81,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "milan",
+    "to": "naples",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 52m",
+        "estimatedCost": 114,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 44m",
+        "estimatedCost": 86,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "milan",
+    "to": "nice",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 47m",
+        "estimatedCost": 45,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 25m",
+        "estimatedCost": 25,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "pisa",
+    "to": "milan",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "3h 10m",
+        "estimatedCost": 36,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 10m",
+        "estimatedCost": 25,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "milan",
+    "to": "rome",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 38m",
+        "estimatedCost": 92,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 52m",
+        "estimatedCost": 68,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "6h 13m",
+        "estimatedCost": 39,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "turin",
+    "to": "milan",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 0m",
+        "estimatedCost": 18,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 0m",
+        "estimatedCost": 12,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "milan",
+    "to": "venice",
+    "methods": [
+      {
+        "type": "train",
+        "name": "Frecciarossa",
+        "duration": "2h 25m",
+        "estimatedCost": 55,
+        "costRange": "€25-90",
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "name": "FlixBus",
+        "duration": "3h 40m",
+        "estimatedCost": 20,
+        "costRange": "€12-35",
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "verona",
+    "to": "milan",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 15m",
+        "estimatedCost": 20,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 15m",
+        "estimatedCost": 14,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "nuremberg",
+    "to": "munich",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 10m",
+        "estimatedCost": 30,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 10m",
+        "estimatedCost": 21,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "munich",
+    "to": "salzburg",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 9m",
+        "estimatedCost": 32,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 48m",
+        "estimatedCost": 17,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "verona",
+    "to": "munich",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "5h 20m",
+        "estimatedCost": 62,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 20m",
+        "estimatedCost": 43,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "naples",
+    "to": "rome",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 30m",
+        "estimatedCost": 39,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 42m",
+        "estimatedCost": 21,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "naples",
+    "to": "venice",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 42m",
+        "estimatedCost": 99,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 9m",
+        "estimatedCost": 73,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "6h 55m",
+        "estimatedCost": 42,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "nice",
+    "to": "paris",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 54m",
+        "estimatedCost": 117,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 52m",
+        "estimatedCost": 89,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "nice",
+    "to": "strasbourg",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 43m",
+        "estimatedCost": 100,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 11m",
+        "estimatedCost": 74,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "7h 1m",
+        "estimatedCost": 43,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "nuremberg",
+    "to": "prague",
+    "methods": [
+      {
+        "type": "bus",
+        "duration": "3h 50m",
+        "estimatedCost": 24,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 50m",
+        "estimatedCost": 16,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "tromso",
+    "to": "oslo",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "1h 55m",
+        "estimatedCost": 85,
+        "recommended": true
+      },
+      {
+        "type": "train",
+        "duration": "6h 0m",
+        "estimatedCost": 68,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "paris",
+    "to": "strasbourg",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 31m",
+        "estimatedCost": 83,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 30m",
+        "estimatedCost": 60,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 15m",
+        "estimatedCost": 34,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "pisa",
+    "to": "rome",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "2h 20m",
+        "estimatedCost": 32,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "2h 20m",
+        "estimatedCost": 22,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "sintra",
+    "to": "porto",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "3h 10m",
+        "estimatedCost": 28,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 10m",
+        "estimatedCost": 19,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "prague",
+    "to": "vienna",
+    "methods": [
+      {
+        "type": "train",
+        "name": "Railjet",
+        "duration": "4h 5m",
+        "estimatedCost": 50,
+        "costRange": "€25-85",
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "name": "RegioJet",
+        "duration": "4h 30m",
+        "estimatedCost": 25,
+        "costRange": "€15-40",
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "wroclaw",
+    "to": "prague",
+    "methods": [
+      {
+        "type": "bus",
+        "duration": "3h 50m",
+        "estimatedCost": 24,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 50m",
+        "estimatedCost": 16,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "riga",
+    "to": "tallinn",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 22m",
+        "estimatedCost": 69,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "1h 56m",
+        "estimatedCost": 48,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 48m",
+        "estimatedCost": 27,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "riga",
+    "to": "vilnius",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 21m",
+        "estimatedCost": 66,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "1h 51m",
+        "estimatedCost": 46,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 36m",
+        "estimatedCost": 26,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "rome",
+    "to": "valletta",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 54m",
+        "estimatedCost": 118,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 53m",
+        "estimatedCost": 89,
+        "recommended": true
+      },
+      {
+        "type": "ferry",
+        "duration": "16h 8m",
+        "estimatedCost": 80,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "rome",
+    "to": "venice",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 31m",
+        "estimatedCost": 82,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "2h 28m",
+        "estimatedCost": 59,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "5h 12m",
+        "estimatedCost": 34,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "the-hague",
+    "to": "rotterdam",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "25m",
+        "estimatedCost": 8,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "25m",
+        "estimatedCost": 8,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "rotterdam",
+    "to": "utrecht",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "0h 50m",
+        "estimatedCost": 25,
+        "recommended": false
+      },
+      {
+        "type": "bus",
+        "duration": "0h 59m",
+        "estimatedCost": 13,
+        "recommended": true
+      }
+    ]
+  },
+  {
+    "from": "salzburg",
+    "to": "vienna",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 20m",
+        "estimatedCost": 65,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "1h 48m",
+        "estimatedCost": 45,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 28m",
+        "estimatedCost": 25,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "santorini",
+    "to": "thessaloniki",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 41m",
+        "estimatedCost": 97,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 5m",
+        "estimatedCost": 72,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "6h 45m",
+        "estimatedCost": 41,
+        "recommended": false
+      },
+      {
+        "type": "ferry",
+        "duration": "12h 22m",
+        "estimatedCost": 67,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "seville",
+    "to": "valencia",
+    "methods": [
+      {
+        "type": "flight",
+        "duration": "2h 43m",
+        "estimatedCost": 100,
+        "recommended": false
+      },
+      {
+        "type": "train",
+        "duration": "3h 10m",
+        "estimatedCost": 74,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "6h 59m",
+        "estimatedCost": 42,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "split",
+    "to": "venice",
+    "methods": [
+      {
+        "type": "ferry",
+        "duration": "6h 0m",
+        "estimatedCost": 45,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "4h 0m",
+        "estimatedCost": 31,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "split",
+    "to": "zagreb",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "6h 20m",
+        "estimatedCost": 28,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "6h 20m",
+        "estimatedCost": 19,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "the-hague",
+    "to": "utrecht",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "40m",
+        "estimatedCost": 10,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "40m",
+        "estimatedCost": 8,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "vaduz",
+    "to": "zurich",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "0h 58m",
+        "estimatedCost": 28,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 21m",
+        "estimatedCost": 15,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "verona",
+    "to": "venice",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "1h 15m",
+        "estimatedCost": 18,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "1h 15m",
+        "estimatedCost": 12,
+        "recommended": false
+      }
+    ]
+  },
+  {
+    "from": "wroclaw",
+    "to": "warsaw",
+    "methods": [
+      {
+        "type": "train",
+        "duration": "3h 40m",
+        "estimatedCost": 32,
+        "recommended": true
+      },
+      {
+        "type": "bus",
+        "duration": "3h 40m",
+        "estimatedCost": 22,
+        "recommended": false
+      }
+    ]
+  }
+]

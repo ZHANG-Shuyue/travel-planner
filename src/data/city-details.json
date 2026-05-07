@@ -1,0 +1,322 @@
+[
+  {
+    "id": "paris",
+    "nearestAirportCode": "CDG",
+    "trainStationName": "Paris Gare du Nord"
+  },
+  {
+    "id": "lyon",
+    "nearestAirportCode": "LYS",
+    "trainStationName": "Lyon Part-Dieu"
+  },
+  {
+    "id": "nice",
+    "nearestAirportCode": "NCE",
+    "trainStationName": "Nice-Ville"
+  },
+  {
+    "id": "marseille",
+    "nearestAirportCode": "MRS",
+    "trainStationName": "Marseille Saint-Charles"
+  },
+  {
+    "id": "strasbourg",
+    "nearestAirportCode": "SXB",
+    "trainStationName": "Strasbourg-Ville"
+  },
+  {
+    "id": "berlin",
+    "nearestAirportCode": "BER",
+    "trainStationName": "Berlin Hbf"
+  },
+  {
+    "id": "munich",
+    "nearestAirportCode": "MUC",
+    "trainStationName": "München Hbf"
+  },
+  {
+    "id": "hamburg",
+    "nearestAirportCode": "HAM",
+    "trainStationName": "Hamburg Hbf"
+  },
+  {
+    "id": "frankfurt",
+    "nearestAirportCode": "FRA",
+    "trainStationName": "Frankfurt (Main) Hbf"
+  },
+  {
+    "id": "cologne",
+    "nearestAirportCode": "CGN",
+    "trainStationName": "Köln Hbf"
+  },
+  {
+    "id": "rome",
+    "nearestAirportCode": "FCO",
+    "trainStationName": "Roma Termini"
+  },
+  {
+    "id": "florence",
+    "nearestAirportCode": "FLR",
+    "trainStationName": "Firenze S.M.N."
+  },
+  {
+    "id": "venice",
+    "nearestAirportCode": "VCE",
+    "trainStationName": "Venezia Santa Lucia"
+  },
+  {
+    "id": "milan",
+    "nearestAirportCode": "MXP",
+    "trainStationName": "Milano Centrale"
+  },
+  {
+    "id": "naples",
+    "nearestAirportCode": "NAP",
+    "trainStationName": "Napoli Centrale"
+  },
+  {
+    "id": "barcelona",
+    "nearestAirportCode": "BCN",
+    "trainStationName": "Barcelona Sants"
+  },
+  {
+    "id": "madrid",
+    "nearestAirportCode": "MAD",
+    "trainStationName": "Madrid Puerta de Atocha"
+  },
+  {
+    "id": "seville",
+    "nearestAirportCode": "SVQ",
+    "trainStationName": "Sevilla Santa Justa"
+  },
+  {
+    "id": "valencia",
+    "nearestAirportCode": "VLC",
+    "trainStationName": "València Joaquín Sorolla"
+  },
+  {
+    "id": "granada",
+    "nearestAirportCode": "GRX",
+    "trainStationName": "Granada Station"
+  },
+  {
+    "id": "amsterdam",
+    "nearestAirportCode": "AMS",
+    "trainStationName": "Amsterdam Centraal"
+  },
+  {
+    "id": "rotterdam",
+    "nearestAirportCode": "RTM",
+    "trainStationName": "Rotterdam Centraal"
+  },
+  {
+    "id": "utrecht",
+    "nearestAirportCode": "AMS",
+    "trainStationName": "Utrecht Centraal"
+  },
+  {
+    "id": "brussels",
+    "nearestAirportCode": "BRU",
+    "trainStationName": "Bruxelles-Midi"
+  },
+  {
+    "id": "bruges",
+    "nearestAirportCode": "OST",
+    "trainStationName": "Brugge Station"
+  },
+  {
+    "id": "ghent",
+    "nearestAirportCode": "BRU",
+    "trainStationName": "Gent-Sint-Pieters"
+  },
+  {
+    "id": "vienna",
+    "nearestAirportCode": "VIE",
+    "trainStationName": "Wien Hbf"
+  },
+  {
+    "id": "salzburg",
+    "nearestAirportCode": "SZG",
+    "trainStationName": "Salzburg Hbf"
+  },
+  {
+    "id": "innsbruck",
+    "nearestAirportCode": "INN",
+    "trainStationName": "Innsbruck Hbf"
+  },
+  {
+    "id": "zurich",
+    "nearestAirportCode": "ZRH",
+    "trainStationName": "Zürich HB"
+  },
+  {
+    "id": "geneva",
+    "nearestAirportCode": "GVA",
+    "trainStationName": "Genève Cornavin"
+  },
+  {
+    "id": "bern",
+    "nearestAirportCode": "BRN",
+    "trainStationName": "Bern Bahnhof"
+  },
+  {
+    "id": "lisbon",
+    "nearestAirportCode": "LIS",
+    "trainStationName": "Lisboa Santa Apolónia"
+  },
+  {
+    "id": "porto",
+    "nearestAirportCode": "OPO",
+    "trainStationName": "Porto Campanhã"
+  },
+  {
+    "id": "faro",
+    "nearestAirportCode": "FAO",
+    "trainStationName": "Faro Station"
+  },
+  {
+    "id": "athens",
+    "nearestAirportCode": "ATH",
+    "trainStationName": "Athens Railway Station"
+  },
+  {
+    "id": "santorini",
+    "nearestAirportCode": "JTR",
+    "trainStationName": "Fira Bus Terminal"
+  },
+  {
+    "id": "thessaloniki",
+    "nearestAirportCode": "SKG",
+    "trainStationName": "Thessaloniki Station"
+  },
+  {
+    "id": "prague",
+    "nearestAirportCode": "PRG",
+    "trainStationName": "Praha hlavní nádraží"
+  },
+  {
+    "id": "brno",
+    "nearestAirportCode": "BRQ",
+    "trainStationName": "Brno hlavní nádraží"
+  },
+  {
+    "id": "warsaw",
+    "nearestAirportCode": "WAW",
+    "trainStationName": "Warszawa Centralna"
+  },
+  {
+    "id": "krakow",
+    "nearestAirportCode": "KRK",
+    "trainStationName": "Kraków Główny"
+  },
+  {
+    "id": "gdansk",
+    "nearestAirportCode": "GDN",
+    "trainStationName": "Gdańsk Główny"
+  },
+  {
+    "id": "stockholm",
+    "nearestAirportCode": "ARN",
+    "trainStationName": "Stockholm Central"
+  },
+  {
+    "id": "gothenburg",
+    "nearestAirportCode": "GOT",
+    "trainStationName": "Göteborg Central"
+  },
+  {
+    "id": "oslo",
+    "nearestAirportCode": "OSL",
+    "trainStationName": "Oslo S"
+  },
+  {
+    "id": "bergen",
+    "nearestAirportCode": "BGO",
+    "trainStationName": "Bergen Station"
+  },
+  {
+    "id": "copenhagen",
+    "nearestAirportCode": "CPH",
+    "trainStationName": "København H"
+  },
+  {
+    "id": "aarhus",
+    "nearestAirportCode": "AAR",
+    "trainStationName": "Aarhus H"
+  },
+  {
+    "id": "helsinki",
+    "nearestAirportCode": "HEL",
+    "trainStationName": "Helsinki Central"
+  },
+  {
+    "id": "rovaniemi",
+    "nearestAirportCode": "RVN",
+    "trainStationName": "Rovaniemi Station"
+  },
+  {
+    "id": "budapest",
+    "nearestAirportCode": "BUD",
+    "trainStationName": "Budapest Keleti"
+  },
+  {
+    "id": "debrecen",
+    "nearestAirportCode": "DEB",
+    "trainStationName": "Debrecen Station"
+  },
+  {
+    "id": "reykjavik",
+    "nearestAirportCode": "KEF",
+    "trainStationName": "BSÍ Terminal"
+  },
+  {
+    "id": "luxembourg-city",
+    "nearestAirportCode": "LUX",
+    "trainStationName": "Luxembourg Gare Centrale"
+  },
+  {
+    "id": "tallinn",
+    "nearestAirportCode": "TLL",
+    "trainStationName": "Tallinn Balti Jaam"
+  },
+  {
+    "id": "riga",
+    "nearestAirportCode": "RIX",
+    "trainStationName": "Riga Central"
+  },
+  {
+    "id": "vilnius",
+    "nearestAirportCode": "VNO",
+    "trainStationName": "Vilnius Station"
+  },
+  {
+    "id": "ljubljana",
+    "nearestAirportCode": "LJU",
+    "trainStationName": "Ljubljana Station"
+  },
+  {
+    "id": "bratislava",
+    "nearestAirportCode": "BTS",
+    "trainStationName": "Bratislava hl.st."
+  },
+  {
+    "id": "valletta",
+    "nearestAirportCode": "MLA",
+    "trainStationName": "Valletta Bus Terminal"
+  },
+  {
+    "id": "vaduz",
+    "nearestAirportCode": "ZRH",
+    "trainStationName": "Schaan-Vaduz"
+  },
+  {
+    "id": "dubrovnik",
+    "nearestAirportCode": "DBV",
+    "trainStationName": "Dubrovnik Bus Station"
+  },
+  {
+    "id": "zagreb",
+    "nearestAirportCode": "ZAG",
+    "trainStationName": "Zagreb Glavni kolodvor"
+  }
+]

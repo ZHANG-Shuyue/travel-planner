@@ -87,14 +87,11 @@ function stylePrompt(style: TravelStyle) {
   return '用户选择深度探索风格，可以安排主题日，节奏缓慢，融入本地生活感。'
 }
 
-async function generateAiItinerary(apiKey: string, routeInfo: string, fallback: DayPlan[], travelStyle: TravelStyle) {
-  const response = await fetch('https://api.openai.com/v1/chat/completions', {
+async function generateAiItinerary(routeInfo: string, fallback: DayPlan[], travelStyle: TravelStyle, userApiKey?: string) {
+  const response = await fetch('/api/generate-itinerary', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
+    headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      model: 'gpt-4o-mini',
-      temperature: 0.7,
-      response_format: { type: 'json_object' },
       messages: [
         {
           role: 'system',
@@ -102,6 +99,7 @@ async function generateAiItinerary(apiKey: string, routeInfo: string, fallback: 
         },
         { role: 'user', content: routeInfo },
       ],
+      userApiKey: userApiKey || undefined,
     }),
   })
   if (!response.ok) return fallback
@@ -231,12 +229,7 @@ export default function SmartPlanner() {
         .map((s, i) => `${i + 1}. ${cityMap.get(s.cityId)?.nameZh ?? s.cityId} ${s.days}天`)
         .join('\n')}`
       const localItinerary = mainResult.plan.itinerary
-      if (!settings.apiKey) {
-        setItinerary(localItinerary)
-        setLoadingItinerary(false)
-        return
-      }
-      setItinerary(await generateAiItinerary(settings.apiKey, routeInfo, localItinerary, travelStyle))
+      setItinerary(await generateAiItinerary(routeInfo, localItinerary, travelStyle, settings.apiKey))
       setLoadingItinerary(false)
     }
     run()
@@ -548,9 +541,10 @@ export default function SmartPlanner() {
       {showSettingsModal ? (
         <div className="fixed inset-0 z-40 flex items-center justify-center bg-black/30 px-4">
           <div className="w-full max-w-md rounded-2xl bg-white p-5 dark:bg-dark-card">
-            <h3 className="text-lg font-semibold">设置 AI 行程生成（可选）</h3>
-            <p className="mt-2 text-sm text-slate-500">填入 OpenAI API Key 可获得详细的逐日行程推荐。不填也可以使用基础推荐功能。</p>
-            <input type="password" value={apiKeyDraft} onChange={(e) => setApiKeyDraft(e.target.value)} className="mt-3 w-full rounded-xl border border-muted/60 px-3 py-2 text-sm" placeholder="sk-..." />
+            <h3 className="text-lg font-semibold">AI 行程生成设置</h3>
+            <p className="mt-2 text-sm text-slate-500">本站已内置 AI 能力，无需配置即可使用。如需使用自己的 OpenAI Key（享受更快速度），可在下方填入。</p>
+            <input type="password" value={apiKeyDraft} onChange={(e) => setApiKeyDraft(e.target.value)} className="mt-3 w-full rounded-xl border border-muted/60 px-3 py-2 text-sm" placeholder="OpenAI API Key（可选）" />
+            <p className="mt-1 text-xs text-slate-500">未填写时使用站点公共额度，填写后优先使用你自己的 Key</p>
             <div className="mt-4 flex items-center justify-between">
               <button className="rounded-full bg-primary px-4 py-1.5 text-sm text-white" onClick={() => { updateSettings({ apiKey: apiKeyDraft.trim() || undefined }); localStorage.setItem('smart-planner-api-guide-seen', '1'); setShowSettingsModal(false) }}>保存</button>
               <button className="text-sm text-slate-500 underline" onClick={() => { localStorage.setItem('smart-planner-api-guide-seen', '1'); setShowSettingsModal(false) }}>跳过，使用基础版</button>

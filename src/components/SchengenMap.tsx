@@ -32,7 +32,7 @@ const NAME_TO_CODE: Record<string, string> = {
 }
 
 const cities = citiesData as SchengenCity[]
-const DEFAULT_CENTER: [number, number] = [12, 53]
+const DEFAULT_CENTER: [number, number] = [10, 50]
 
 function clamp(value: number, min: number, max: number) {
   return Math.min(max, Math.max(min, value))
@@ -169,10 +169,10 @@ export default function SchengenMap({
     setZoom(next.zoom)
   }
 
-  const renderMapContent = (projection: (coordinates: [number, number]) => [number, number] | null) => (
+  const renderMapContent = () => (
     <>
       <Geographies geography={EUROPE_GEO_URL}>
-        {({ geographies }: { geographies: any[] }) => (
+        {({ geographies, projection }: { geographies: any[]; projection: (coordinates: [number, number]) => [number, number] | null }) => (
           <>
             {geographies.map((geo: any) => {
               const geoName = String((geo.properties as { name?: string })?.name ?? '')
@@ -243,10 +243,10 @@ export default function SchengenMap({
   )
 
   return (
-    <div className={`relative map-root rounded-2xl border border-muted/60 bg-background p-2 shadow-sm ${compact ? 'h-[200px] md:h-[300px]' : ''}`}>
+    <div className={`relative map-root rounded-2xl border border-muted/60 bg-background p-2 shadow-sm ${compact ? 'h-[200px] md:h-[300px]' : 'h-[420px] md:h-[620px]'}`}>
       <ComposableMap
         projection="geoMercator"
-        projectionConfig={{ center: [12, 53], scale: compact ? 420 : 520 }}
+        projectionConfig={{ center: [10, 50], scale: compact ? 420 : 700 }}
         width={980}
         height={compact ? 300 : 640}
         style={{ width: '100%', height: '100%', background: 'transparent', transition: 'all 300ms ease' }}
@@ -264,7 +264,7 @@ export default function SchengenMap({
           disablePanning={!enableZoom}
           disableZoom={!enableZoom}
         >
-          {({ projection }: { projection: (coordinates: [number, number]) => [number, number] | null }) => renderMapContent(projection)}
+          {renderMapContent()}
         </ZoomableGroup>
       </ComposableMap>
 
